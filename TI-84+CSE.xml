@@ -795,10 +795,10 @@ to include changes if they're better!
 	  <Alt string="Agrave" />
     </Token>
     <Token byte="$70" string="Â" group="Accented Letters">
-	  <Alt string="Acircumflex" />
+	  <Alt string="Ahat" />
     </Token>
     <Token byte="$71" string="Ä" group="Accented Letters">
-	  <Alt string="Adiaresis" />
+	  <Alt string="Adots" />
     </Token>
     <Token byte="$72" string="á" group="Accented Letters">
 	  <Alt string="aacute" />
@@ -807,10 +807,10 @@ to include changes if they're better!
 	  <Alt string="agrave" />
     </Token>
     <Token byte="$74" string="â" group="Accented Letters">
-	  <Alt string="acircumflex" />
+	  <Alt string="ahat" />
     </Token>
     <Token byte="$75" string="ä" group="Accented Letters">
-	  <Alt string="adiaresis" />
+	  <Alt string="adots" />
     </Token>
     <Token byte="$76" string="É" group="Accented Letters">
 	  <Alt string="Eacute" />
@@ -819,10 +819,10 @@ to include changes if they're better!
 	  <Alt string="Egrave" />
     </Token>
     <Token byte="$78" string="Ê" group="Accented Letters">
-	  <Alt string="Ecircumflex" />
+	  <Alt string="Ehat" />
     </Token>
     <Token byte="$79" string="Ë" group="Accented Letters">
-	  <Alt string="Ediaresis" />
+	  <Alt string="Edots" />
     </Token>
     <Token byte="$7A" string="é" group="Accented Letters">
 	  <Alt string="eacute" />
@@ -831,19 +831,19 @@ to include changes if they're better!
 	  <Alt string="egrave" />
     </Token>
     <Token byte="$7C" string="ê" group="Accented Letters">
-	  <Alt string="ecircumflex" />
+	  <Alt string="ehat" />
     </Token>
     <Token byte="$7D" string="ë" group="Accented Letters">
-	  <Alt string="ediaresis"/>
+	  <Alt string="edots"/>
     </Token>
     <Token byte="$7F" string="Ì" group="Accented Letters">
 	  <Alt string="Igrave" />
     </Token>
     <Token byte="$80" string="Î" group="Accented Letters">
-	  <Alt string="Icircumflex" />
+	  <Alt string="Ihat" />
     </Token>
     <Token byte="$81" string="Ï" group="Accented Letters">
-	  <Alt string="Idiaresis" />
+	  <Alt string="Idots" />
     </Token>
     <Token byte="$82" string="í" group="Accented Letters">
 	  <Alt string="iacute" />
@@ -852,10 +852,10 @@ to include changes if they're better!
 	  <Alt string="igrave" />
     </Token>
     <Token byte="$84" string="î" group="Accented Letters">
-	  <Alt string="icircumflex" />
+	  <Alt string="ihat" />
     </Token>
     <Token byte="$85" string="ï" group="Accented Letters">
-	  <Alt string="idiaresis" />
+	  <Alt string="idots" />
     </Token>
     <Token byte="$86" string="Ó" group="Accented Letters">
 	  <Alt string="Oacute" />
@@ -864,10 +864,10 @@ to include changes if they're better!
 	  <Alt string="Ograve" />
     </Token>
     <Token byte="$88" string="Ô" group="Accented Letters">
-	  <Alt string="Ocircumflex" />
+	  <Alt string="Ohat" />
     </Token>
     <Token byte="$89" string="Ö" group="Accented Letters">
-	  <Alt string="Odiaresis" />
+	  <Alt string="Odots" />
     </Token>
     <Token byte="$8A" string="ó" group="Accented Letters">
 	  <Alt string="oacute" />
@@ -876,10 +876,10 @@ to include changes if they're better!
 	  <Alt string="ograve" />
     </Token>
     <Token byte="$8C" string="ô" group="Accented Letters">
-	  <Alt string="ocircumflex" />
+	  <Alt string="ohat" />
     </Token>
     <Token byte="$8D" string="ö" group="Accented Letters">
-	  <Alt string="odiaresis" />
+	  <Alt string="odots" />
     </Token>
     <Token byte="$8E" string="Ú" group="Accented Letters">
 	  <Alt string="Uacute" />
@@ -888,10 +888,10 @@ to include changes if they're better!
 	  <Alt string="Ugrave" />
     </Token>
     <Token byte="$90" string="Û" group="Accented Letters">
-	  <Alt string="Ucircumflex" />
+	  <Alt string="Uhat" />
     </Token>
     <Token byte="$91" string="Ü" group="Accented Letters">
-	  <Alt string="Udiaresis" />
+	  <Alt string="Udots" />
     </Token>
     <Token byte="$92" string="ú" group="Accented Letters">
 	  <Alt string="uacute" />
@@ -900,10 +900,10 @@ to include changes if they're better!
 	  <Alt string="ugrave" />
     </Token>
     <Token byte="$94" string="û" group="Accented Letters">
-	  <Alt string="ucircumflex" />
+	  <Alt string="uhat" />
     </Token>
     <Token byte="$95" string="ü" group="Accented Letters">
-	  <Alt string="udiaresis" />
+	  <Alt string="udots" />
     </Token>
     <Token byte="$96" string="Ç" group="Accented Letters">
 	  <Alt string="Ccedilla" />
