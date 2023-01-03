@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 TI-84+CE.xml
 Kevin Gomez
@@ -571,16 +571,13 @@ to include changes if they're better!
     <Token byte="$11" string="vwAxes" />
     <Token byte="$12" string="uwAxes" />
   </Token>
-  <Token byte="$7F" string="plotsquare" stringTerminator="false">
-    <Alt string="squareplot" />
-    <Alt string="□" />
+  <Token byte="$7F" string="□" stringTerminator="false">
+    <Alt string="plotsquare" />
   </Token>
   <Token byte="$80" string="﹢" stringTerminator="false">
-    <Alt string="crossplot" />
     <Alt string="plotcross" />
   </Token>
   <Token byte="$81" string="·" stringTerminator="false">
-    <Alt string="dotplot" />
     <Alt string="plotdot" />
   </Token>
   <Token byte="$82" string="*" />
@@ -643,7 +640,6 @@ to include changes if they're better!
   <Token byte="$AE" string="'" />
   <Token byte="$AF" string="?" />
   <Token byte="$B0" string="⁻" stringTerminator="false">
-    <Alt string="|-" />
     <Alt string="~" />
   </Token>
   <Token byte="$B1" string="int(" style="Command" />
@@ -796,49 +792,135 @@ to include changes if they're better!
     <Token byte="$6A" string="Asm(" style="Command" />
     <Token byte="$6B" string="AsmComp(" style="Command" />
     <Token byte="$6C" string="AsmPrgm" />
-    <Token byte="$6E" string="Á" group="Accented Letters" />
-    <Token byte="$6F" string="À" group="Accented Letters" />
-    <Token byte="$70" string="Â" group="Accented Letters" />
-    <Token byte="$71" string="Ä" group="Accented Letters" />
-    <Token byte="$72" string="á" group="Accented Letters" />
-    <Token byte="$73" string="à" group="Accented Letters" />
-    <Token byte="$74" string="â" group="Accented Letters" />
-    <Token byte="$75" string="ä" group="Accented Letters" />
-    <Token byte="$76" string="É" group="Accented Letters" />
-    <Token byte="$77" string="È" group="Accented Letters" />
-    <Token byte="$78" string="Ê" group="Accented Letters" />
-    <Token byte="$79" string="Ë" group="Accented Letters" />
-    <Token byte="$7A" string="é" group="Accented Letters" />
-    <Token byte="$7B" string="è" group="Accented Letters" />
-    <Token byte="$7C" string="ê" group="Accented Letters" />
-    <Token byte="$7D" string="ë" group="Accented Letters" />
-    <Token byte="$7F" string="Ì" group="Accented Letters" />
-    <Token byte="$80" string="Î" group="Accented Letters" />
-    <Token byte="$81" string="Ï" group="Accented Letters" />
-    <Token byte="$82" string="í" group="Accented Letters" />
-    <Token byte="$83" string="ì" group="Accented Letters" />
-    <Token byte="$84" string="î" group="Accented Letters" />
-    <Token byte="$85" string="ï" group="Accented Letters" />
-    <Token byte="$86" string="Ó" group="Accented Letters" />
-    <Token byte="$87" string="Ò" group="Accented Letters" />
-    <Token byte="$88" string="Ô" group="Accented Letters" />
-    <Token byte="$89" string="Ö" group="Accented Letters" />
-    <Token byte="$8A" string="ó" group="Accented Letters" />
-    <Token byte="$8B" string="ò" group="Accented Letters" />
-    <Token byte="$8C" string="ô" group="Accented Letters" />
-    <Token byte="$8D" string="ö" group="Accented Letters" />
-    <Token byte="$8E" string="Ú" group="Accented Letters" />
-    <Token byte="$8F" string="Ù" group="Accented Letters" />
-    <Token byte="$90" string="Û" group="Accented Letters" />
-    <Token byte="$91" string="Ü" group="Accented Letters" />
-    <Token byte="$92" string="ú" group="Accented Letters" />
-    <Token byte="$93" string="ù" group="Accented Letters" />
-    <Token byte="$94" string="û" group="Accented Letters" />
-    <Token byte="$95" string="ü" group="Accented Letters" />
-    <Token byte="$96" string="Ç" group="Accented Letters" />
-    <Token byte="$97" string="ç" group="Accented Letters" />
-    <Token byte="$98" string="Ñ" group="Accented Letters" />
-    <Token byte="$99" string="ñ" group="Accented Letters" />
+    <Token byte="$6E" string="Á" group="Accented Letters">
+      <Alt string="Aacute" />
+    </Token>
+    <Token byte="$6F" string="À" group="Accented Letters">
+      <Alt string="Agrave" />
+    </Token>
+    <Token byte="$70" string="Â" group="Accented Letters">
+      <Alt string="Acircumflex" />
+    </Token>
+    <Token byte="$71" string="Ä" group="Accented Letters">
+      <Alt string="Adiaeresis" />
+    </Token>
+    <Token byte="$72" string="á" group="Accented Letters">
+      <Alt string="aacute" />
+    </Token>
+    <Token byte="$73" string="à" group="Accented Letters">
+      <Alt string="agrave" />
+    </Token>
+    <Token byte="$74" string="â" group="Accented Letters">
+      <Alt string="acircumflex" />
+    </Token>
+    <Token byte="$75" string="ä" group="Accented Letters">
+      <Alt string="adiaeresis" />
+    </Token>
+    <Token byte="$76" string="É" group="Accented Letters">
+      <Alt string="Eacute" />
+    </Token>
+    <Token byte="$77" string="È" group="Accented Letters">
+      <Alt string="Egrave" />
+    </Token>
+    <Token byte="$78" string="Ê" group="Accented Letters">
+      <Alt string="Ecircumflex" />
+    </Token>
+    <Token byte="$79" string="Ë" group="Accented Letters">
+      <Alt string="Ediaeresis" />
+    </Token>
+    <Token byte="$7A" string="é" group="Accented Letters">
+      <Alt string="eacute" />
+    </Token>
+    <Token byte="$7B" string="è" group="Accented Letters">
+      <Alt string="egrave" />
+    </Token>
+    <Token byte="$7C" string="ê" group="Accented Letters">
+      <Alt string="ecircumflex" />
+    </Token>
+    <Token byte="$7D" string="ë" group="Accented Letters">
+      <Alt string="ediaeresis" />
+    </Token>
+    <Token byte="$7F" string="Ì" group="Accented Letters">
+      <Alt string="Igrave" />
+    </Token>
+    <Token byte="$80" string="Î" group="Accented Letters">
+      <Alt string="Icircumflex" />
+    </Token>
+    <Token byte="$81" string="Ï" group="Accented Letters">
+      <Alt string="Idiaeresis" />
+    </Token>
+    <Token byte="$82" string="í" group="Accented Letters">
+      <Alt string="iacute" />
+    </Token>
+    <Token byte="$83" string="ì" group="Accented Letters">
+      <Alt string="igrave" />
+    </Token>
+    <Token byte="$84" string="î" group="Accented Letters">
+      <Alt string="Icircumflex" />
+    </Token>
+    <Token byte="$85" string="ï" group="Accented Letters">
+      <Alt string="idiaeresis" />
+    </Token>
+    <Token byte="$86" string="Ó" group="Accented Letters">
+      <Alt string="Oacute" />
+    </Token>
+    <Token byte="$87" string="Ò" group="Accented Letters">
+      <Alt string="Ograve" />
+    </Token>
+    <Token byte="$88" string="Ô" group="Accented Letters">
+      <Alt string="Ocircumflex" />
+    </Token>
+    <Token byte="$89" string="Ö" group="Accented Letters">
+      <Alt string="Odiaeresis" />
+    </Token>
+    <Token byte="$8A" string="ó" group="Accented Letters">
+      <Alt string="oacute" />
+    </Token>
+    <Token byte="$8B" string="ò" group="Accented Letters">
+      <Alt string="ograve" />
+    </Token>
+    <Token byte="$8C" string="ô" group="Accented Letters">
+      <Alt string="ocircumflex" />
+    </Token>
+    <Token byte="$8D" string="ö" group="Accented Letters">
+      <Alt string="odiaeresis" />
+    </Token>
+    <Token byte="$8E" string="Ú" group="Accented Letters">
+      <Alt string="Uacute" />
+    </Token>
+    <Token byte="$8F" string="Ù" group="Accented Letters">
+      <Alt string="Ugrave" />
+    </Token>
+    <Token byte="$90" string="Û" group="Accented Letters">
+      <Alt string="Ucircumflex" />
+    </Token>
+    <Token byte="$91" string="Ü" group="Accented Letters">
+      <Alt string="Udiaeresis" />
+    </Token>
+    <Token byte="$92" string="ú" group="Accented Letters">
+      <Alt string="uacute" />
+    </Token>
+    <Token byte="$93" string="ù" group="Accented Letters">
+      <Alt string="ugrave" />
+    </Token>
+    <Token byte="$94" string="û" group="Accented Letters">
+      <Alt string="ucircumflex" />
+    </Token>
+    <Token byte="$95" string="ü" group="Accented Letters">
+      <Alt string="udiaeresis" />
+    </Token>
+    <Token byte="$96" string="Ç" group="Accented Letters">
+      <Alt string="Ccedilla" />
+    </Token>
+    <Token byte="$97" string="ç" group="Accented Letters">
+      <Alt string="ccedilla" />
+    </Token>
+    <Token byte="$98" string="Ñ" group="Accented Letters">
+      <Alt string="Ntilde" />
+    </Token>
+    <Token byte="$99" string="ñ" group="Accented Letters">
+      <Alt string="ntilde" />
+    </Token>
     <Token byte="$9A" string="´" stringTerminator="false">
       <Alt string="|'" />
       <Alt string="^^'" />
@@ -934,7 +1016,9 @@ to include changes if they're better!
     <Token byte="$CC" string="τ" group="Greek">
       <Alt string="tau" />
     </Token>
-    <Token byte="$CD" string="Í" group="Accented Letters" />
+    <Token byte="$CD" string="Í" group="Accented Letters">
+      <Alt string="Iacute" />
+    </Token>
     <Token byte="$CE" string="GarbageCollect" />
     <Token byte="$CF" string="|~" />
     <Token byte="$D1" string="@" />
@@ -1086,8 +1170,8 @@ to include changes if they're better!
   <Token byte="$E9" string="PlotsOn " style="Command" />
   <Token byte="$EA" string="PlotsOff " style="Command" />
   <Token byte="$EB" string="ʟ" style="Var">
-    <Alt string="smallL" />
     <Alt string="|L" />
+    <Alt string="smallL" />
   </Token>
   <Token byte="$EC" string="Plot1(" style="Command" />
   <Token byte="$ED" string="Plot2(" style="Command" />
@@ -1221,9 +1305,7 @@ to include changes if they're better!
     <Token byte="$67" string="TextColor(" style="Command" group="Drawing Commands" />
     <Token byte="$68" string="Asm84CPrgm" />
     <Token byte="$6C" string="BorderColor " style="Command" group="Graph Commands" />
-    <Token byte="$73" string="tinydotplot" stringTerminator="false">
-      <Alt string="plottinydot" />
-    </Token>
+    <Token byte="$73" string="plottinydot" stringTerminator="false" />
     <Token byte="$74" string="Thin" group="Graph Styles" />
     <Token byte="$75" string="Dot-Thin" group="Graph Styles" />
     <Token byte="$79" string="PlySmlt2" />
