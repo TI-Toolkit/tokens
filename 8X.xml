@@ -8108,7 +8108,7 @@
                     <version>0.01</version>
                 </since>
                 <lang code="en">
-                    <name>getDtStr</name>
+                    <name>getDtStr(</name>
                 </lang>
             </token>
         </byte>
