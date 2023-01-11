@@ -37,7 +37,7 @@
         </token>
     </byte>
     <byte value="$04">
-        <token stringTerminator>
+        <token stringTerminator="true">
             <since>
                 <model>TI-82</model>
                 <version>1.0</version>
@@ -458,7 +458,7 @@
         </token>
     </byte>
     <byte value="$2A">
-        <token stringTerminator>
+        <token stringTerminator="true">
             <since>
                 <model>TI-82</model>
                 <version>1.0</version>
