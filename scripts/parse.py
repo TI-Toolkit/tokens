@@ -135,8 +135,8 @@ class Tokens:
         self.langs = langs
 
     @staticmethod
-    def from_xml_string(xml_str: str):
-        return Tokens.from_element(ET.fromstring(xml_str))
+    def from_xml_string(xml_str: str, model_version=ModelVersion("latest", "")):
+        return Tokens.from_element(ET.fromstring(xml_str), model_version=model_version)
 
     @staticmethod
     def from_element(root, model_version=ModelVersion("latest", "")):
@@ -155,7 +155,7 @@ class Tokens:
 
                 if token.existed_at(model_version):
                     all_bytes[bits] = token
-                    for lang, names in token.langs:
+                    for lang, names in token.langs.items():
                         if lang not in all_langs:
                             all_langs[lang] = {}
 
@@ -164,9 +164,9 @@ class Tokens:
 
             for child in element:
                 if child.tag == "byte":
-                    parse_page(child, bits + bytes.fromhex(child.attrib["value"][1:]))
+                    parse_page(child, bits=bits + bytes.fromhex(child.attrib["value"][1:]))
                 else:
-                    parse_page(child, bits)
+                    parse_page(child, bits=bits)
 
         parse_page(root)
 
