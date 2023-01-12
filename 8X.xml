@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Credits
+ - Ryan Pitasky
+ - Kevin Gomez
+ - John Cesarz
+ - LogicalJoe
+ - Frederic Desautels
+ - Shaun McFall, through tokenide
+ - Christopher Mitchell, through tokenide
+ -->
 <tokens>
     <byte value="$01">
         <token>

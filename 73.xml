@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Credits
+ - Ryan Pitasky
+ - Shaun McFall, through tokenide
+ - Daniel Thorneycroft, through tokenide
+ -->
 <tokens>
 <byte value="$01">
   <token>
