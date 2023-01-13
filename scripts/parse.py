@@ -28,7 +28,7 @@ MODEL_ORDER = {
 
 
 @functools.total_ordering
-class ModelVersion(namedtuple("ModelVersion", ["model", "version"])):
+class Version(namedtuple("Version", ["model", "version"])):
     __slots__ = ()
 
     def __lt__(self, other):
@@ -52,7 +52,7 @@ class ModelVersion(namedtuple("ModelVersion", ["model", "version"])):
         return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
 
     @staticmethod
-    def from_element(element) -> 'ModelVersion':
+    def from_element(element) -> 'Version':
         model = ""
         version = ""
 
@@ -76,21 +76,21 @@ class ModelVersion(namedtuple("ModelVersion", ["model", "version"])):
             raise ValueError(
                 "Invalid <version> string \"" + version + "\", must be a sequence of numbers separated by periods.")
 
-        return ModelVersion(model, version)
+        return Version(model, version)
 
 
 class Token:
     def __init__(self, bits: bytes, langs: dict[str, dict[str, bytes]], attrs: dict[str, str] = None,
-                 since: ModelVersion = None,
-                 until: ModelVersion = None) -> object:
+                 since: Version = None,
+                 until: Version = None) -> object:
         self.bits = bits
         self.langs = langs
         self.attrs = attrs
         self.since = since
         self.until = until
 
-    def existed_at(self, model_version: ModelVersion):
-        return ((self.since is None) or (self.since < model_version)) and ((self.until is None) or (self.until >= model_version))
+    def existed_at(self, version: Version):
+        return ((self.since is None) or (self.since < version)) and ((self.until is None) or (self.until >= version))
 
     @staticmethod
     def from_element(element, bits):
@@ -103,13 +103,13 @@ class Token:
             match child.tag:
                 case "since":
                     if since is None:
-                        since = ModelVersion.from_element(child)
+                        since = Version.from_element(child)
                     else:
                         raise ValueError("Cannot have multiple <since> elements.")
 
                 case "until":
                     if until is None:
-                        until = ModelVersion.from_element(child)
+                        until = Version.from_element(child)
                     else:
                         raise ValueError("Cannot have multiple <until> elements.")
 
@@ -135,11 +135,11 @@ class Tokens:
         self.langs = langs
 
     @staticmethod
-    def from_xml_string(xml_str: str, model_version=ModelVersion("latest", "")):
-        return Tokens.from_element(ET.fromstring(xml_str), model_version=model_version)
+    def from_xml_string(xml_str: str, version=Version("latest", "")):
+        return Tokens.from_element(ET.fromstring(xml_str), version=version)
 
     @staticmethod
-    def from_element(root, model_version=ModelVersion("latest", "")):
+    def from_element(root, version=Version("latest", "")):
         if root.tag != "tokens":
             raise ValueError("Not a tokens xml.")
 
@@ -153,7 +153,7 @@ class Tokens:
             if element.tag == "token":
                 token = Token.from_element(element, bits)
 
-                if token.existed_at(model_version):
+                if token.existed_at(version):
                     all_bytes[bits] = token
                     for lang, names in token.langs.items():
                         if lang not in all_langs:

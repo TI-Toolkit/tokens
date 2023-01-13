@@ -1,3 +1,3 @@
-from .parse import Token, Tokens, ModelVersion
+from .parse import Token, Tokens, Version
 
-__all__ = ["Token", "Tokens", "ModelVersion"]
+__all__ = ["Token", "Tokens", "Version"]
