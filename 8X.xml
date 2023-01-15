@@ -3618,7 +3618,7 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>AxesOn </name>
+                    <name>AxesOn&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -3653,7 +3653,7 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>GridDot </name>
+                    <name>GridDot&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -8903,6 +8903,17 @@
                 </since>
                 <lang code="en">
                     <name>Asm84CEPrgm</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$81">
+            <token>
+                <since>
+                    <model>TI-84+CE</model>
+                    <version>5.1.0</version>
+                </since>
+                <lang code="en">
+                    <name>Quartiles Setting...</name>
                 </lang>
             </token>
         </byte>
