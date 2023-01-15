@@ -9025,6 +9025,21 @@
                 </lang>
             </token>
         </byte>
+        <byte value="$8E">
+            <token>
+                <since>
+                    <model>TI-84+CE</model>
+                    <version>5.2.0</version>
+                </since>
+                <until>
+                    <model>TI-84+CE</model>
+                    <version>5.3.0</version>
+                </until>
+                <lang code="en">
+                    <name>pieceWise(</name>
+                </lang>
+            </token>
+        </byte>
         <byte value="$8F">
             <token>
                 <since>
