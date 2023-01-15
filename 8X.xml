@@ -9124,7 +9124,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
-                    <name>Wait</name>
+                    <name>Wait&#032;</name>
                 </lang>
             </token>
         </byte>
