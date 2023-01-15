@@ -705,7 +705,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>&#032;</name>
+                <name>&#010;</name>
             </lang>
         </token>
     </byte>
@@ -3369,7 +3369,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>Fix</name>
+                <name>Fix&#032;</name>
             </lang>
         </token>
     </byte>
@@ -3604,8 +3604,21 @@
                     <model>TI-82</model>
                     <version>1.0</version>
                 </since>
+                <until>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </until>
                 <lang code="en">
                     <name>AxesOn</name>
+                </lang>
+            </token>
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>AxesOn </name>
                 </lang>
             </token>
         </byte>
@@ -3640,7 +3653,7 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>GridDot</name>
+                    <name>GridDot </name>
                 </lang>
             </token>
         </byte>
@@ -3977,7 +3990,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>nPr</name>
+                <name>&#032;nPr&#032;</name>
             </lang>
         </token>
     </byte>
@@ -3988,7 +4001,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>nCr</name>
+                <name>&#032;nCr&#032;</name>
             </lang>
         </token>
     </byte>
@@ -3999,7 +4012,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>FnOn</name>
+                <name>FnOn&#032;</name>
             </lang>
         </token>
     </byte>
@@ -4021,7 +4034,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>StorePic</name>
+                <name>StorePic&#032;</name>
             </lang>
         </token>
     </byte>
@@ -4032,7 +4045,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>RecallPic</name>
+                <name>RecallPic&#032;</name>
             </lang>
         </token>
     </byte>
@@ -4043,7 +4056,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>StoreGDB</name>
+                <name>StoreGDB&#032;</name>
             </lang>
         </token>
     </byte>
@@ -4054,7 +4067,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>RecallGDB</name>
+                <name>RecallGDB&#032;</name>
             </lang>
         </token>
     </byte>
@@ -4076,7 +4089,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>Vertical</name>
+                <name>Vertical&#032;</name>
             </lang>
         </token>
     </byte>
@@ -4175,7 +4188,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>Horizontal</name>
+                <name>Horizontal&#032;</name>
             </lang>
         </token>
     </byte>
@@ -5350,7 +5363,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>ZInterval</name>
+                    <name>ZInterval&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -5405,7 +5418,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>2-SampTTest</name>
+                    <name>2-SampTTest&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -5416,7 +5429,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>2-SampFTest</name>
+                    <name>2-SampFTest&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -5427,7 +5440,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>TInterval</name>
+                    <name>TInterval&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -5438,7 +5451,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>2-SampTInt</name>
+                    <name>2-SampTInt&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -5560,7 +5573,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>DelVar</name>
+                    <name>DelVar&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -7971,7 +7984,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>PlotsOn</name>
+                <name>PlotsOn&#032;</name>
             </lang>
         </token>
     </byte>
@@ -7982,7 +7995,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>PlotsOff</name>
+                <name>PlotsOff&#032;</name>
             </lang>
         </token>
     </byte>
@@ -8274,7 +8287,7 @@
                     <version>2.30</version>
                 </since>
                 <lang code="en">
-                    <name>LinRegTInt</name>
+                    <name>LinRegTInt&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -8285,7 +8298,7 @@
                     <version>0.46</version>
                 </since>
                 <lang code="en">
-                    <name>Manual-Fit</name>
+                    <name>Manual-Fit&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -8746,7 +8759,7 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>GridLine</name>
+                    <name>GridLine&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -8757,7 +8770,7 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>BackgroundOn</name>
+                    <name>BackgroundOn&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -8834,7 +8847,7 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>BorderColor</name>
+                    <name>BorderColor&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -9124,7 +9137,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
-                    <name>Wait</name>
+                    <name>Wait&#032;</name>
                 </lang>
             </token>
         </byte>
@@ -9280,7 +9293,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>1-Var Stats</name>
+                <name>1-Var Stats&#032;</name>
             </lang>
         </token>
     </byte>
@@ -9291,7 +9304,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>2-Var Stats</name>
+                <name>2-Var Stats&#032;</name>
             </lang>
         </token>
     </byte>
