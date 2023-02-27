@@ -8921,7 +8921,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>u(n-2)</name>
@@ -8932,7 +8932,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>v(n-2)</name>
@@ -8943,7 +8943,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>w(n-2)</name>
@@ -8954,7 +8954,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>u(n-1)</name>
@@ -8965,7 +8965,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>v(n-1)</name>
@@ -8976,7 +8976,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>w(n-1)</name>
@@ -8987,7 +8987,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>u(n)</name>
@@ -8998,7 +8998,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>v(n)</name>
@@ -9009,7 +9009,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>w(n)</name>
@@ -9020,7 +9020,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>u(n+1)</name>
@@ -9031,7 +9031,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>v(n+1)</name>
@@ -9042,7 +9042,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>w(n+1)</name>
@@ -9068,7 +9068,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>SEQ(n)</name>
@@ -9079,7 +9079,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>SEQ(n+1)</name>
@@ -9090,7 +9090,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>SEQ(n+2)</name>
@@ -9101,7 +9101,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>LEFT</name>
@@ -9112,7 +9112,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>CENTER</name>
@@ -9123,7 +9123,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>RIGHT</name>
@@ -9134,7 +9134,7 @@
             <token>
                 <since>
                     <model>TI-84+CE</model>
-                    <version>5.0.0</version>
+                    <version>5.2.0</version>
                 </since>
                 <lang code="en">
                     <name>invBinom(</name>
