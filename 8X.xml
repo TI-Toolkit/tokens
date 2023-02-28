@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Credits
- - Ryan Pitasky
- - Kevin Gomez
+ - Adrien Bertrand
  - John Cesarz
- - LogicalJoe
  - Frederic Desautels
+ - Kevin Gomez
+ - LogicalJoe
  - Shaun McFall, through tokenide
  - Christopher Mitchell, through tokenide
+ - Ryan Pitasky
  -->
 <tokens>
     <byte value="$01">
@@ -8749,6 +8750,116 @@
                     <name>DarkGrey</name>
                     <name>DARKGRAY</name>
                     <name>DarkGray</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$50">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image1</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$51">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image2</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$52">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image3</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$53">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image4</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$54">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image5</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$55">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image6</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$56">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image7</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$57">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image8</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$58">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image9</name>
+                </lang>
+            </token>
+        </byte>
+        <byte value="$59">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>Image0</name>
                 </lang>
             </token>
         </byte>
