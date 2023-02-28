@@ -144,8 +144,8 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>ˉ¹</name>
                 <name>⁻¹</name>
+                <name>ˉ¹</name>
                 <name>^^-1</name>
             </lang>
         </token>
@@ -496,6 +496,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
+                <name>𝑖</name>
                 <name>[i]</name>
             </lang>
         </token>
@@ -1841,6 +1842,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>x̄</name>
                     <name>ẋ</name>
                     <name>[xhat]</name>
                 </lang>
@@ -2041,6 +2043,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>[Q₁]</name>
                     <name>[Q1]</name>
                 </lang>
             </token>
@@ -2052,6 +2055,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>[Q₃]</name>
                     <name>[Q3]</name>
                 </lang>
             </token>
@@ -2190,6 +2194,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>[𝒏]</name>
                     <name>[recursiven]</name>
                 </lang>
             </token>
@@ -2270,6 +2275,8 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>p̂</name>
+                    <name>[p̂]</name>
                     <name>[ṗ]</name>
                     <name>[phat]</name>
                 </lang>
@@ -2282,6 +2289,8 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>p̂₁</name>
+                    <name>p̂1</name>
                     <name>ṗ₁</name>
                     <name>ṗ1</name>
                     <name>phat₁</name>
@@ -2296,6 +2305,8 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>p̂₂</name>
+                    <name>p̂2</name>
                     <name>ṗ₂</name>
                     <name>ṗ2</name>
                     <name>phat₂</name>
@@ -2310,6 +2321,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>x̄₁</name>
                     <name>ẋ₁</name>
                     <name>ẋ1</name>
                     <name>xhat₁</name>
@@ -2348,6 +2360,8 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>x̄₂</name>
+                    <name>x̄2</name>
                     <name>ẋ₂</name>
                     <name>ẋ2</name>
                     <name>xhat₂</name>
@@ -3058,6 +3072,8 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>𝗡</name>
+                    <name>|𝗡</name>
                     <name>|N</name>
                 </lang>
             </token>
@@ -4856,6 +4872,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>𝐅cdf(</name>
                     <name>Fcdf(</name>
                 </lang>
             </token>
@@ -4969,6 +4986,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>𝐅pdf(</name>
                     <name>Fpdf(</name>
                 </lang>
             </token>
@@ -5024,6 +5042,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>tvm_𝗡</name>
                     <name>tvm_N</name>
                 </lang>
             </token>
@@ -5123,6 +5142,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>ΔList(</name>
                     <name>DeltaList(</name>
                 </lang>
             </token>
@@ -5191,7 +5211,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>SinReg</name>
+                    <name>SinReg&#32;</name>
                 </lang>
             </token>
         </byte>
@@ -5202,7 +5222,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>Logistic</name>
+                    <name>Logistic&#32;</name>
                 </lang>
             </token>
         </byte>
@@ -5213,7 +5233,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>LinRegTTest</name>
+                    <name>LinRegTTest&#32;</name>
                 </lang>
             </token>
         </byte>
@@ -5260,6 +5280,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>Shade𝐅(</name>
                     <name>ShadeF(</name>
                 </lang>
             </token>
@@ -5306,7 +5327,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>T-Test</name>
+                    <name>T-Test&#32;</name>
                 </lang>
             </token>
         </byte>
@@ -5430,6 +5451,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>2-Samp𝐅Test&#032;</name>
                     <name>2-SampFTest&#032;</name>
                 </lang>
             </token>
@@ -5507,7 +5529,9 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>re^θ𝑖</name>
                     <name>re^θi</name>
+                    <name>re^theta𝑖</name>
                     <name>re^thetai</name>
                 </lang>
             </token>
@@ -5519,6 +5543,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>a+b𝑖</name>
                     <name>a+bi</name>
                 </lang>
             </token>
@@ -5642,7 +5667,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
-                    <name>ModBoxPlot</name>
+                    <name>ModBoxplot</name>
                 </lang>
             </token>
         </byte>
@@ -6249,6 +6274,7 @@
                     <version>1.03</version>
                 </since>
                 <lang code="en">
+                    <name>`</name>
                     <name>|`</name>
                     <name>^^`</name>
                 </lang>
@@ -6478,6 +6504,8 @@
                     <version>1.03</version>
                 </since>
                 <lang code="en">
+                    <name>𝐅</name>
+                    <name>|𝐅</name>
                     <name>|F</name>
                 </lang>
             </token>
@@ -7206,6 +7234,7 @@
                     <version>1.16</version>
                 </since>
                 <lang code="en">
+                    <name>🡅</name>
                     <name>bolduparrow</name>
                 </lang>
             </token>
@@ -7217,6 +7246,7 @@
                     <version>1.16</version>
                 </since>
                 <lang code="en">
+                    <name>🡇</name>
                     <name>bolddownarrow</name>
                 </lang>
             </token>
@@ -7240,6 +7270,7 @@
                     <version>1.16</version>
                 </since>
                 <lang code="en">
+                    <name>⌸</name>
                     <name>invertedequal</name>
                 </lang>
             </token>
@@ -8008,6 +8039,7 @@
             </since>
             <lang code="en">
                 <name>ʟ</name>
+                <name>⌊</name>
                 <name>smallL</name>
                 <name>|L</name>
             </lang>
@@ -8321,6 +8353,7 @@
                     <version>2.53</version>
                 </since>
                 <lang code="en">
+                    <name>ZFrac1⁄2</name>
                     <name>ZFrac1/2</name>
                 </lang>
             </token>
@@ -8332,6 +8365,7 @@
                     <version>2.53</version>
                 </since>
                 <lang code="en">
+                    <name>ZFrac1⁄3</name>
                     <name>ZFrac1/3</name>
                 </lang>
             </token>
@@ -8343,6 +8377,7 @@
                     <version>2.53</version>
                 </since>
                 <lang code="en">
+                    <name>ZFrac1⁄4</name>
                     <name>ZFrac1/4</name>
                 </lang>
             </token>
@@ -8354,6 +8389,7 @@
                     <version>2.53</version>
                 </since>
                 <lang code="en">
+                    <name>ZFrac1⁄5</name>
                     <name>ZFrac1/5</name>
                 </lang>
             </token>
@@ -8365,6 +8401,7 @@
                     <version>2.53</version>
                 </since>
                 <lang code="en">
+                    <name>ZFrac1⁄8</name>
                     <name>ZFrac1/8</name>
                 </lang>
             </token>
@@ -8376,6 +8413,7 @@
                     <version>2.53</version>
                 </since>
                 <lang code="en">
+                    <name>ZFrac1⁄10</name>
                     <name>ZFrac1/10</name>
                 </lang>
             </token>
@@ -8387,6 +8425,7 @@
                     <version>2.53</version>
                 </since>
                 <lang code="en">
+                    <name>⬚</name>
                     <name>mathprintbox</name>
                 </lang>
             </token>
@@ -8704,10 +8743,10 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>LTGREY</name>
-                    <name>LtGrey</name>
                     <name>LTGRAY</name>
                     <name>LtGray</name>
+                    <name>LTGREY</name>
+                    <name>LtGrey</name>
                 </lang>
             </token>
         </byte>
@@ -8718,10 +8757,10 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
+                    <name>MedGray</name>
                     <name>MEDGREY</name>
                     <name>MedGrey</name>
                     <name>MEDGRAY</name>
-                    <name>MedGray</name>
                 </lang>
             </token>
         </byte>
@@ -8732,10 +8771,10 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
-                    <name>GREY</name>
-                    <name>Grey</name>
                     <name>GRAY</name>
                     <name>Gray</name>
+                    <name>GREY</name>
+                    <name>Grey</name>
                 </lang>
             </token>
         </byte>
@@ -8746,10 +8785,10 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
+                    <name>DarkGray</name>
                     <name>DARKGREY</name>
                     <name>DarkGrey</name>
                     <name>DARKGRAY</name>
-                    <name>DarkGray</name>
                 </lang>
             </token>
         </byte>
@@ -8969,6 +9008,7 @@
                     <version>4.0</version>
                 </since>
                 <lang code="en">
+                    <name>·</name>
                     <name>plottinydot</name>
                 </lang>
             </token>
@@ -9024,6 +9064,7 @@
                     <version>5.1.0</version>
                 </since>
                 <lang code="en">
+                    <name>Quartiles Setting…</name>
                     <name>Quartiles Setting...</name>
                 </lang>
             </token>
@@ -9035,6 +9076,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>u(𝒏-2)</name>
                     <name>u(n-2)</name>
                 </lang>
             </token>
@@ -9046,6 +9088,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>v(𝒏-2)</name>
                     <name>v(n-2)</name>
                 </lang>
             </token>
@@ -9057,6 +9100,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>w(𝒏-2)</name>
                     <name>w(n-2)</name>
                 </lang>
             </token>
@@ -9068,6 +9112,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>u(𝒏-1)</name>
                     <name>u(n-1)</name>
                 </lang>
             </token>
@@ -9079,6 +9124,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>v(𝒏-1)</name>
                     <name>v(n-1)</name>
                 </lang>
             </token>
@@ -9090,6 +9136,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>w(𝒏-1)</name>
                     <name>w(n-1)</name>
                 </lang>
             </token>
@@ -9101,6 +9148,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>u(𝒏)</name>
                     <name>u(n)</name>
                 </lang>
             </token>
@@ -9112,6 +9160,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>v(𝒏)</name>
                     <name>v(n)</name>
                 </lang>
             </token>
@@ -9123,6 +9172,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>w(𝒏)</name>
                     <name>w(n)</name>
                 </lang>
             </token>
@@ -9134,6 +9184,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>u(𝒏+1)</name>
                     <name>u(n+1)</name>
                 </lang>
             </token>
@@ -9145,6 +9196,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>v(𝒏+1)</name>
                     <name>v(n+1)</name>
                 </lang>
             </token>
@@ -9156,6 +9208,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>w(𝒏+1)</name>
                     <name>w(n+1)</name>
                 </lang>
             </token>
@@ -9182,6 +9235,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>SEQ(𝒏)</name>
                     <name>SEQ(n)</name>
                 </lang>
             </token>
@@ -9193,6 +9247,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>SEQ(𝒏+1)</name>
                     <name>SEQ(n+1)</name>
                 </lang>
             </token>
@@ -9204,6 +9259,7 @@
                     <version>5.2.0</version>
                 </since>
                 <lang code="en">
+                    <name>SEQ(𝒏+2)</name>
                     <name>SEQ(n+2)</name>
                 </lang>
             </token>
