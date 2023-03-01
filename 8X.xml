@@ -8946,6 +8946,17 @@
                 </lang>
             </token>
         </byte>
+        <byte value="$66">
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>QuickPlot&#038;Fit-EQ</name>
+                </lang>
+            </token>
+        </byte>
         <byte value="$67">
             <token>
                 <since>
