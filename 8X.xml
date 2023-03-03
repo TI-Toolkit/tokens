@@ -8603,6 +8603,15 @@
                     <name>[FRAC]</name>
                 </lang>
             </token>
+            <token>
+                <since>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </since>
+                <lang code="en">
+                    <name>[FRAC-APPROX]</name>
+                </lang>
+            </token>
         </byte>
         <byte value="$41">
             <token>
