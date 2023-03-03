@@ -8599,6 +8599,10 @@
                     <model>TI-84+</model>
                     <version>2.53</version>
                 </since>
+                <until>
+                    <model>TI-84+CSE</model>
+                    <version>4.0</version>
+                </until>
                 <lang code="en">
                     <name>[FRAC]</name>
                 </lang>
