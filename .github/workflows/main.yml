@@ -6,21 +6,17 @@ on:
     
 jobs:
   validate:
-    name: Convert XML files to JSON
+    name: Validate XML files with XMLStarlet
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: Convert 73 tokens
-        uses: fabasoad/data-format-converter-action@v0.1.3
+      - name: Validate 73 tokens
+        uses: Mudlet/xmlstarlet-action@v1.1
         with:
-          input: '73.xml'
-          from: 'xml'
-          to: 'json'
+          args: 'val -b 73.xml'
           
-      - name: Convert 8X tokens
-        uses: fabasoad/data-format-converter-action@v0.1.3
+      - name: Validate 8X tokens
+        uses: Mudlet/xmlstarlet-action@v1.1
         with:
-          input: '8X.xml'
-          from: 'xml'
-          to: 'json'
+          args: 'val -b 8X.xml'
