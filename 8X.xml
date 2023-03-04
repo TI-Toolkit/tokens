@@ -2593,6 +2593,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>u(𝒏Min)</name>
                     <name>u(nMin)</name>
                 </lang>
             </token>
@@ -2608,6 +2609,7 @@
                     <version>1.010</version>
                 </until>
                 <lang code="en">
+                    <name>V𝒏Start</name>
                     <name>VnStart</name>
                 </lang>
             </token>
@@ -2617,6 +2619,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>v(𝒏Min)</name>
                     <name>v(nMin)</name>
                 </lang>
             </token>
@@ -2628,6 +2631,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>U𝒏-₁</name>
                     <name>Un-₁</name>
                     <name>Un-1</name>
                 </lang>
@@ -2640,6 +2644,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>V𝒏-₁</name>
                     <name>Vn-₁</name>
                     <name>Vn-1</name>
                 </lang>
@@ -2652,6 +2657,8 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>Zu(𝒏Min)</name>
+                    <name>Zu(nMin)</name>
                     <name>Zu(nmin)</name>
                 </lang>
             </token>
@@ -2663,6 +2670,8 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>Zv(𝒏Min)</name>
+                    <name>Zv(nMin)</name>
                     <name>Zv(nmin)</name>
                 </lang>
             </token>
@@ -2869,6 +2878,7 @@
                     <version>1.010</version>
                 </until>
                 <lang code="en">
+                    <name>𝒏Min</name>
                     <name>nMin</name>
                 </lang>
             </token>
@@ -2900,6 +2910,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>𝒏Max</name>
                     <name>nMax</name>
                 </lang>
             </token>
@@ -2911,6 +2922,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>Z𝒏Max</name>
                     <name>ZnMax</name>
                 </lang>
             </token>
@@ -2935,6 +2947,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>𝒏Min</name>
                     <name>nMin</name>
                 </lang>
             </token>
@@ -2946,6 +2959,7 @@
                     <version>1.0</version>
                 </since>
                 <lang code="en">
+                    <name>Z𝒏Min</name>
                     <name>ZnMin</name>
                 </lang>
             </token>
@@ -3151,6 +3165,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>w(𝒏Min)</name>
                     <name>w(nMin)</name>
                 </lang>
             </token>
@@ -3162,6 +3177,7 @@
                     <version>1.010</version>
                 </since>
                 <lang code="en">
+                    <name>Zw(𝒏Min)</name>
                     <name>Zw(nMin)</name>
                 </lang>
             </token>
