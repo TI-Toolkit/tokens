@@ -3226,6 +3226,17 @@
                 </lang>
             </token>
         </byte>
+        <byte value="$38">
+            <token>
+                <since>
+                    <model>TI-84+CE</model>
+                    <version>5.0.0</version>
+                </since>
+                <lang code="en">
+                    <name>TraceStep</name>
+                </lang>
+            </token>
+        </byte>
     </byte>
     <byte value="$64">
         <token>
@@ -4056,7 +4067,7 @@
                 <version>1.0</version>
             </since>
             <lang code="en">
-                <name>FnOff</name>
+                <name>FnOff&#032;</name>
             </lang>
         </token>
     </byte>
