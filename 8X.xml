@@ -9,7 +9,7 @@
  - Christopher Mitchell, through tokenide
  - Ryan Pitasky
  -->
-<two-bytes>
+<tokens>
 	<token value="$01">
 		<version>
 			<since>
