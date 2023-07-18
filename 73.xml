@@ -617,8 +617,7 @@
 				<os-version>1.3004</os-version>
 			</since>
 			<lang code="en">
-				<name>
-	</name>
+				<name>&#010;</name>
 			</lang>
 		</version>
 	</token>
@@ -1030,7 +1029,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<two-byte value="$5D">
 		<token value="$01">
 			<version>
@@ -1098,7 +1097,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<two-byte value="$5E">
 		<token value="$10">
 			<version>
@@ -1441,7 +1440,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<token value="$5F">
 		<version>
 			<since>
@@ -1553,7 +1552,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<two-byte value="$61">
 		<token value="$01">
 			<version>
@@ -1654,7 +1653,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<two-byte value="$62">
 		<token value="$01">
 			<version>
@@ -2008,7 +2007,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<two-byte value="$63">
 		<token value="$01">
 			<version>
@@ -2417,7 +2416,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<token value="$64">
 		<version>
 			<since>
@@ -2727,7 +2726,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<token value="$78">
 		<version>
 			<since>
@@ -3345,7 +3344,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<token value="$AB">
 		<version>
 			<since>
@@ -3952,7 +3951,7 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 	<token value="$BC">
 		<version>
 			<since>
@@ -4636,5 +4635,5 @@
 				</lang>
 			</version>
 		</token>
-	</token>
+	</two-byte>
 </tokens>
