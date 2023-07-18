@@ -47,7 +47,7 @@
 		</version>
 	</token>
 	<two-byte value="$04">
-		<token stringTerminator="true">
+		<version stringTerminator="true">
 			<since>
 				<model>TI-82</model>
 				<os-version>1.0</os-version>
