@@ -9435,7 +9435,8 @@
 				</since>
 				<lang code="en" ti-ascii="4D454447524159">
 					<display>MEDGRAY</display>
-					<accessible>MedGray</accessible>
+					<accessible>MEDGRAY</accessible>
+					<variant>MedGray</variant>
 					<variant>MEDGREY</variant>
 					<variant>MedGrey</variant>
 				</lang>
@@ -9464,7 +9465,8 @@
 				</since>
 				<lang code="en" ti-ascii="4441524B47524159">
 					<display>DARKGRAY</display>
-					<accessible>DarkGray</accessible>
+					<accessible>DARKGRAY</accessible>
+					<variant>DarkGray</variant>
 					<variant>DARKGREY</variant>
 					<variant>DarkGrey</variant>
 				</lang>
