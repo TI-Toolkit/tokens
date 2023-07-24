@@ -2728,8 +2728,8 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="7528014D696E29">
-					<display>u(𝑛Min)</display>
+				<lang code="en" ti-ascii="556E5374617274">
+					<display>UnStart</display>
 					<accessible>UnStart</accessible>
 				</lang>
 			</version>
@@ -2755,8 +2755,8 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="7628014D696E29">
-					<display>v(𝑛Min)</display>
+				<lang code="en" ti-ascii="56015374617274">
+					<display>VnStart</display>
 					<accessible>VnStart</accessible>
 					<variant>V𝒏Start</variant>
 				</lang>
@@ -3077,8 +3077,8 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="506C6F745374617274">
-					<display>PlotStart</display>
+				<lang code="en" ti-ascii="014D696E">
+					<display>𝑛Min</display>
 					<accessible>nMin</accessible>
 					<variant>𝒏Min</variant>
 				</lang>
@@ -3142,8 +3142,8 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="014D696E">
-					<display>𝑛Min</display>
+				<lang code="en" ti-ascii="015374617274">
+					<display>𝑛Start</display>
 					<accessible>nStart</accessible>
 				</lang>
 			</version>
@@ -3862,8 +3862,8 @@
 					<model>TI-84+CSE</model>
 					<os-version>4.0</os-version>
 				</until>
-				<lang code="en" ti-ascii="546869636B">
-					<display>Thick</display>
+				<lang code="en" ti-ascii="436F6E6E6563746564">
+					<display>Connected</display>
 					<accessible>Connected</accessible>
 				</lang>
 			</version>
@@ -3888,8 +3888,8 @@
 					<model>TI-84+CSE</model>
 					<os-version>4.0</os-version>
 				</until>
-				<lang code="en" ti-ascii="446F742D546869636B">
-					<display>Dot-Thick</display>
+				<lang code="en" ti-ascii="446F74">
+					<display>Dot</display>
 					<accessible>Dot</accessible>
 				</lang>
 			</version>
@@ -3914,8 +3914,8 @@
 					<model>TI-84+CSE</model>
 					<os-version>4.0</os-version>
 				</until>
-				<lang code="en" ti-ascii="417865734F6E20">
-					<display>AxesOn&#032;</display>
+				<lang code="en" ti-ascii="417865734F6E">
+					<display>AxesOn</display>
 					<accessible>AxesOn</accessible>
 				</lang>
 			</version>
@@ -3952,8 +3952,8 @@
 					<model>TI-84+CSE</model>
 					<os-version>4.0</os-version>
 				</until>
-				<lang code="en" ti-ascii="47726964446F7420">
-					<display>GridDot&#032;</display>
+				<lang code="en" ti-ascii="477269644F6E">
+					<display>GridOn</display>
 					<accessible>GridOn</accessible>
 				</lang>
 			</version>
@@ -4789,8 +4789,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="696E7428">
-				<display>int(</display>
+			<lang code="en" ti-ascii="696E7420">
+				<display>int&#032;</display>
 				<accessible>int&#032;</accessible>
 			</lang>
 		</version>
@@ -4815,8 +4815,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="61627328">
-				<display>abs(</display>
+			<lang code="en" ti-ascii="61627320">
+				<display>abs&#032;</display>
 				<accessible>abs&#032;</accessible>
 			</lang>
 		</version>
@@ -4841,8 +4841,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="64657428">
-				<display>det(</display>
+			<lang code="en" ti-ascii="64657420">
+				<display>det&#032;</display>
 				<accessible>det&#032;</accessible>
 			</lang>
 		</version>
@@ -4867,8 +4867,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="6964656E7469747928">
-				<display>identity(</display>
+			<lang code="en" ti-ascii="6964656E7469747920">
+				<display>identity&#032;</display>
 				<accessible>identity&#032;</accessible>
 			</lang>
 		</version>
@@ -4893,8 +4893,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="64696D28">
-				<display>dim(</display>
+			<lang code="en" ti-ascii="64696D20">
+				<display>dim&#032;</display>
 				<accessible>dim&#032;</accessible>
 			</lang>
 		</version>
@@ -4919,8 +4919,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="73756D28">
-				<display>sum(</display>
+			<lang code="en" ti-ascii="73756D20">
+				<display>sum&#032;</display>
 				<accessible>sum&#032;</accessible>
 			</lang>
 		</version>
@@ -4969,8 +4969,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="695061727428">
-				<display>iPart(</display>
+			<lang code="en" ti-ascii="695061727420">
+				<display>iPart&#032;</display>
 				<accessible>iPart&#032;</accessible>
 			</lang>
 		</version>
@@ -4995,8 +4995,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="665061727428">
-				<display>fPart(</display>
+			<lang code="en" ti-ascii="665061727420">
+				<display>fPart&#032;</display>
 				<accessible>fPart&#032;</accessible>
 			</lang>
 		</version>
@@ -6045,8 +6045,8 @@
 					<model>TI-83</model>
 					<os-version>1.010</os-version>
 				</until>
-				<lang code="en" ti-ascii="44656C56617220">
-					<display>DelVar&#032;</display>
+				<lang code="en" ti-ascii="44656C566172">
+					<display>DelVar</display>
 					<accessible>DelVar</accessible>
 				</lang>
 			</version>
@@ -7847,8 +7847,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="1028">
-				<display>√(</display>
+			<lang code="en" ti-ascii="10">
+				<display>√</display>
 				<accessible>sqrt</accessible>
 				<variant>√</variant>
 			</lang>
@@ -7874,8 +7874,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="0E1028">
-				<display>³√(</display>
+			<lang code="en" ti-ascii="0E10">
+				<display>³√</display>
 				<accessible>cuberoot</accessible>
 				<variant>³√</variant>
 			</lang>
@@ -7901,8 +7901,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="6C6E28">
-				<display>ln(</display>
+			<lang code="en" ti-ascii="6C6E20">
+				<display>ln&#032;</display>
 				<accessible>ln&#032;</accessible>
 			</lang>
 		</version>
@@ -7927,8 +7927,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="DB5E28">
-				<display>𝑒^(</display>
+			<lang code="en" ti-ascii="DB5E">
+				<display>𝑒^</display>
 				<accessible>e^</accessible>
 			</lang>
 		</version>
@@ -7953,8 +7953,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="6C6F6728">
-				<display>log(</display>
+			<lang code="en" ti-ascii="6C6F67">
+				<display>log&#032;</display>
 				<accessible>log&#032;</accessible>
 			</lang>
 		</version>
@@ -7991,8 +7991,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="73696E28">
-				<display>sin(</display>
+			<lang code="en" ti-ascii="73696E20">
+				<display>sin&#032;</display>
 				<accessible>sin&#032;</accessible>
 			</lang>
 		</version>
@@ -8017,8 +8017,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="73696E1128">
-				<display>sin⁻¹(</display>
+			<lang code="en" ti-ascii="73696E1120">
+				<display>sin⁻¹&#032;</display>
 				<accessible>sin^-1&#032;</accessible>
 				<variant>sin⁻¹&#032;</variant>
 			</lang>
@@ -8044,8 +8044,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="636F7328">
-				<display>cos(</display>
+			<lang code="en" ti-ascii="636F7320">
+				<display>cos&#032;</display>
 				<accessible>cos&#032;</accessible>
 			</lang>
 		</version>
@@ -8070,8 +8070,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="636F731128">
-				<display>cos⁻¹(</display>
+			<lang code="en" ti-ascii="636F731120">
+				<display>cos⁻¹&#032;</display>
 				<accessible>cos^-1&#032;</accessible>
 				<variant>cos⁻¹&#032;</variant>
 			</lang>
@@ -8097,8 +8097,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="74616E28">
-				<display>tan(</display>
+			<lang code="en" ti-ascii="74616E20">
+				<display>tan&#032;</display>
 				<accessible>tan&#032;</accessible>
 			</lang>
 		</version>
@@ -8123,8 +8123,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="74616E1128">
-				<display>tan⁻¹(</display>
+			<lang code="en" ti-ascii="74616E1120">
+				<display>tan⁻¹&#032;</display>
 				<accessible>tan^-1&#032;</accessible>
 				<variant>tan⁻¹&#032;</variant>
 			</lang>
@@ -8150,8 +8150,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="73696E6828">
-				<display>sinh(</display>
+			<lang code="en" ti-ascii="73696E6820">
+				<display>sinh&#032;</display>
 				<accessible>sinh&#032;</accessible>
 			</lang>
 		</version>
@@ -8176,8 +8176,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="73696E681128">
-				<display>sinh⁻¹(</display>
+			<lang code="en" ti-ascii="73696E681120">
+				<display>sinh⁻¹&#032;</display>
 				<accessible>sinh^-1&#032;</accessible>
 				<variant>sinh⁻¹&#032;</variant>
 			</lang>
@@ -8203,8 +8203,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="636F736828">
-				<display>cosh(</display>
+			<lang code="en" ti-ascii="636F736820">
+				<display>cosh&#032;</display>
 				<accessible>cosh&#032;</accessible>
 			</lang>
 		</version>
@@ -8229,8 +8229,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="636F73681128">
-				<display>cosh⁻¹(</display>
+			<lang code="en" ti-ascii="636F73681120">
+				<display>cosh⁻¹&#032;</display>
 				<accessible>cosh^-1&#032;</accessible>
 				<variant>cosh⁻¹&#032;</variant>
 			</lang>
@@ -8256,8 +8256,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="74616E6828">
-				<display>tanh(</display>
+			<lang code="en" ti-ascii="74616E6820">
+				<display>tanh&#032;</display>
 				<accessible>tanh&#032;</accessible>
 			</lang>
 		</version>
@@ -8282,8 +8282,8 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="74616E681128">
-				<display>tanh⁻¹(</display>
+			<lang code="en" ti-ascii="74616E681120">
+				<display>tanh⁻¹&#032;</display>
 				<accessible>tanh^-1&#032;</accessible>
 				<variant>tanh⁻¹&#032;</variant>
 			</lang>
@@ -9254,8 +9254,8 @@
 					<model>TI-84+CSE</model>
 					<os-version>4.0</os-version>
 				</until>
-				<lang code="en" ti-ascii="465241432D415050524F58">
-					<display>FRAC-APPROX</display>
+				<lang code="en" ti-ascii="46524143">
+					<display>FRAC</display>
 					<accessible>[FRAC]</accessible>
 				</lang>
 			</version>
