@@ -28,7 +28,7 @@ MODEL_ORDER = {
 
 
 @functools.total_ordering
-class Version(namedtuple("Version", ["model", "version"])):
+class OsVersion(namedtuple("OsVersion", ["model", "version"])):
     __slots__ = ()
 
     def __lt__(self, other):
@@ -52,22 +52,22 @@ class Version(namedtuple("Version", ["model", "version"])):
         return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
 
     @staticmethod
-    def from_element(element) -> 'Version':
+    def from_element(element) -> 'OsVersion':
         model = ""
         version = ""
 
         for child in element:
             if child.tag == "model":
                 model = child.text
-            elif child.tag == "version":
+            elif child.tag == "os-version":
                 version = child.text
             else:
-                raise ValueError("Unrecognized tag in " + element.name + ": " + child.name)
+                raise ValueError("Unrecognized tag in " + element.tag + ": " + child.tag)
 
         if version == "":
-            raise ValueError("<" + element.name + "> has a missing or empty <version> tag.")
+            raise ValueError("<" + element.tag + "> has a missing or empty <os-version> tag.")
         elif model == "":
-            raise ValueError("<" + element.name + "> has a missing or empty <model> tag.")
+            raise ValueError("<" + element.tag + "> has a missing or empty <model> tag.")
 
         if model not in MODEL_ORDER or model == "latest":  # "latest" is for user convenience, not the sheet itself
             raise ValueError("Unrecognized <model>: " + model)
@@ -76,57 +76,79 @@ class Version(namedtuple("Version", ["model", "version"])):
             raise ValueError(
                 "Invalid <version> string \"" + version + "\", must be a sequence of numbers separated by periods.")
 
-        return Version(model, version)
+        return OsVersion(model, version)
+
+
+class Translation:
+    def __init__(self, ti_ascii: bytes, display: str, accessible: str, variants: list[str]):
+        self.ti_ascii = ti_ascii
+        self.display = display
+        self.accessible = accessible
+        self.variants = variants
+
+    def names(self) -> list[str]:
+        return [self.display, self.accessible] + self.variants
+
+    @staticmethod
+    def from_element(element) -> (str, 'Translation'):
+        code = element.attrib["code"]
+
+        ti_ascii = bytes.fromhex(element.attrib["ti-ascii"])
+
+        display = ""
+        accessible = ""
+        variants = []
+
+        for child in element:
+            match child.tag:
+                case "display":
+                    display = child.text
+                case "accessible":
+                    accessible = child.text
+                case "variants":
+                    variants.append(child.text)
+
+        return code, Translation(ti_ascii, display, accessible, variants)
 
 
 class Token:
-    def __init__(self, bits: bytes, langs: dict[str, dict[str, bytes]], attrs: dict[str, str] = None,
-                 since: Version = None,
-                 until: Version = None) -> object:
+    def __init__(self, bits: bytes, langs: dict[str, Translation], attrs: dict[str, str] = None,
+                 since: OsVersion = None,
+                 until: OsVersion = None):
         self.bits = bits
         self.langs = langs
         self.attrs = attrs
         self.since = since
         self.until = until
 
-    def existed_at(self, version: Version):
-        return ((self.since is None) or (self.since < version)) and ((self.until is None) or (self.until >= version))
-
     @staticmethod
-    def from_element(element, bits):
+    def from_element(element, bits, version=OsVersion("latest", "")):
         since = None
         until = None
 
-        langs: dict[str, dict[str, bytes]] = {}
+        langs: dict[str, Translation] = {}
 
-        for child in element:
-            match child.tag:
-                case "since":
-                    if since is None:
-                        since = Version.from_element(child)
-                    else:
-                        raise ValueError("Cannot have multiple <since> elements.")
+        done = False
+        for version_elem in element:
+            for child in version_elem:
+                match child.tag:
+                    case "since":
+                        version_since = OsVersion.from_element(child)
+                        if since is None:
+                            since = version_since
 
-                case "until":
-                    if until is None:
-                        until = Version.from_element(child)
-                    else:
-                        raise ValueError("Cannot have multiple <until> elements.")
+                        if since > version:
+                            done = True
 
-                case "lang":
-                    if "code" in child.attrib and len(child.attrib["code"]) == 2:
-                        code = child.attrib["code"]
+                    case "until":
+                        version_until = OsVersion.from_element(child)
+                        if until is None or until > version_until:
+                            until = version_until
 
-                        langs[code] = {}
-
-                        for grandchild in child:
-                            if grandchild.tag == "name":
-                                langs[code][grandchild.text] = bits
-                            else:
-                                raise ValueError("Unrecognized tag in <lang>, only <name> is allowed.")
-                    else:
-                        raise ValueError("Missing or unrecognized localization code.")
-
+                    case "lang":
+                        if not done:
+                            code, translation = Translation.from_element(child)
+                            langs[code] = translation
         return Token(bits, langs, attrs=element.attrib, since=since, until=until)
 
 class Tokens:
@@ -135,11 +157,11 @@ class Tokens:
         self.langs = langs
 
     @staticmethod
-    def from_xml_string(xml_str: str, version=Version("latest", "")):
+    def from_xml_string(xml_str: str, version=OsVersion("latest", "")):
         return Tokens.from_element(ET.fromstring(xml_str), version=version)
 
     @staticmethod
-    def from_element(root, version=Version("latest", "")):
+    def from_element(root, version=OsVersion("latest", "")):
         if root.tag != "tokens":
             raise ValueError("Not a tokens xml.")
 
@@ -151,19 +173,18 @@ class Tokens:
             nonlocal all_langs
 
             if element.tag == "token":
-                token = Token.from_element(element, bits)
+                token = Token.from_element(element, bits, version=version)
 
-                if token.existed_at(version):
-                    all_bytes[bits] = token
-                    for lang, names in token.langs.items():
-                        if lang not in all_langs:
-                            all_langs[lang] = {}
+                all_bytes[bits] = token
+                for lang, translation in token.langs.items():
+                    if lang not in all_langs:
+                        all_langs[lang] = {}
 
-                        for name in names:
-                            all_langs[lang][name] = bits
+                    for name in translation.names():
+                        all_langs[lang][name] = bits
 
             for child in element:
-                if child.tag == "byte":
+                if child.tag == "two-byte":
                     parse_page(child, bits=bits + bytes.fromhex(child.attrib["value"][1:]))
                 else:
                     parse_page(child, bits=bits)
@@ -171,3 +192,7 @@ class Tokens:
         parse_page(root)
 
         return Tokens(all_bytes, all_langs)
+
+
+# with open("../8X.xml", encoding="UTF-8") as file:
+#   Tokens.from_xml_string(file.read())
