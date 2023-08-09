@@ -22,7 +22,7 @@ MODEL_ORDER = {
     "TI-83PCEEP": 60,
     "TI-84+CEPY": 60,
     "TI-84+CETPE": 60,
-    "TI-82AEP": 60
+    "TI-82AEP": 60,
 
     "latest": 9999999
 }
