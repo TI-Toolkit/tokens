@@ -4774,8 +4774,8 @@
 			</since>
 			<lang code="en" ti-ascii="1A">
 				<display>⁻</display>
-				<accessible>|-</accessible>
-				<variant>~</variant>
+				<accessible>~</accessible>
+				<variant>|-</variant>
 			</lang>
 		</version>
 	</token>
