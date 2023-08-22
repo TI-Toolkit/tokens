@@ -28,7 +28,7 @@ class TokenTrie:
 
                 current = current.children[char]
 
-            current.token = tokens.bytes[tokens.langs[lang][name]]
+            current.token = token
 
     @staticmethod
     def from_tokens(tokens: Tokens, lang: str = "en", *, mode: str = "all"):
@@ -44,7 +44,7 @@ class TokenTrie:
     def get_tokens(self, string: str) -> list[tuple[Token, str]]:
         tokens = []
 
-        if string:
+        if string and string[0] in self.children:
             tokens += self.children[string[0]].get_tokens(string[1:])
 
         if self.token:
