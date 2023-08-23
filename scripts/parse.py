@@ -1,6 +1,6 @@
 import functools
 import xml.etree.ElementTree as ET
-from typing import NamedTuple
+from dataclasses import dataclass
 
 # Models ordered such that models earlier in the list are earlier in the evolution of the token tables
 MODEL_ORDER = {
@@ -42,7 +42,8 @@ MODEL_ORDER = {
 
 
 @functools.total_ordering
-class OsVersion(NamedTuple):
+@dataclass
+class OsVersion:
     model: str
     version: str
 
@@ -197,13 +198,14 @@ class Tokens:
                 token_bits = bits + bytes.fromhex(element.attrib["value"][1:])
                 token = Token.from_element(element, token_bits, version=version)
 
-                all_bytes[token_bits] = token
-                for lang, translation in token.langs.items():
-                    if lang not in all_langs:
-                        all_langs[lang] = {}
+                if token.langs:
+                    all_bytes[token_bits] = token
+                    for lang, translation in token.langs.items():
+                        if lang not in all_langs:
+                            all_langs[lang] = {}
 
-                    for name in translation.names():
-                        all_langs[lang][name] = token_bits
+                        for name in translation.names():
+                            all_langs[lang][name] = token_bits
 
             for child in element:
                 if child.tag == "two-byte":
