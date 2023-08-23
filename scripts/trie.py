@@ -1,4 +1,4 @@
-from parse import Token, Tokens
+from .parse import Token, Tokens
 
 
 class TokenTrie:
