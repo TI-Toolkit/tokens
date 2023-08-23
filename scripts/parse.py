@@ -60,6 +60,10 @@ class OsVersion:
                 return False
             elif other.version == "latest":
                 return True
+            elif other.version == "":
+                return False
+            elif self.version == "":
+                return True
             else:
                 return any(map(lambda a: a[0] < a[1],
                                zip(map(int, self.version.split(".")), map(int, other.version.split(".")))))
