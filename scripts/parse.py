@@ -1,18 +1,31 @@
 import functools
 import xml.etree.ElementTree as ET
-from collections import namedtuple
+from dataclasses import dataclass
 
 # Models ordered such that models earlier in the list are earlier in the evolution of the token tables
 MODEL_ORDER = {
+    "": 0,
+
     "TI-82": 10,
 
     "TI-83": 20,
+    "TI-82ST": 20,
+    "TI-82ST.fr": 20,
+    "TI-76.fr": 20,
 
     "TI-83+": 30,
+    "TI-83+SE": 30,
+    "TI-83+.fr": 30,
+    "TI-82+": 30,
 
     "TI-84+": 40,
-    "TI-84+T": 40,
-    "TI-82A": 40,
+    "TI-84+SE": 40,
+    "TI-83+.fr:USB": 40,
+    "TI-84P.fr": 40,
+    "TI-84+PSE": 40,
+
+    "TI-82A": 45,
+    "TI-84+T": 45,
 
     "TI-84+CSE": 50,
 
@@ -29,8 +42,10 @@ MODEL_ORDER = {
 
 
 @functools.total_ordering
-class OsVersion(namedtuple("OsVersion", ["model", "version"])):
-    __slots__ = ()
+@dataclass
+class OsVersion:
+    model: str
+    version: str
 
     def __lt__(self, other):
         order1 = MODEL_ORDER[self.model]
@@ -46,8 +61,8 @@ class OsVersion(namedtuple("OsVersion", ["model", "version"])):
             elif other.version == "latest":
                 return True
             else:
-                return any(
-                    map(lambda a: a[0] < a[1], zip(map(int, self.version.split(".")), map(int, other.version.split(".")))))
+                return any(map(lambda a: a[0] < a[1],
+                               zip(map(int, self.version.split(".")), map(int, other.version.split(".")))))
 
     def __eq__(self, other):
         return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
@@ -78,6 +93,11 @@ class OsVersion(namedtuple("OsVersion", ["model", "version"])):
                 "Invalid <version> string \"" + version + "\", must be a sequence of numbers separated by periods.")
 
         return OsVersion(model, version)
+
+
+class OsVersions:
+    INITIAL = OsVersion("", "")
+    LATEST = OsVersion("latest", "latest")
 
 
 class Translation:
@@ -114,8 +134,8 @@ class Translation:
 
 class Token:
     def __init__(self, bits: bytes, langs: dict[str, Translation], attrs: dict[str, str] = None,
-                 since: OsVersion = None,
-                 until: OsVersion = None):
+                 since: OsVersion = OsVersions.INITIAL,
+                 until: OsVersion = OsVersions.LATEST):
         self.bits = bits
         self.langs = langs
         self.attrs = attrs
@@ -123,9 +143,9 @@ class Token:
         self.until = until
 
     @staticmethod
-    def from_element(element, bits, version=OsVersion("latest", "")):
-        since = None
-        until = None
+    def from_element(element, bits, version=OsVersions.LATEST):
+        since = OsVersions.INITIAL
+        until = OsVersions.LATEST
 
         langs: dict[str, Translation] = {}
 
@@ -135,7 +155,7 @@ class Token:
                 match child.tag:
                     case "since":
                         version_since = OsVersion.from_element(child)
-                        if since is None:
+                        if since < version_since:
                             since = version_since
 
                         if since > version:
@@ -143,7 +163,7 @@ class Token:
 
                     case "until":
                         version_until = OsVersion.from_element(child)
-                        if until is None or until > version_until:
+                        if until > version_until:
                             until = version_until
 
                     case "lang":
@@ -152,17 +172,18 @@ class Token:
                             langs[code] = translation
         return Token(bits, langs, attrs=element.attrib, since=since, until=until)
 
+
 class Tokens:
-    def __init__(self, bytes, langs):
-        self.bytes = bytes
-        self.langs = langs
+    def __init__(self, byte_map: dict[bytes, Token], lang_map: dict[str, dict[str, bytes]]):
+        self.bytes = byte_map
+        self.langs = lang_map
 
     @staticmethod
-    def from_xml_string(xml_str: str, version=OsVersion("latest", "")):
+    def from_xml_string(xml_str: str, version=OsVersions.LATEST):
         return Tokens.from_element(ET.fromstring(xml_str), version=version)
 
     @staticmethod
-    def from_element(root, version=OsVersion("latest", "")):
+    def from_element(root, version=OsVersions.LATEST):
         if root.tag != "tokens":
             raise ValueError("Not a tokens xml.")
 
@@ -174,15 +195,17 @@ class Tokens:
             nonlocal all_langs
 
             if element.tag == "token":
-                token = Token.from_element(element, bits, version=version)
+                token_bits = bits + bytes.fromhex(element.attrib["value"][1:])
+                token = Token.from_element(element, token_bits, version=version)
 
-                all_bytes[bits] = token
-                for lang, translation in token.langs.items():
-                    if lang not in all_langs:
-                        all_langs[lang] = {}
+                if token.langs:
+                    all_bytes[token_bits] = token
+                    for lang, translation in token.langs.items():
+                        if lang not in all_langs:
+                            all_langs[lang] = {}
 
-                    for name in translation.names():
-                        all_langs[lang][name] = bits
+                        for name in translation.names():
+                            all_langs[lang][name] = token_bits
 
             for child in element:
                 if child.tag == "two-byte":
