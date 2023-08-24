@@ -44,6 +44,17 @@ MODEL_ORDER = {
 @functools.total_ordering
 @dataclass
 class OsVersion:
+    """
+    Data class for defining and comparing OS versions
+
+    An OS version is defined by its model and verison number.
+    The model name must appear in the MODEL_ORDER map above.
+    The version number must be of the form "x1.x2.....xn", where each xi is an integer.
+
+    Both the model and version can also be empty or "latest".
+    An empty model/version is always first in version ordering, while "latest" is always last.
+    """
+    
     model: str
     version: str
 
@@ -73,6 +84,13 @@ class OsVersion:
 
     @staticmethod
     def from_element(element) -> 'OsVersion':
+        """
+        Constructs an instance from an XML element in a token sheet
+
+        :param element: An XML element
+        :return: An OS version corresponding to the element
+        """
+        
         model = ""
         version = ""
 
@@ -100,11 +118,27 @@ class OsVersion:
 
 
 class OsVersions:
+    """
+    Enum class to contain useful OS version constants
+
+    This class can be extended with useful versions for other applications.
+    """
+    
     INITIAL = OsVersion("", "")
     LATEST = OsVersion("latest", "latest")
 
 
 class Translation:
+    """
+    Data class for managing the different decodings of tokens
+
+    A token translations stores the following:
+        - The TI ASCII representation, i.e. the sequence of font bytes used on-calc
+        - The displayed name, a Unicode string intended to best emulate on-calc display
+        - The accessible name, an ASCII string intended to be easy to type
+        - Any variant names; such may be derived from their use in other tokenization tools
+    """
+    
     def __init__(self, ti_ascii: bytes, display: str, accessible: str, variants: list[str]):
         self.ti_ascii = ti_ascii
         self.display = display
@@ -112,10 +146,21 @@ class Translation:
         self.variants = variants
 
     def names(self) -> list[str]:
+        """
+        :return: A list of all names for this token
+        """
+        
         return [self.display, self.accessible] + self.variants
 
     @staticmethod
     def from_element(element) -> (str, 'Translation'):
+        """
+        Constructs an instance and its key from an XML element in a token sheet
+
+        :param element: An XML element
+        :return: A tuple of a string key and a token translation corresponding to the element
+        """
+        
         code = element.attrib["code"]
 
         ti_ascii = bytes.fromhex(element.attrib["ti-ascii"])
@@ -137,6 +182,17 @@ class Translation:
 
 
 class Token:
+    """
+    Data class for storing all information about a single token
+
+    A token stores the following:
+        - The bytes for this token on-calc
+        - The translations of this tokens in all supported languages
+        - The earliest OS version supporting this token
+        - The latest OS version supporting this token
+        - Any additional attributes stored in the token sheets
+    """
+    
     def __init__(self, bits: bytes, langs: dict[str, Translation], attrs: dict[str, str] = None,
                  since: OsVersion = OsVersions.INITIAL,
                  until: OsVersion = OsVersions.LATEST):
@@ -148,6 +204,15 @@ class Token:
 
     @staticmethod
     def from_element(element, bits, version=OsVersions.LATEST):
+        """
+        Constructs an instance from an XML element in the token sheets
+
+        :param element: An XML element
+        :param bits: The token's bytes
+        :param version: A minimum OS version (defaults to latest)
+        :return: A token corresponding to the element and bits
+        """
+        
         since = OsVersions.INITIAL
         until = OsVersions.LATEST
 
@@ -178,16 +243,41 @@ class Token:
 
 
 class Tokens:
+    """
+    Data class for storing maps between text and tokens
+
+    Two maps are stored: bytes -> token and string -> string -> bytes.
+    
+    The byte map is indexed by bytes and yields token objects.
+    The lang map is indexed by language code, then token name, and yields token bytes.
+    """
+    
     def __init__(self, byte_map: dict[bytes, Token], lang_map: dict[str, dict[str, bytes]]):
         self.bytes = byte_map
         self.langs = lang_map
 
     @staticmethod
     def from_xml_string(xml_str: str, version=OsVersions.LATEST):
+        """
+        Constructs an instance from an XML string
+
+        :param xml_str: An XML string
+        :param version: A minimum OS version (defaults to latest)
+        :return: Token maps corresponding to the string
+        """
+        
         return Tokens.from_element(ET.fromstring(xml_str), version=version)
 
     @staticmethod
     def from_element(root, version=OsVersions.LATEST):
+        """
+        Constructs an instance from an XML element in the token sheets
+
+        :param root: An XML element, which must be the root element of the sheet
+        :param version: A minimum OS version (defauls to latest)
+        :return: Token maps corresponding to the root element
+        """
+        
         if root.tag != "tokens":
             raise ValueError("Not a tokens xml.")
 
