@@ -7929,7 +7929,7 @@
 			</until>
 			<lang code="en" ti-ascii="DB5E">
 				<display>𝑒^</display>
-				<accessible>e^</accessible>
+				<accessible>e^^</accessible>
 			</lang>
 		</version>
 		<version>
@@ -7939,7 +7939,7 @@
 			</since>
 			<lang code="en" ti-ascii="DB5E28">
 				<display>𝑒^(</display>
-				<accessible>e^(</accessible>
+				<accessible>e^^(</accessible>
 			</lang>
 		</version>
 	</token>
