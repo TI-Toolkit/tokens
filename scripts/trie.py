@@ -10,35 +10,18 @@ class TokenTrie:
         self.token = token
         self.children = {}
 
-    def insert(self, token: Token, lang: str = "en", *, mode: str = "all"):
+    def insert(self, token: Token, lang: str = "en"):
         """
-        Inserts some or all names of a token into the trie in a given language
-
-        Three modes can be passed to specify which name(s) of the tokens to insert:
-            - "display":      insert only the display name
-            - "accessible":   insert only the accessible name
-            - "all":          insert all names (display, accessible, and variants)
+        Inserts the names of a token into the trie in a given language
 
         :param token: The token to insert
         :param lang: The language to insert names from
-        :param mode: Type(s) of names to insert (defaults to "all")
         """
         
         if lang not in token.langs:
             raise ValueError(f"lang {lang} not found")
 
-        match mode.lower():
-            case "display":
-                names = [token.langs[lang].display]
-
-            case "accessible":
-                names = [token.langs[lang].accessible]
-
-            case _:
-                # Case "all", but can be any unrecognized arg
-                names = token.langs[lang].names()
-
-        for name in names:
+        for name in token.langs[lang].names():
             current = self
             for char in name:
                 if char not in current.children:
@@ -49,11 +32,12 @@ class TokenTrie:
             current.token = token
 
     @staticmethod
-    def from_tokens(tokens: Tokens, lang: str = "en", *, mode: str = "all"):
+    def from_tokens(tokens: Tokens, lang: str = "en"):
         """
         Inserts all tokens from a token container into the trie
 
-        The lang and mode parameters match those used by a single insert.
+        :param tokens: The tokens to insert
+        :param lang: The language to insert names from
         """
         
         if lang not in tokens.langs:
@@ -61,7 +45,7 @@ class TokenTrie:
 
         root = TokenTrie()
         for token in tokens.bytes.values():
-            root.insert(token, lang, mode=mode)
+            root.insert(token, lang)
 
         return root
 

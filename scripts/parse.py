@@ -147,10 +147,10 @@ class Translation:
 
     def names(self) -> list[str]:
         """
-        :return: A list of all names for this token
+        :return: A list of all names in this translation used for tokenization
         """
         
-        return [self.display, self.accessible] + self.variants
+        return [self.accessible, *self.variants]
 
     @staticmethod
     def from_element(element) -> (str, 'Translation'):
