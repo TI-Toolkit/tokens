@@ -8047,6 +8047,7 @@
 			<lang code="en" ti-ascii="73696E1128">
 				<display>sin⁻¹(</display>
 				<accessible>sin^-1(</accessible>
+				<variant>sin⁻¹(</variant>
 				<variant>arcsin(</variant>
 				<variant>asin(</variant>
 			</lang>
@@ -8104,6 +8105,7 @@
 			<lang code="en" ti-ascii="636F731128">
 				<display>cos⁻¹(</display>
 				<accessible>cos^-1(</accessible>
+				<variant>cos⁻¹(</variant>
 				<variant>arccos(</variant>
 				<variant>acos(</variant>
 			</lang>
@@ -8161,6 +8163,7 @@
 			<lang code="en" ti-ascii="74616E1128">
 				<display>tan⁻¹(</display>
 				<accessible>tan^-1(</accessible>
+				<variant>tan⁻¹(</variant>
 				<variant>arctan(</variant>
 				<variant>atan(</variant>
 			</lang>
@@ -8218,6 +8221,7 @@
 			<lang code="en" ti-ascii="73696E681128">
 				<display>sinh⁻¹(</display>
 				<accessible>sinh^-1(</accessible>
+				<variant>sinh⁻¹(</variant>
 				<variant>arcsinh(</variant>
 				<variant>asinh(</variant>
 			</lang>
@@ -8275,6 +8279,7 @@
 			<lang code="en" ti-ascii="636F73681128">
 				<display>cosh⁻¹(</display>
 				<accessible>cosh^-1(</accessible>
+				<variant>cosh⁻¹(</variant>
 				<variant>arccosh(</variant>
 				<variant>acosh(</variant>
 			</lang>
@@ -8332,6 +8337,7 @@
 			<lang code="en" ti-ascii="74616E681128">
 				<display>tanh⁻¹(</display>
 				<accessible>tanh^-1(</accessible>
+				<variant>tanh⁻¹(</variant>
 				<variant>arctanh(</variant>
 				<variant>atanh(</variant>
 			</lang>
