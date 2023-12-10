@@ -6790,8 +6790,7 @@
 				</since>
 				<lang code="en" ti-ascii="B7">
 					<display>`</display>
-					<accessible>`</accessible>
-					<variant>|`</variant>
+					<accessible>|`</accessible>
 					<variant>^^`</variant>
 				</lang>
 			</version>
