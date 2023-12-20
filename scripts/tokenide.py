@@ -28,7 +28,7 @@ class TokenIDESheet:
     NAMESPACE = "http://merthsoft.com/Tokens"
 
     STARTERS = [b'\x2A']
-    TERMINATORS = [b'\x04', b'*', b'\x3F']
+    TERMINATORS = [b'\x04', b'\x2A', b'\x3F']
 
     def __init__(self, sheet: dict[str] = None):
         self.sheet = sheet or {"tokens": {}, "meta": []}
@@ -111,8 +111,8 @@ class TokenIDESheet:
                 for name in dct.get("variants", set()):
                     element.append(ET.Element("Alt", string=name))
 
-            for child in dict(sorted(dct.get("tokens", {}).items())):
-                build_page(element, child, dct["tokens"][child])
+            for child_byte, child_dct in sorted(dct.get("tokens", {}).items()):
+                build_page(element, child_byte, child_dct)
 
         build_page(sheet, "", self.sheet)
         return sheet
