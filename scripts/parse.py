@@ -175,7 +175,7 @@ class Translation:
                     display = child.text
                 case "accessible":
                     accessible = child.text
-                case "variants":
+                case "variant":
                     variants.append(child.text)
 
         return code, Translation(ti_ascii, display, accessible, variants)
