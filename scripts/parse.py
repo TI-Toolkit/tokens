@@ -47,7 +47,7 @@ class OsVersion:
     """
     Data class for defining and comparing OS versions
 
-    An OS version is defined by its model and verison number.
+    An OS version is defined by its model and version number.
     The model name must appear in the MODEL_ORDER map above.
     The version number must be of the form "x1.x2.....xn", where each xi is an integer.
 
@@ -83,7 +83,7 @@ class OsVersion:
         return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
 
     @staticmethod
-    def from_element(element) -> 'OsVersion':
+    def from_element(element: ET.Element) -> 'OsVersion':
         """
         Constructs an instance from an XML element in a token sheet
 
@@ -153,7 +153,7 @@ class Translation:
         return [self.accessible, *self.variants]
 
     @staticmethod
-    def from_element(element) -> (str, 'Translation'):
+    def from_element(element: ET.Element) -> (str, 'Translation'):
         """
         Constructs an instance and its key from an XML element in a token sheet
 
@@ -187,7 +187,7 @@ class Token:
 
     A token stores the following:
         - The bytes for this token on-calc
-        - The translations of this tokens in all supported languages
+        - The translations of this token in all supported languages
         - The earliest OS version supporting this token
         - The latest OS version supporting this token
         - Any additional attributes stored in the token sheets
@@ -203,7 +203,7 @@ class Token:
         self.until = until
 
     @staticmethod
-    def from_element(element, bits, version=OsVersions.LATEST):
+    def from_element(element: ET.Element, bits: bytes, version: OsVersion = OsVersions.LATEST):
         """
         Constructs an instance from an XML element in the token sheets
 
@@ -239,6 +239,7 @@ class Token:
                         if not done:
                             code, translation = Translation.from_element(child)
                             langs[code] = translation
+
         return Token(bits, langs, attrs=element.attrib, since=since, until=until)
 
 
@@ -257,7 +258,7 @@ class Tokens:
         self.langs = lang_map
 
     @staticmethod
-    def from_xml_string(xml_str: str, version=OsVersions.LATEST):
+    def from_xml_string(xml_str: str, version: OsVersion = OsVersions.LATEST):
         """
         Constructs an instance from an XML string
 
@@ -269,12 +270,12 @@ class Tokens:
         return Tokens.from_element(ET.fromstring(xml_str), version=version)
 
     @staticmethod
-    def from_element(root, version=OsVersions.LATEST):
+    def from_element(root: ET.Element, version: OsVersion = OsVersions.LATEST):
         """
         Constructs an instance from an XML element in the token sheets
 
         :param root: An XML element, which must be the root element of the sheet
-        :param version: A minimum OS version (defauls to latest)
+        :param version: A minimum OS version (defaults to latest)
         :return: Token maps corresponding to the root element
         """
         
@@ -284,7 +285,7 @@ class Tokens:
         all_bytes: dict[bytes, Token] = {}
         all_langs: dict[str, dict[str, bytes]] = {}
 
-        def parse_page(element, bits=b""):
+        def parse_page(element: ET.Element, bits: bytes = b""):
             nonlocal all_bytes
             nonlocal all_langs
 
