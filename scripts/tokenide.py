@@ -142,7 +142,13 @@ class TokenIDESheet:
             else:
                 tokens = Tokens.from_xml_string(file.read(), version or OsVersions.LATEST)
 
-        for byte, token in tokens.bytes.items():
+        all_bytes = tokens.bytes
+
+        display_names = [token.langs.get(lang, "en").display for token in all_bytes.values()]
+        names = [name for token in all_bytes.values() for name in token.langs.get(lang, "en").names()] + display_names
+        safe_display_names = {name for name in display_names if names.count(name) == 1}
+
+        for byte, token in all_bytes.items():
             if version is not None and token.since > version:
                 continue
 
@@ -162,8 +168,11 @@ class TokenIDESheet:
                     dct[value] = {"string": None, "variants": set(), "attrib": {}, "tokens": {}}
 
             translation = token.langs.get(lang, "en")
-            dct[value]["string"] = dct[value]["string"] or translation.accessible
-            dct[value]["variants"] |= {name for name in translation.names() if name != dct[value]["string"]}
+            dct[value]["string"] = string = dct[value]["string"] or translation.accessible
+            dct[value]["variants"] |= {name for name in translation.names() if name != string}
+
+            if string not in translation.display and translation.display in safe_display_names:
+                dct[value]["variants"].add(translation.display)
 
             if byte in TokenIDESheet.STARTERS:
                 dct[value]["attrib"]["stringStarter"] = "true"
