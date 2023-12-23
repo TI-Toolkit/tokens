@@ -10,7 +10,6 @@ https://github.com/TI-Toolkit/tokens
 
 TokenIDE created by
 Shaun McFall, Merthsoft Creations
-shaunm.mcfall@gmail.com
 -->"""
 
 
