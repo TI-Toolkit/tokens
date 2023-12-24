@@ -76,8 +76,7 @@ class OsVersion:
             elif self.version == "":
                 return True
             else:
-                return any(map(lambda a: a[0] < a[1],
-                               zip(map(int, self.version.split(".")), map(int, other.version.split(".")))))
+                return self.version.split(".") < other.version.split(".")
 
     def __eq__(self, other):
         return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
