@@ -42,7 +42,7 @@ MODEL_ORDER = {
 
 
 @functools.total_ordering
-@dataclass
+@dataclass(frozen=True)
 class OsVersion:
     """
     Data class for defining and comparing OS versions
