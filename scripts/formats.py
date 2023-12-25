@@ -7,143 +7,140 @@ from collections import defaultdict
 from .parse import OsVersion, OsVersions
 
 
-def validate(element: ET.Element, byte: str = "", all_tokens: set[str] = None,
-             all_accessible_names: dict[str, set[str]] = None, all_variant_names: dict[str, set[str]] = None):
+def validate(root: ET.Element):
     """
-    Validates a token sheet
+    Validates a token sheet, raising an error if an invalid component is found
 
-    :param element: An XML element; call on the root element to validate the entire sheet
-    :param byte: The current token byte (should not be set directly)
-    :param all_tokens: All previously seen tokens (should not be set directly)
-    :param all_accessible_names: All previously seen accessible names per language (should not be set directly)
-    :param all_variant_names: All previously seen variant names per language (should not be set directly)
-    :return: Whether the element and all its descendants are valid components of the sheet
+    :param root: An XML element; call on the root element to validate the entire sheet
     """
 
-    byte += element.attrib.get("value", "").lstrip("$")
+    if root.tag != "tokens":
+        raise ValueError("not a token sheet")
 
-    all_tokens = all_tokens or set()
-    all_accessible_names = all_accessible_names or defaultdict(set)
-    all_variant_names = all_variant_names or defaultdict(set)
+    all_tokens = set()
+    all_names = {}
 
-    class ValidationError(ValueError):
-        def __init__(self, message: str):
-            super().__init__("token 0x" + byte + ": " + message if byte else "root: " + message)
+    current_lang, current_names = "", {}
+    prev_version = current_version = None
 
-    def attributes(el: ET.Element, **attribs: str):
-        for attrib, regex in attribs.items():
-            if attrib not in el.attrib:
-                raise ValidationError(f"<{el.tag}> does not have attribute {attrib}")
+    def visit(element: ET.Element, byte: str = ""):
+        nonlocal current_lang, current_names
+        nonlocal prev_version, current_version
 
-            if not re.fullmatch(regex, value := el.attrib[attrib]):
-                raise ValidationError(f"<{el.tag}> {attrib} '{value}' does not match r'{regex}'")
+        byte += element.attrib.get("value", "").lstrip("$")
 
-    def children(el: ET.Element, required: list[str], optional: list[str] = ()):
-        options = {*required, *optional}
-        tags = set()
+        class ValidationError(ValueError):
+            def __init__(self, message: str):
+                super().__init__("token 0x" + byte + ": " + message if byte else "root: " + message)
 
-        for child in el:
-            if child.tag not in options:
-                raise ValidationError(f"<{child.tag}> is not a valid child of <{el.tag}>")
+        def attributes(**attrs: str):
+            attrib = element.attrib.copy()
 
-            tags.add(child.tag)
-            validate(child, byte, all_tokens, all_accessible_names, all_variant_names)
+            for attr, regex in attrs.items():
+                if attr not in attrib:
+                    raise ValidationError(f"<{element.tag}> does not have attribute {attr}")
 
-        if dif := {*required} - tags:
-            raise ValidationError(f"missing required child <{dif.pop()}> of <{el.tag}>")
+                if not re.fullmatch(regex, value := attrib.pop(attr)):
+                    raise ValidationError(f"<{element.tag}> {attr} '{value}' does not match r'{regex}'")
 
-    def text(el: ET.Element, regex: str):
-        if not re.fullmatch(regex, el.text):
-            raise ValidationError(f"<{el.tag}> text '{el.text}' does not match r'{regex}'")
+            if attrib:
+                raise ValidationError(f"<{element.tag}> has unexpected attribute {[*attrib.values()][0]}")
 
-    match element.tag:
-        case "tokens":
-            children(element, ["token"], ["two-byte"])
+        def children(required: list[str], optional: list[str] = ()):
+            options = {*required, *optional}
+            tags = set()
 
-        case "two-byte":
-            attributes(element, value=r"\$[0-9A-F]{2}")
-            children(element, ["token"])
+            for child in element:
+                if child.tag not in options:
+                    raise ValidationError(f"<{child.tag}> is not a valid child of <{element.tag}>")
 
-        case "token":
-            attributes(element, value=r"\$[0-9A-F]{2}")
+                tags.add(child.tag)
+                visit(child, byte)
 
-            if byte in all_tokens:
-                raise ValidationError("token byte must be unique")
+            if dif := {*required} - tags:
+                raise ValidationError(f"missing required child <{dif.pop()}> of <{element.tag}>")
 
-            all_tokens.add(byte)
+        def text(regex: str):
+            if not re.fullmatch(regex, element.text):
+                raise ValidationError(f"<{element.tag}> text '{element.text}' does not match r'{regex}'")
 
-            accessible_names, variant_names = defaultdict(set), defaultdict(set)
-            current_version = OsVersions.INITIAL
+        match element.tag:
+            case "tokens":
+                children(["token"], ["two-byte"])
 
-            for version in element:
-                if version.tag != "version":
-                    raise ValidationError(f"<{version.tag}> is not a valid child of <token>")
+            case "two-byte":
+                attributes(value=r"\$[0-9A-F]{2}")
+                children(["token"])
 
-                tags = set()
-                for grandchild in version:
-                    match grandchild.tag:
-                        case "since":
-                            if (next_version := OsVersion.from_element(grandchild)) < current_version:
-                                raise ValidationError(f"version {next_version} overlaps with {current_version}")
+            case "token":
+                attributes(value=r"\$[0-9A-F]{2}")
 
-                            children(grandchild, ["model", "os-version"])
+                if byte in all_tokens:
+                    raise ValidationError("token byte must be unique")
 
-                        case "until":
-                            current_version = OsVersion.from_element(grandchild)
-                            children(grandchild, ["model", "os-version"])
+                all_tokens.add(byte)
 
-                        case "lang":
-                            attributes(grandchild, code=r"[a-z]{2}", **{"ti-ascii": r"([0-9A-F]{2})+"})
-                            lang = grandchild.attrib["code"]
+                current_names = defaultdict(lambda s: defaultdict(set))
+                children(["version"])
 
-                            names = set()
-                            for name in grandchild:
-                                match name.tag:
-                                    case "display":
-                                        text(name, r"[\S\s]+")
+            case "version":
+                current_names = defaultdict(set)
 
-                                    case "accessible":
-                                        text(name, r"[\u0000-\u00FF]*")
-                                        accessible_names[lang].add(name.text)
+                prev_version, current_version = OsVersions.INITIAL, None
+                children(["since", "lang"], ["until"])
+                prev_version, current_version = current_version, None
 
-                                    case "variant":
-                                        text(name, r".+")
-                                        variant_names[lang].add(name.text)
+                for lang in current_names:
+                    if intersection := current_names[lang] & all_names[prev_version][lang]:
+                        raise ValidationError(f"name '{intersection.pop()}' is not unique within {prev_version}")
 
-                                    case _:
-                                        ValidationError(f"unrecognized tag <{element.tag}>")
+                    all_names[prev_version][lang] |= current_names[lang]
 
-                                names.add(name.tag)
+            case "since":
+                if current_version is not None:
+                    raise ValidationError(f"<since> is not first child of <version>")
 
-                            if dif := {"display", "accessible"} - names:
-                                raise ValidationError(f"missing required child <{dif.pop()}> of <lang>")
+                if (current_version := OsVersion.from_element(element)) < prev_version:
+                    raise ValidationError(f"version {current_version} overlaps with {prev_version}")
 
-                        case _:
-                            ValidationError(f"unrecognized tag <{element.tag}>")
+                prev_version = None
+                children(["model", "os-version"])
 
-                    tags.add(grandchild.tag)
+                all_names[current_version] = all_names.get(current_version, defaultdict(set))
 
-                if dif := {"since", "lang"} - tags:
-                    raise ValidationError(f"missing required child <{dif.pop()}> of <version>")
+            case "until":
+                if prev_version is not None:
+                    raise ValidationError(f"<until> precedes <since> in <version>")
 
-            for lang in accessible_names:
-                if intersection := accessible_names[lang] & all_accessible_names[lang]:
-                    raise ValidationError(f"accessible name '{intersection.pop()}' is not unique")
+                children(["model", "os-version"])
 
-                if intersection := variant_names[lang] & all_variant_names[lang]:
-                    raise ValidationError(f"variant name '{intersection.pop()}' is not unique")
+            case "lang":
+                attributes(code=r"[a-z]{2}", **{"ti-ascii": r"([0-9A-F]{2})+"})
 
-                all_accessible_names[lang] |= accessible_names[lang]
-                all_variant_names[lang] |= variant_names[lang]
+                current_lang = element.attrib["code"]
+                children(["display", "accessible"], ["variant"])
 
-        case "model":
-            text(element, r"TI-\d\d.*")
+            case "display":
+                text(r"[\S\s]+")
 
-        case "os-version":
-            text(element, r"(\d+\.)+\d+")
+            case "accessible":
+                text(r"[\u0000-\u00FF]*")
+                current_names[current_lang].add(element.text)
 
-        case _:
-            raise ValidationError(f"unrecognized tag <{element.tag}>")
+            case "variant":
+                text(r".+")
+                current_names[current_lang].add(element.text)
+
+            case "model":
+                text(r"TI-\d\d.*")
+
+            case "os-version":
+                text(r"(\d+\.)+\d+")
+
+            case _:
+                raise ValidationError(f"unrecognized tag <{element.tag}>")
+
+    visit(root)
 
 
 def to_json(element: ET.Element):
@@ -201,9 +198,6 @@ def to_json(element: ET.Element):
 
 # with open("../8X.xml", encoding="UTF-8") as file:
 #   json.dumps(to_json(ET.fromstring(file.read())), indent=2)
-
-with open("../8X.xml", encoding="UTF-8") as file:
-    validate(ET.fromstring(file.read()))
 
 
 __all__ = ["to_json", "validate"]
