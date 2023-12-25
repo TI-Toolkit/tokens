@@ -11,7 +11,7 @@ def validate(root: ET.Element):
     """
     Validates a token sheet, raising an error if an invalid component is found
 
-    :param root: An XML element; call on the root element to validate the entire sheet
+    :param root: An XML element, which must be the root element of the sheet
     """
 
     if root.tag != "tokens":
@@ -20,20 +20,19 @@ def validate(root: ET.Element):
     all_tokens = set()
     all_names = {}
 
-    current_lang, current_names = "", {}
-    prev_version = current_version = None
+    version = None
 
-    def visit(element: ET.Element, byte: str = ""):
-        nonlocal current_lang, current_names
-        nonlocal prev_version, current_version
+    def visit(element: ET.Element, byte: str = "", lang: str = ""):
+        nonlocal version
 
         byte += element.attrib.get("value", "").lstrip("$")
+        lang += element.attrib.get("code", "")
 
         class ValidationError(ValueError):
             def __init__(self, message: str):
-                super().__init__("token 0x" + byte + ": " + message if byte else "root: " + message)
+                super().__init__((f"token 0x{byte}: " if byte else "root: ") + message)
 
-        def attributes(**attrs: str):
+        def attributes(attrs: dict[str]):
             attrib = element.attrib.copy()
 
             for attr, regex in attrs.items():
@@ -55,7 +54,7 @@ def validate(root: ET.Element):
                     raise ValidationError(f"<{child.tag}> is not a valid child of <{element.tag}>")
 
                 tags.add(child.tag)
-                visit(child, byte)
+                visit(child, byte, lang)
 
             if dif := {*required} - tags:
                 raise ValidationError(f"missing required child <{dif.pop()}> of <{element.tag}>")
@@ -69,55 +68,44 @@ def validate(root: ET.Element):
                 children(["token"], ["two-byte"])
 
             case "two-byte":
-                attributes(value=r"\$[0-9A-F]{2}")
+                attributes({"value": r"\$[0-9A-F]{2}"})
                 children(["token"])
 
             case "token":
-                attributes(value=r"\$[0-9A-F]{2}")
+                attributes({"value": r"\$[0-9A-F]{2}"})
 
                 if byte in all_tokens:
                     raise ValidationError("token byte must be unique")
 
                 all_tokens.add(byte)
 
-                current_names = defaultdict(lambda s: defaultdict(set))
                 children(["version"])
 
             case "version":
-                current_names = defaultdict(set)
-
-                prev_version, current_version = OsVersions.INITIAL, None
+                version = OsVersions.INITIAL
                 children(["since", "lang"], ["until"])
-                prev_version, current_version = current_version, None
-
-                for lang in current_names:
-                    if intersection := current_names[lang] & all_names[prev_version][lang]:
-                        raise ValidationError(f"name '{intersection.pop()}' is not unique within {prev_version}")
-
-                    all_names[prev_version][lang] |= current_names[lang]
 
             case "since":
-                if current_version is not None:
+                if version is not OsVersions.INITIAL:
                     raise ValidationError(f"<since> is not first child of <version>")
 
-                if (current_version := OsVersion.from_element(element)) < prev_version:
-                    raise ValidationError(f"version {current_version} overlaps with {prev_version}")
+                if (this_version := OsVersion.from_element(element)) < version:
+                    raise ValidationError(f"version {this_version} overlaps with {version}")
 
-                prev_version = None
+                # Workaround for nested defaultdict
+                version = this_version
+                all_names[version] = all_names.get(version, defaultdict(set))
+
                 children(["model", "os-version"])
 
-                all_names[current_version] = all_names.get(current_version, defaultdict(set))
-
             case "until":
-                if prev_version is not None:
+                if version == OsVersions.INITIAL:
                     raise ValidationError(f"<until> precedes <since> in <version>")
 
                 children(["model", "os-version"])
 
             case "lang":
-                attributes(code=r"[a-z]{2}", **{"ti-ascii": r"([0-9A-F]{2})+"})
-
-                current_lang = element.attrib["code"]
+                attributes({"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+"})
                 children(["display", "accessible"], ["variant"])
 
             case "display":
@@ -125,11 +113,19 @@ def validate(root: ET.Element):
 
             case "accessible":
                 text(r"[\u0000-\u00FF]*")
-                current_names[current_lang].add(element.text)
+
+                if element.text in all_names[version][lang]:
+                    raise ValidationError(f"{lang} accessible name '{element.text}' is not unique within {version}")
+
+                all_names[version][lang].add(element.text)
 
             case "variant":
                 text(r".+")
-                current_names[current_lang].add(element.text)
+
+                if element.text in all_names[version][lang]:
+                    raise ValidationError(f"{lang} variant name '{element.text}' is not unique within {version}")
+
+                all_names[version][lang].add(element.text)
 
             case "model":
                 text(r"TI-\d\d.*")
