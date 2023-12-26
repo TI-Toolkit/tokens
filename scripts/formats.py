@@ -45,19 +45,17 @@ def validate(root: ET.Element):
             if attrib:
                 raise ValidationError(f"<{element.tag}> has unexpected attribute {[*attrib.values()][0]}")
 
-        def children(required: list[str], optional: list[str] = ()):
-            options = {*required, *optional}
-            tags = set()
-
+        def children(regex: str):
+            tags = ""
             for child in element:
-                if child.tag not in options:
+                if child.tag not in regex:
                     raise ValidationError(f"<{child.tag}> is not a valid child of <{element.tag}>")
 
-                tags.add(child.tag)
                 visit(child, byte, lang)
+                tags += f"<{child.tag}>"
 
-            if dif := {*required} - tags:
-                raise ValidationError(f"missing required child <{dif.pop()}> of <{element.tag}>")
+            if not re.fullmatch(regex, tags):
+                raise ValidationError(f"children of <{element.tag}> do not match r'{regex}'")
 
         def text(regex: str):
             if not re.fullmatch(regex, element.text):
@@ -65,11 +63,11 @@ def validate(root: ET.Element):
 
         match element.tag:
             case "tokens":
-                children(["token"], ["two-byte"])
+                children(r"(<token>|<two-byte>)+")
 
             case "two-byte":
                 attributes({"value": r"\$[0-9A-F]{2}"})
-                children(["token"])
+                children(r"(<token>)+")
 
             case "token":
                 attributes({"value": r"\$[0-9A-F]{2}"})
@@ -79,15 +77,15 @@ def validate(root: ET.Element):
 
                 all_tokens.add(byte)
 
-                children(["version"])
+                children(r"(<version>)+")
 
             case "version":
                 version = OsVersions.INITIAL
-                children(["since", "lang"], ["until"])
+                children(r"<since>(<until>)?(<lang>)+")
 
             case "since":
-                if version is not OsVersions.INITIAL:
-                    raise ValidationError(f"<since> is not first child of <version>")
+                if version != OsVersions.INITIAL:
+                    raise ValidationError("<since> is not first child of <version>")
 
                 if (this_version := OsVersion.from_element(element)) < version:
                     raise ValidationError(f"version {this_version} overlaps with {version}")
@@ -96,17 +94,17 @@ def validate(root: ET.Element):
                 version = this_version
                 all_names[version] = all_names.get(version, defaultdict(set))
 
-                children(["model", "os-version"])
+                children(r"<model><os-version>")
 
             case "until":
                 if version == OsVersions.INITIAL:
-                    raise ValidationError(f"<until> precedes <since> in <version>")
+                    raise ValidationError("<until> precedes <since> in <version>")
 
-                children(["model", "os-version"])
+                children(r"<model><os-version>")
 
             case "lang":
                 attributes({"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+"})
-                children(["display", "accessible"], ["variant"])
+                children(r"<display><accessible>(<variant>)*")
 
             case "display":
                 text(r"[\S\s]+")
