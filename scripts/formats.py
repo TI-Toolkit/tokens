@@ -7,11 +7,12 @@ from collections import defaultdict
 from .parse import OsVersion, OsVersions
 
 
-def validate(root: ET.Element):
+def validate(root: ET.Element) -> int:
     """
     Validates a token sheet, raising an error if an invalid component is found
 
     :param root: An XML element, which must be the root element of the sheet
+    :return: The number of tokens in the sheet
     """
 
     if root.tag != "tokens":
@@ -69,13 +70,12 @@ def validate(root: ET.Element):
 
             case "token":
                 attributes({"value": r"\$[0-9A-F]{2}"})
+                children(r"(<version>)+")
 
                 if byte in all_tokens:
                     raise ValidationError("token byte must be unique")
 
                 all_tokens.add(byte)
-
-                children(r"(<version>)+")
 
             case "version":
                 version = OsVersions.INITIAL
@@ -137,6 +137,7 @@ def validate(root: ET.Element):
             visit(child, byte, lang)
 
     visit(root)
+    return len(all_tokens)
 
 
 def to_json(element: ET.Element):
