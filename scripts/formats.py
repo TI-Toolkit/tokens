@@ -82,9 +82,6 @@ def validate(root: ET.Element) -> int:
                 children(r"<since>(<until>)?(<lang>)+")
 
             case "since":
-                if version != OsVersions.INITIAL:
-                    raise ValidationError("<since> is not first child of <version>")
-
                 if (this_version := OsVersion.from_element(element)) < version:
                     raise ValidationError(f"version {this_version} overlaps with {version}")
 
@@ -95,9 +92,6 @@ def validate(root: ET.Element) -> int:
                 children(r"<model><os-version>")
 
             case "until":
-                if version == OsVersions.INITIAL:
-                    raise ValidationError("<until> precedes <since> in <version>")
-
                 children(r"<model><os-version>")
 
             case "lang":
