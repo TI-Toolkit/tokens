@@ -29,10 +29,13 @@ def validate(root: ET.Element):
         lang += element.attrib.get("code", "")
 
         class ValidationError(ValueError):
+            __qualname__ = "ValidationError"
+
             def __init__(self, message: str):
                 super().__init__((f"token 0x{byte}: " if byte else "root: ") + message)
 
-        def attributes(attrs: dict[str]):
+        # Require attributes matching regexes
+        def attributes(attrs: dict[str, str]):
             attrib = element.attrib.copy()
 
             for attr, regex in attrs.items():
@@ -45,22 +48,17 @@ def validate(root: ET.Element):
             if attrib:
                 raise ValidationError(f"<{element.tag}> has unexpected attribute {[*attrib.values()][0]}")
 
+        # Require child tags to match regex when appended in order
         def children(regex: str):
-            tags = ""
-            for child in element:
-                if child.tag not in regex:
-                    raise ValidationError(f"<{child.tag}> is not a valid child of <{element.tag}>")
-
-                visit(child, byte, lang)
-                tags += f"<{child.tag}>"
-
-            if not re.fullmatch(regex, tags):
+            if not re.fullmatch(regex, "".join(f"<{child.tag}>" for child in element)):
                 raise ValidationError(f"children of <{element.tag}> do not match r'{regex}'")
 
+        # Require text to match regex
         def text(regex: str):
             if not re.fullmatch(regex, element.text):
                 raise ValidationError(f"<{element.tag}> text '{element.text}' does not match r'{regex}'")
 
+        # Check requirements for each tag
         match element.tag:
             case "tokens":
                 children(r"(<token>|<two-byte>)+")
@@ -133,6 +131,10 @@ def validate(root: ET.Element):
 
             case _:
                 raise ValidationError(f"unrecognized tag <{element.tag}>")
+
+        # Visit children
+        for child in element:
+            visit(child, byte, lang)
 
     visit(root)
 
