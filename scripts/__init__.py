@@ -1,6 +1,6 @@
-from .formats import to_json
+from .formats import to_json, validate
 from .parse import Token, Tokens, OsVersion, OsVersions, Translation
 from .trie import TokenTrie
 
 __all__ = ["Token", "Tokens", "OsVersion", "OsVersions", "Translation", "TokenTrie",
-           "to_json"]
+           "to_json", "validate"]
