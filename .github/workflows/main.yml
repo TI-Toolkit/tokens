@@ -5,18 +5,25 @@ on:
     branches: [ 'main' ]
     
 jobs:
-  validate:
-    name: Validate XML files with XMLStarlet
+  build:
+    name: Build and validate token sheets
     runs-on: ubuntu-latest
+    permissions: write-all
+
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Validate 73 tokens
-        uses: Mudlet/xmlstarlet-action@v1.1
-        with:
-          args: 'val -b 73.xml'
-          
-      - name: Validate 8X tokens
-        uses: Mudlet/xmlstarlet-action@v1.1
-        with:
-          args: 'val -b 8X.xml'
+      - name: Checkout sheets
+        uses: actions/checkout@v4
+
+      - name: Run build script
+        run: |
+          mkdir built
+          python -m scripts.build
+
+      - name: Save to built branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: built
+          FOLDER: built
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build {sha}: {msg}"
