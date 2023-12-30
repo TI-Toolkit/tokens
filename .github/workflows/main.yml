@@ -9,7 +9,6 @@ jobs:
   build:
     name: Build and validate token sheets
     runs-on: ubuntu-latest
-    permissions: write-all
 
     if: github.event.pull_request.draft == false
     steps:
@@ -20,6 +19,27 @@ jobs:
         run: |
           mkdir built
           python -m scripts.build
+
+      - name: Upload artifact
+      - uses: actions/upload-artifact@v4
+        with:
+          name: built
+          path: built/
+
+  commit:
+    name: Push sheets to built branch
+    runs-on: ubuntu-latest
+
+    permissions: write-all
+    needs: build
+
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - name: Download artifact
+      - uses: actions/download-artifact@v4
+        with:
+          name: built
+          path: built/
 
       - name: Save to built branch
         uses: s0/git-publish-subdir-action@develop
