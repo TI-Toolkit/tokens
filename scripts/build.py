@@ -13,3 +13,11 @@ with open("8X.xml", encoding="UTF-8") as infile:
 
     with open("built/8X.json", "w+", encoding="UTF-8") as outfile:
         json.dump(to_json(root), outfile, indent=2, ensure_ascii=False)
+
+
+with open("73.xml", encoding="UTF-8") as infile:
+    root = ET.fromstring(src := infile.read())
+
+    with open("built/73.xml", "w+", encoding="UTF-8") as outfile:
+        validate(root, for_73=True)
+        outfile.write(src)

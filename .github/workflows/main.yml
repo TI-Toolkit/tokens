@@ -18,7 +18,6 @@ jobs:
       - name: Run build script
         run: |
           mkdir built
-          cp 73.xml built/
           python -m scripts.build
 
       - name: Upload artifact

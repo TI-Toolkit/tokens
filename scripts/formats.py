@@ -7,11 +7,12 @@ from collections import defaultdict
 from .parse import OsVersion, OsVersions
 
 
-def validate(root: ET.Element) -> int:
+def validate(root: ET.Element, *, for_73: bool = False) -> int:
     """
     Validates a token sheet, raising an error if an invalid component is found
 
     :param root: An XML element, which must be the root element of the sheet
+    :param for_73: Whether to use the 73 sheet validator (defaults to False)
     :return: The number of tokens in the sheet
     """
 
@@ -82,11 +83,13 @@ def validate(root: ET.Element) -> int:
                 children(r"<since>(<until>)?(<lang>)+")
 
             case "since":
-                if (this_version := OsVersion.from_element(element)) < version:
-                    raise ValidationError(f"version {this_version} overlaps with {version}")
+                if not for_73:
+                    if (this_version := OsVersion.from_element(element)) < version:
+                        raise ValidationError(f"version {this_version} overlaps with {version}")
+
+                    version = this_version
 
                 # Workaround for nested defaultdict
-                version = this_version
                 all_names[version] = all_names.get(version, defaultdict(set))
 
                 children(r"<model><os-version>")
@@ -95,8 +98,11 @@ def validate(root: ET.Element) -> int:
                 children(r"<model><os-version>")
 
             case "lang":
-                attributes({"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+"})
-                children(r"<display><accessible>(<variant>)*")
+                attributes({"code": r"[a-z]{2}"} if for_73 else {"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+"})
+                children(r"<name>" if for_73 else r"<display><accessible>(<variant>)*")
+
+            case "name" if for_73:
+                text(r"[\S\s]+")
 
             case "display":
                 text(r"[\S\s]+")
