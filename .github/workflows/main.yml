@@ -18,6 +18,7 @@ jobs:
       - name: Run build script
         run: |
           mkdir built
+          cp 73.xml built/
           python -m scripts.build
 
       - name: Upload artifact
@@ -47,5 +48,7 @@ jobs:
           REPO: self
           BRANCH: built
           FOLDER: built
+          SKIP_EMPTY_COMMITS: true
+          CLEAR_GLOBS_FILE: ".github/.clear-in-built"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build {sha}: {msg}"
