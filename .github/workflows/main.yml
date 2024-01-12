@@ -1,0 +1,53 @@
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+    branches: [ 'main' ]
+    types: [opened, synchronize, reopened, ready_for_review]
+    
+jobs:
+  build:
+    name: Build and validate token sheets
+    runs-on: ubuntu-latest
+
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Checkout sheets
+        uses: actions/checkout@v4
+
+      - name: Run build script
+        run: |
+          mkdir built
+          python -m scripts.build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: built
+          path: built/
+
+  commit:
+    name: Push sheets to built branch
+    runs-on: ubuntu-latest
+
+    permissions: write-all
+    needs: build
+
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: built
+          path: built/
+
+      - name: Save to built branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: built
+          FOLDER: built
+          SKIP_EMPTY_COMMITS: true
+          CLEAR_GLOBS_FILE: ".github/.clear-in-built"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build {sha}: {msg}"
