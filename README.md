@@ -68,7 +68,7 @@ Each language translation contains a number of different ways that token is repr
 ```
 
 > [!WARNING]
-> Currently, only English translations are supported. See [our contribution guidelines](https://github.com/TI-Toolkit/tokens/blob/main/CONTRIBUTING.md) for details on adding new translations.
+> Currently, only English translations are supported. See [our contribution guidelines](CONTRIBUTING.md) for details on adding new translations.
 
 ## Other Formats
 
