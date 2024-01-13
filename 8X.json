@@ -9850,11 +9850,8 @@
         "langs": {
           "en": {
             "ti-ascii": "7F",
-            "display": "⍯",
-            "accessible": "invertedequal",
-            "variants": [
-              "⌸"
-            ]
+            "display": "⌸",
+            "accessible": "invertedequal"
           }
         }
       }

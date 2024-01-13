@@ -7829,9 +7829,8 @@
 					<os-version>1.16</os-version>
 				</since>
 				<lang code="en" ti-ascii="7F">
-					<display>⍯</display>
+					<display>⌸</display>
 					<accessible>invertedequal</accessible>
-					<variant>⌸</variant>
 				</lang>
 			</version>
 		</token>
