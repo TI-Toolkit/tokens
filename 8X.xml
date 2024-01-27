@@ -9312,6 +9312,30 @@
 				</lang>
 			</version>
 		</token>
+		<token value="$3F">
+			<version>
+				<since>
+					<model>TI-84+</model>
+					<os-version>2.55</os-version>
+				</since>
+				<lang code="en" ti-ascii="5354415457495A415244204F4E">
+					<display>STATWIZARD ON</display>
+					<accessible>[STATWIZARD ON]</accessible>
+				</lang>
+			</version>
+		</token>
+		<token value="$40">
+			<version>
+				<since>
+					<model>TI-84+</model>
+					<os-version>2.55</os-version>
+				</since>
+				<lang code="en" ti-ascii="5354415457495A415244204F4646">
+					<display>STATWIZARD OFF</display>
+					<accessible>[STATWIZARD OFF]</accessible>
+				</lang>
+			</version>
+		</token>
 		<token value="$41">
 			<version>
 				<since>

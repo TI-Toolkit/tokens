@@ -11720,6 +11720,36 @@
         }
       }
     ],
+    "$3F": [
+      {
+        "since": {
+          "model": "TI-84+",
+          "os-version": "2.55"
+        },
+        "langs": {
+          "en": {
+            "ti-ascii": "5354415457495A415244204F4E",
+            "display": "STATWIZARD ON",
+            "accessible": "[STATWIZARD ON]"
+          }
+        }
+      }
+    ],
+    "$40": [
+      {
+        "since": {
+          "model": "TI-84+",
+          "os-version": "2.55"
+        },
+        "langs": {
+          "en": {
+            "ti-ascii": "5354415457495A415244204F4646",
+            "display": "STATWIZARD OFF",
+            "accessible": "[STATWIZARD OFF]"
+          }
+        }
+      }
+    ],
     "$41": [
       {
         "since": {
