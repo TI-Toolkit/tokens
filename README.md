@@ -83,7 +83,7 @@ The `scripts` package contains Python scripts for parsing and manipulating the t
 * `build.py`: Helper script to generate the `built` branch
 * `formats.py`: Convert an XML sheet to another other format, e.g. JSON ([see above](#Other-Formats))
 * `parse.py`: Load a sheet or individual tokens into Python objects
-* `tokenide.py`: Create or update token files used by [TokenIDE](https://www.cemetech.net/downloads/files/515/x515)
+* `tokenide.py`: Create or update token files used by [TokenIDE](https://github.com/merthsoft/TokenIDE)
 * `trie.py`: Create a trie from a sheet for use in tokenization
 
 Contributions welcome!
