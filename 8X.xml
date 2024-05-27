@@ -20,6 +20,7 @@
 			<lang code="en" ti-ascii="05444D53">
 				<display>►DMS</display>
 				<accessible>&gt;DMS</accessible>
+				<variant>►DMS</variant>
 			</lang>
 		</version>
 	</token>
@@ -32,6 +33,7 @@
 			<lang code="en" ti-ascii="05446563">
 				<display>►Dec</display>
 				<accessible>&gt;Dec</accessible>
+				<variant>►Dec</variant>
 			</lang>
 		</version>
 	</token>
@@ -44,6 +46,7 @@
 			<lang code="en" ti-ascii="0546726163">
 				<display>►Frac</display>
 				<accessible>&gt;Frac</accessible>
+				<variant>►Frac</variant>
 			</lang>
 		</version>
 	</token>
@@ -56,6 +59,7 @@
 			<lang code="en" ti-ascii="1C">
 				<display>→</display>
 				<accessible>-&gt;</accessible>
+				<variant>→</variant>
 			</lang>
 		</version>
 	</token>
@@ -128,6 +132,7 @@
 			<lang code="en" ti-ascii="15">
 				<display>ʳ</display>
 				<accessible>^^r</accessible>
+				<variant>ʳ</variant>
 			</lang>
 		</version>
 	</token>
@@ -140,6 +145,7 @@
 			<lang code="en" ti-ascii="14">
 				<display>°</display>
 				<accessible>^^o</accessible>
+				<variant>°</variant>
 			</lang>
 		</version>
 	</token>
@@ -152,6 +158,7 @@
 			<lang code="en" ti-ascii="11">
 				<display>⁻¹</display>
 				<accessible>^^-1</accessible>
+				<variant>⁻¹</variant>
 				<variant>ˉ¹</variant>
 			</lang>
 		</version>
@@ -165,6 +172,7 @@
 			<lang code="en" ti-ascii="12">
 				<display>²</display>
 				<accessible>^^2</accessible>
+				<variant>²</variant>
 			</lang>
 		</version>
 	</token>
@@ -177,6 +185,7 @@
 			<lang code="en" ti-ascii="16">
 				<display>ᵀ</display>
 				<accessible>^^T</accessible>
+				<variant>ᵀ</variant>
 			</lang>
 		</version>
 	</token>
@@ -189,6 +198,7 @@
 			<lang code="en" ti-ascii="D5">
 				<display>³</display>
 				<accessible>^^3</accessible>
+				<variant>³</variant>
 			</lang>
 		</version>
 	</token>
@@ -333,6 +343,7 @@
 			<lang code="en" ti-ascii="5205507228">
 				<display>R►Pr(</display>
 				<accessible>R&gt;Pr(</accessible>
+				<variant>R►Pr(</variant>
 			</lang>
 		</version>
 	</token>
@@ -345,6 +356,7 @@
 			<lang code="en" ti-ascii="5205505B28">
 				<display>R►Pθ(</display>
 				<accessible>R&gt;Ptheta(</accessible>
+				<variant>R►Pθ(</variant>
 				<variant>R►Ptheta(</variant>
 				<variant>R&gt;Pθ(</variant>
 			</lang>
@@ -359,6 +371,7 @@
 			<lang code="en" ti-ascii="5005527828">
 				<display>P►Rx(</display>
 				<accessible>P&gt;Rx(</accessible>
+				<variant>P►Rx(</variant>
 			</lang>
 		</version>
 	</token>
@@ -371,6 +384,7 @@
 			<lang code="en" ti-ascii="5005527928">
 				<display>P►Ry(</display>
 				<accessible>P&gt;Ry(</accessible>
+				<variant>P►Ry(</variant>
 			</lang>
 		</version>
 	</token>
@@ -527,6 +541,7 @@
 			<lang code="en" ti-ascii="D7">
 				<display>𝑖</display>
 				<accessible>[i]</accessible>
+				<variant>𝑖</variant>
 			</lang>
 		</version>
 	</token>
@@ -707,6 +722,7 @@
 			<lang code="en" ti-ascii="1B">
 				<display>ᴇ</display>
 				<accessible>|E</accessible>
+				<variant>ᴇ</variant>
 			</lang>
 		</version>
 	</token>
@@ -1091,6 +1107,7 @@
 			<lang code="en" ti-ascii="5B">
 				<display>θ</display>
 				<accessible>theta</accessible>
+				<variant>θ</variant>
 			</lang>
 		</version>
 	</token>
@@ -1226,6 +1243,7 @@
 				<lang code="en" ti-ascii="4C81">
 					<display>L₁</display>
 					<accessible>L1</accessible>
+					<variant>L₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -1238,6 +1256,7 @@
 				<lang code="en" ti-ascii="4C82">
 					<display>L₂</display>
 					<accessible>L2</accessible>
+					<variant>L₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -1250,6 +1269,7 @@
 				<lang code="en" ti-ascii="4C83">
 					<display>L₃</display>
 					<accessible>L3</accessible>
+					<variant>L₃</variant>
 				</lang>
 			</version>
 		</token>
@@ -1262,6 +1282,7 @@
 				<lang code="en" ti-ascii="4C84">
 					<display>L₄</display>
 					<accessible>L4</accessible>
+					<variant>L₄</variant>
 				</lang>
 			</version>
 		</token>
@@ -1274,6 +1295,7 @@
 				<lang code="en" ti-ascii="4C85">
 					<display>L₅</display>
 					<accessible>L5</accessible>
+					<variant>L₅</variant>
 				</lang>
 			</version>
 		</token>
@@ -1286,6 +1308,7 @@
 				<lang code="en" ti-ascii="4C86">
 					<display>L₆</display>
 					<accessible>L6</accessible>
+					<variant>L₆</variant>
 				</lang>
 			</version>
 		</token>
@@ -1300,6 +1323,7 @@
 				<lang code="en" ti-ascii="5981">
 					<display>Y₁</display>
 					<accessible>{Y1}</accessible>
+					<variant>Y₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -1312,6 +1336,7 @@
 				<lang code="en" ti-ascii="5983">
 					<display>Y₂</display>
 					<accessible>{Y2}</accessible>
+					<variant>Y₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -1324,6 +1349,7 @@
 				<lang code="en" ti-ascii="5984">
 					<display>Y₃</display>
 					<accessible>{Y3}</accessible>
+					<variant>Y₃</variant>
 				</lang>
 			</version>
 		</token>
@@ -1336,6 +1362,7 @@
 				<lang code="en" ti-ascii="5985">
 					<display>Y₄</display>
 					<accessible>{Y4}</accessible>
+					<variant>Y₄</variant>
 				</lang>
 			</version>
 		</token>
@@ -1348,6 +1375,7 @@
 				<lang code="en" ti-ascii="5986">
 					<display>Y₅</display>
 					<accessible>{Y5}</accessible>
+					<variant>Y₅</variant>
 				</lang>
 			</version>
 		</token>
@@ -1360,6 +1388,7 @@
 				<lang code="en" ti-ascii="5986">
 					<display>Y₆</display>
 					<accessible>{Y6}</accessible>
+					<variant>Y₆</variant>
 				</lang>
 			</version>
 		</token>
@@ -1372,6 +1401,7 @@
 				<lang code="en" ti-ascii="5987">
 					<display>Y₇</display>
 					<accessible>{Y7}</accessible>
+					<variant>Y₇</variant>
 				</lang>
 			</version>
 		</token>
@@ -1384,6 +1414,7 @@
 				<lang code="en" ti-ascii="5988">
 					<display>Y₈</display>
 					<accessible>{Y8}</accessible>
+					<variant>Y₈</variant>
 				</lang>
 			</version>
 		</token>
@@ -1396,6 +1427,7 @@
 				<lang code="en" ti-ascii="5989">
 					<display>Y₉</display>
 					<accessible>{Y9}</accessible>
+					<variant>Y₉</variant>
 				</lang>
 			</version>
 		</token>
@@ -1408,6 +1440,7 @@
 				<lang code="en" ti-ascii="5980">
 					<display>Y₀</display>
 					<accessible>{Y0}</accessible>
+					<variant>Y₀</variant>
 				</lang>
 			</version>
 		</token>
@@ -1420,6 +1453,7 @@
 				<lang code="en" ti-ascii="58810D">
 					<display>X₁ᴛ</display>
 					<accessible>{X1T}</accessible>
+					<variant>X₁ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1432,6 +1466,7 @@
 				<lang code="en" ti-ascii="59810D">
 					<display>Y₁ᴛ</display>
 					<accessible>{Y1T}</accessible>
+					<variant>Y₁ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1444,6 +1479,7 @@
 				<lang code="en" ti-ascii="58820D">
 					<display>X₂ᴛ</display>
 					<accessible>{X2T}</accessible>
+					<variant>X₂ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1456,6 +1492,7 @@
 				<lang code="en" ti-ascii="59820D">
 					<display>Y₂ᴛ</display>
 					<accessible>{Y2T}</accessible>
+					<variant>Y₂ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1468,6 +1505,7 @@
 				<lang code="en" ti-ascii="58830D">
 					<display>X₃ᴛ</display>
 					<accessible>{X3T}</accessible>
+					<variant>X₃ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1480,6 +1518,7 @@
 				<lang code="en" ti-ascii="59830D">
 					<display>Y₃ᴛ</display>
 					<accessible>{Y3T}</accessible>
+					<variant>Y₃ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1492,6 +1531,7 @@
 				<lang code="en" ti-ascii="58840D">
 					<display>X₄ᴛ</display>
 					<accessible>{X4T}</accessible>
+					<variant>X₄ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1504,6 +1544,7 @@
 				<lang code="en" ti-ascii="59840D">
 					<display>Y₄ᴛ</display>
 					<accessible>{Y4T}</accessible>
+					<variant>Y₄ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1516,6 +1557,7 @@
 				<lang code="en" ti-ascii="58850D">
 					<display>X₅ᴛ</display>
 					<accessible>{X5T}</accessible>
+					<variant>X₅ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1528,6 +1570,7 @@
 				<lang code="en" ti-ascii="59850D">
 					<display>Y₅ᴛ</display>
 					<accessible>{Y5T}</accessible>
+					<variant>Y₅ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1540,6 +1583,7 @@
 				<lang code="en" ti-ascii="58860D">
 					<display>X₆ᴛ</display>
 					<accessible>{X6T}</accessible>
+					<variant>X₆ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1552,6 +1596,7 @@
 				<lang code="en" ti-ascii="59860D">
 					<display>Y₆ᴛ</display>
 					<accessible>{Y6T}</accessible>
+					<variant>Y₆ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1564,6 +1609,7 @@
 				<lang code="en" ti-ascii="7281">
 					<display>r₁</display>
 					<accessible>{r1}</accessible>
+					<variant>r₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -1576,6 +1622,7 @@
 				<lang code="en" ti-ascii="7282">
 					<display>r₂</display>
 					<accessible>{r2}</accessible>
+					<variant>r₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -1588,6 +1635,7 @@
 				<lang code="en" ti-ascii="7283">
 					<display>r₃</display>
 					<accessible>{r3}</accessible>
+					<variant>r₃</variant>
 				</lang>
 			</version>
 		</token>
@@ -1600,6 +1648,7 @@
 				<lang code="en" ti-ascii="7284">
 					<display>r₄</display>
 					<accessible>{r4}</accessible>
+					<variant>r₄</variant>
 				</lang>
 			</version>
 		</token>
@@ -1612,6 +1661,7 @@
 				<lang code="en" ti-ascii="7285">
 					<display>r₅</display>
 					<accessible>{r5}</accessible>
+					<variant>r₅</variant>
 				</lang>
 			</version>
 		</token>
@@ -1624,6 +1674,7 @@
 				<lang code="en" ti-ascii="7286">
 					<display>r₆</display>
 					<accessible>{r6}</accessible>
+					<variant>r₆</variant>
 				</lang>
 			</version>
 		</token>
@@ -1930,6 +1981,7 @@
 				<lang code="en" ti-ascii="5265674551">
 					<display>RegEQ</display>
 					<accessible>[RegEQ]</accessible>
+					<variant>RegEQ</variant>
 				</lang>
 			</version>
 		</token>
@@ -1954,6 +2006,7 @@
 				<lang code="en" ti-ascii="CB">
 					<display>x̄</display>
 					<accessible>[xhat]</accessible>
+					<variant>x̄</variant>
 					<variant>ẋ</variant>
 				</lang>
 			</version>
@@ -1967,6 +2020,7 @@
 				<lang code="en" ti-ascii="C678">
 					<display>Σx</display>
 					<accessible>[Sigmax]</accessible>
+					<variant>Σx</variant>
 				</lang>
 			</version>
 		</token>
@@ -1979,6 +2033,7 @@
 				<lang code="en" ti-ascii="C67812">
 					<display>Σx²</display>
 					<accessible>[Sigmax^2]</accessible>
+					<variant>Σx²</variant>
 					<variant>Σx^2</variant>
 					<variant>sigmax²</variant>
 				</lang>
@@ -1993,6 +2048,7 @@
 				<lang code="en" ti-ascii="5378">
 					<display>Sx</display>
 					<accessible>[Sx]</accessible>
+					<variant>Sx</variant>
 				</lang>
 			</version>
 		</token>
@@ -2005,6 +2061,7 @@
 				<lang code="en" ti-ascii="C778">
 					<display>σx</display>
 					<accessible>[sigmax]</accessible>
+					<variant>σx</variant>
 				</lang>
 			</version>
 		</token>
@@ -2017,6 +2074,7 @@
 				<lang code="en" ti-ascii="6D696E58">
 					<display>minX</display>
 					<accessible>[minX]</accessible>
+					<variant>minX</variant>
 				</lang>
 			</version>
 		</token>
@@ -2029,6 +2087,7 @@
 				<lang code="en" ti-ascii="6D617858">
 					<display>maxX</display>
 					<accessible>[maxX]</accessible>
+					<variant>maxX</variant>
 				</lang>
 			</version>
 		</token>
@@ -2041,6 +2100,7 @@
 				<lang code="en" ti-ascii="6D696E59">
 					<display>minY</display>
 					<accessible>[minY]</accessible>
+					<variant>minY</variant>
 				</lang>
 			</version>
 		</token>
@@ -2053,6 +2113,7 @@
 				<lang code="en" ti-ascii="6D617859">
 					<display>maxY</display>
 					<accessible>[maxY]</accessible>
+					<variant>maxY</variant>
 				</lang>
 			</version>
 		</token>
@@ -2065,6 +2126,7 @@
 				<lang code="en" ti-ascii="CC">
 					<display>ȳ</display>
 					<accessible>[yhat]</accessible>
+					<variant>ȳ</variant>
 				</lang>
 			</version>
 		</token>
@@ -2077,6 +2139,7 @@
 				<lang code="en" ti-ascii="C679">
 					<display>Σy</display>
 					<accessible>[Sigmay]</accessible>
+					<variant>Σy</variant>
 				</lang>
 			</version>
 		</token>
@@ -2089,6 +2152,7 @@
 				<lang code="en" ti-ascii="C67912">
 					<display>Σy²</display>
 					<accessible>[Sigmay^2]</accessible>
+					<variant>Σy²</variant>
 					<variant>Σy^2</variant>
 					<variant>sigmay²</variant>
 				</lang>
@@ -2103,6 +2167,7 @@
 				<lang code="en" ti-ascii="5379">
 					<display>Sy</display>
 					<accessible>[Sy]</accessible>
+					<variant>Sy</variant>
 				</lang>
 			</version>
 		</token>
@@ -2115,6 +2180,7 @@
 				<lang code="en" ti-ascii="C779">
 					<display>σy</display>
 					<accessible>[sigmay]</accessible>
+					<variant>σy</variant>
 				</lang>
 			</version>
 		</token>
@@ -2127,6 +2193,7 @@
 				<lang code="en" ti-ascii="C67879">
 					<display>Σxy</display>
 					<accessible>[Sigmaxy]</accessible>
+					<variant>Σxy</variant>
 				</lang>
 			</version>
 		</token>
@@ -2151,6 +2218,7 @@
 				<lang code="en" ti-ascii="4D6564">
 					<display>Med</display>
 					<accessible>[Med]</accessible>
+					<variant>Med</variant>
 				</lang>
 			</version>
 		</token>
@@ -2163,6 +2231,7 @@
 				<lang code="en" ti-ascii="5181">
 					<display>Q₁</display>
 					<accessible>[Q1]</accessible>
+					<variant>Q₁</variant>
 					<variant>[Q₁]</variant>
 				</lang>
 			</version>
@@ -2176,6 +2245,7 @@
 				<lang code="en" ti-ascii="5183">
 					<display>Q₃</display>
 					<accessible>[Q3]</accessible>
+					<variant>Q₃</variant>
 					<variant>[Q₃]</variant>
 				</lang>
 			</version>
@@ -2249,6 +2319,7 @@
 				<lang code="en" ti-ascii="7881">
 					<display>x₁</display>
 					<accessible>[x1]</accessible>
+					<variant>x₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -2261,6 +2332,7 @@
 				<lang code="en" ti-ascii="7882">
 					<display>x₂</display>
 					<accessible>[x2]</accessible>
+					<variant>x₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -2273,6 +2345,7 @@
 				<lang code="en" ti-ascii="7883">
 					<display>x₃</display>
 					<accessible>[x3]</accessible>
+					<variant>x₃</variant>
 				</lang>
 			</version>
 		</token>
@@ -2285,6 +2358,7 @@
 				<lang code="en" ti-ascii="7981">
 					<display>y₁</display>
 					<accessible>[y1]</accessible>
+					<variant>y₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -2297,6 +2371,7 @@
 				<lang code="en" ti-ascii="7982">
 					<display>y₂</display>
 					<accessible>[y2]</accessible>
+					<variant>y₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -2309,6 +2384,7 @@
 				<lang code="en" ti-ascii="7983">
 					<display>y₃</display>
 					<accessible>[y3]</accessible>
+					<variant>y₃</variant>
 				</lang>
 			</version>
 		</token>
@@ -2321,6 +2397,7 @@
 				<lang code="en" ti-ascii="01">
 					<display>𝑛</display>
 					<accessible>[recursiven]</accessible>
+					<variant>𝑛</variant>
 					<variant>[𝒏]</variant>
 				</lang>
 			</version>
@@ -2370,6 +2447,7 @@
 				<lang code="en" ti-ascii="D912">
 					<display>χ²</display>
 					<accessible>[chi^2]</accessible>
+					<variant>χ²</variant>
 					<variant>χ^2</variant>
 					<variant>chi²</variant>
 				</lang>
@@ -2422,6 +2500,7 @@
 				<lang code="en" ti-ascii="D881">
 					<display>p̂₁</display>
 					<accessible>[phat1]</accessible>
+					<variant>p̂₁</variant>
 					<variant>p̂1</variant>
 					<variant>ṗ₁</variant>
 					<variant>ṗ1</variant>
@@ -2438,6 +2517,7 @@
 				<lang code="en" ti-ascii="D882">
 					<display>p̂₂</display>
 					<accessible>[phat2]</accessible>
+					<variant>p̂₂</variant>
 					<variant>p̂2</variant>
 					<variant>ṗ₂</variant>
 					<variant>ṗ2</variant>
@@ -2454,6 +2534,7 @@
 				<lang code="en" ti-ascii="CB81">
 					<display>x̄₁</display>
 					<accessible>[xhat1]</accessible>
+					<variant>x̄₁</variant>
 					<variant>ẋ₁</variant>
 					<variant>ẋ1</variant>
 					<variant>xhat₁</variant>
@@ -2469,6 +2550,7 @@
 				<lang code="en" ti-ascii="537881">
 					<display>Sx₁</display>
 					<accessible>[Sx1]</accessible>
+					<variant>Sx₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -2481,6 +2563,7 @@
 				<lang code="en" ti-ascii="6E81">
 					<display>n₁</display>
 					<accessible>[n1]</accessible>
+					<variant>n₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -2493,6 +2576,7 @@
 				<lang code="en" ti-ascii="CB82">
 					<display>x̄₂</display>
 					<accessible>[xhat2]</accessible>
+					<variant>x̄₂</variant>
 					<variant>x̄2</variant>
 					<variant>ẋ₂</variant>
 					<variant>ẋ2</variant>
@@ -2509,6 +2593,7 @@
 				<lang code="en" ti-ascii="537882">
 					<display>Sx₂</display>
 					<accessible>[Sx2]</accessible>
+					<variant>Sx₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -2521,6 +2606,7 @@
 				<lang code="en" ti-ascii="6E82">
 					<display>n₂</display>
 					<accessible>[n2]</accessible>
+					<variant>n₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -2533,6 +2619,7 @@
 				<lang code="en" ti-ascii="537870">
 					<display>Sxp</display>
 					<accessible>[Sxp]</accessible>
+					<variant>Sxp</variant>
 				</lang>
 			</version>
 		</token>
@@ -2545,6 +2632,7 @@
 				<lang code="en" ti-ascii="6C6F776572">
 					<display>lower</display>
 					<accessible>[lower]</accessible>
+					<variant>lower</variant>
 				</lang>
 			</version>
 		</token>
@@ -2557,6 +2645,7 @@
 				<lang code="en" ti-ascii="7570706572">
 					<display>upper</display>
 					<accessible>[upper]</accessible>
+					<variant>upper</variant>
 				</lang>
 			</version>
 		</token>
@@ -2581,6 +2670,7 @@
 				<lang code="en" ti-ascii="7212">
 					<display>r²</display>
 					<accessible>[r^2]</accessible>
+					<variant>r²</variant>
 				</lang>
 			</version>
 		</token>
@@ -2593,6 +2683,7 @@
 				<lang code="en" ti-ascii="5212">
 					<display>R²</display>
 					<accessible>[R^2]</accessible>
+					<variant>R²</variant>
 				</lang>
 			</version>
 		</token>
@@ -2741,6 +2832,7 @@
 				<lang code="en" ti-ascii="7528014D696E29">
 					<display>u(𝑛Min)</display>
 					<accessible>u(nMin)</accessible>
+					<variant>u(𝑛Min)</variant>
 					<variant>u(𝒏Min)</variant>
 				</lang>
 			</version>
@@ -2769,6 +2861,7 @@
 				<lang code="en" ti-ascii="7628014D696E29">
 					<display>v(𝑛Min)</display>
 					<accessible>v(nMin)</accessible>
+					<variant>v(𝑛Min)</variant>
 					<variant>v(𝒏Min)</variant>
 				</lang>
 			</version>
@@ -2786,6 +2879,7 @@
 				<lang code="en" ti-ascii="55012D81">
 					<display>U𝑛-₁</display>
 					<accessible>Un-1</accessible>
+					<variant>U𝑛-₁</variant>
 					<variant>U𝒏-₁</variant>
 					<variant>Un-₁</variant>
 				</lang>
@@ -2798,6 +2892,7 @@
 				<lang code="en" ti-ascii="55012D81">
 					<display>U𝑛-₁</display>
 					<accessible>Un-1</accessible>
+					<variant>U𝑛-₁</variant>
 					<variant>U𝒏-₁</variant>
 					<variant>Un-₁</variant>
 				</lang>
@@ -2816,6 +2911,7 @@
 				<lang code="en" ti-ascii="56012D81">
 					<display>V𝑛-₁</display>
 					<accessible>Vn-1</accessible>
+					<variant>V𝑛-₁</variant>
 					<variant>V𝒏-₁</variant>
 					<variant>Vn-₁</variant>
 				</lang>
@@ -2828,6 +2924,7 @@
 				<lang code="en" ti-ascii="56012D81">
 					<display>V𝑛-₁</display>
 					<accessible>Vn-1</accessible>
+					<variant>V𝑛-₁</variant>
 					<variant>V𝒏-₁</variant>
 					<variant>Vn-₁</variant>
 				</lang>
@@ -2842,6 +2939,7 @@
 				<lang code="en" ti-ascii="5A7528014D696E29">
 					<display>Zu(𝑛Min)</display>
 					<accessible>Zu(nMin)</accessible>
+					<variant>Zu(𝑛Min)</variant>
 					<variant>Zu(𝒏Min)</variant>
 					<variant>Zu(nmin)</variant>
 				</lang>
@@ -2856,6 +2954,7 @@
 				<lang code="en" ti-ascii="5A7628014D696E29">
 					<display>Zv(𝑛Min)</display>
 					<accessible>Zv(nMin)</accessible>
+					<variant>Zv(𝑛Min)</variant>
 					<variant>Zv(𝒏Min)</variant>
 					<variant>Zv(nmin)</variant>
 				</lang>
@@ -2942,6 +3041,7 @@
 				<lang code="en" ti-ascii="5B6D696E">
 					<display>θmin</display>
 					<accessible>thetaMin</accessible>
+					<variant>θmin</variant>
 					<variant>θMin</variant>
 				</lang>
 			</version>
@@ -2955,6 +3055,7 @@
 				<lang code="en" ti-ascii="5B6D6178">
 					<display>θmax</display>
 					<accessible>thetaMax</accessible>
+					<variant>θmax</variant>
 					<variant>θMax</variant>
 				</lang>
 			</version>
@@ -3016,6 +3117,7 @@
 				<lang code="en" ti-ascii="5A5B6D696E">
 					<display>Zθmin</display>
 					<accessible>Zthetamin</accessible>
+					<variant>Zθmin</variant>
 				</lang>
 			</version>
 		</token>
@@ -3028,6 +3130,7 @@
 				<lang code="en" ti-ascii="5A5B6D6178">
 					<display>Zθmax</display>
 					<accessible>Zthetamax</accessible>
+					<variant>Zθmax</variant>
 				</lang>
 			</version>
 		</token>
@@ -3080,6 +3183,7 @@
 				<lang code="en" ti-ascii="014D696E">
 					<display>𝑛Min</display>
 					<accessible>nMin</accessible>
+					<variant>𝑛Min</variant>
 					<variant>𝒏Min</variant>
 				</lang>
 			</version>
@@ -3115,6 +3219,7 @@
 				<lang code="en" ti-ascii="014D6178">
 					<display>𝑛Max</display>
 					<accessible>nMax</accessible>
+					<variant>𝑛Max</variant>
 					<variant>𝒏Max</variant>
 				</lang>
 			</version>
@@ -3128,6 +3233,7 @@
 				<lang code="en" ti-ascii="5A014D6178">
 					<display>Z𝑛Max</display>
 					<accessible>ZnMax</accessible>
+					<variant>Z𝑛Max</variant>
 					<variant>Z𝒏Max</variant>
 				</lang>
 			</version>
@@ -3145,6 +3251,7 @@
 				<lang code="en" ti-ascii="015374617274">
 					<display>𝑛Start</display>
 					<accessible>nStart</accessible>
+					<variant>𝑛Start</variant>
 				</lang>
 			</version>
 			<version>
@@ -3155,6 +3262,7 @@
 				<lang code="en" ti-ascii="014D696E">
 					<display>𝑛Min</display>
 					<accessible>nMin</accessible>
+					<variant>𝑛Min</variant>
 					<variant>𝒏Min</variant>
 				</lang>
 			</version>
@@ -3168,6 +3276,7 @@
 				<lang code="en" ti-ascii="5A014D696E">
 					<display>Z𝑛Min</display>
 					<accessible>ZnMin</accessible>
+					<variant>Z𝑛Min</variant>
 					<variant>Z𝒏Min</variant>
 				</lang>
 			</version>
@@ -3181,6 +3290,7 @@
 				<lang code="en" ti-ascii="BE54626C">
 					<display>ΔTbl</display>
 					<accessible>DeltaTbl</accessible>
+					<variant>ΔTbl</variant>
 					<variant>∆Tbl</variant>
 				</lang>
 			</version>
@@ -3206,6 +3316,7 @@
 				<lang code="en" ti-ascii="5B73746570">
 					<display>θstep</display>
 					<accessible>thetastep</accessible>
+					<variant>θstep</variant>
 				</lang>
 			</version>
 		</token>
@@ -3230,6 +3341,7 @@
 				<lang code="en" ti-ascii="5A5B73746570">
 					<display>Zθstep</display>
 					<accessible>Zthetastep</accessible>
+					<variant>Zθstep</variant>
 				</lang>
 			</version>
 		</token>
@@ -3242,6 +3354,7 @@
 				<lang code="en" ti-ascii="BE58">
 					<display>ΔX</display>
 					<accessible>DeltaX</accessible>
+					<variant>ΔX</variant>
 					<variant>∆X</variant>
 				</lang>
 			</version>
@@ -3255,6 +3368,7 @@
 				<lang code="en" ti-ascii="BE59">
 					<display>ΔY</display>
 					<accessible>DeltaY</accessible>
+					<variant>ΔY</variant>
 					<variant>∆Y</variant>
 				</lang>
 			</version>
@@ -3304,6 +3418,7 @@
 				<lang code="en" ti-ascii="DD">
 					<display>𝗡</display>
 					<accessible>|N</accessible>
+					<variant>𝗡</variant>
 					<variant>|𝗡</variant>
 				</lang>
 			</version>
@@ -3365,6 +3480,7 @@
 				<lang code="en" ti-ascii="502F59">
 					<display>P/Y</display>
 					<accessible>|P/Y</accessible>
+					<variant>P/Y</variant>
 				</lang>
 			</version>
 		</token>
@@ -3377,6 +3493,7 @@
 				<lang code="en" ti-ascii="432F59">
 					<display>C/Y</display>
 					<accessible>|C/Y</accessible>
+					<variant>C/Y</variant>
 				</lang>
 			</version>
 		</token>
@@ -3389,6 +3506,7 @@
 				<lang code="en" ti-ascii="7728014D696E29">
 					<display>w(𝑛Min)</display>
 					<accessible>w(nMin)</accessible>
+					<variant>w(𝑛Min)</variant>
 					<variant>w(𝒏Min)</variant>
 				</lang>
 			</version>
@@ -3402,6 +3520,7 @@
 				<lang code="en" ti-ascii="5A7728014D696E29">
 					<display>Zw(𝑛Min)</display>
 					<accessible>Zw(nMin)</accessible>
+					<variant>Zw(𝑛Min)</variant>
 					<variant>Zw(𝒏Min)</variant>
 				</lang>
 			</version>
@@ -3584,6 +3703,7 @@
 			<lang code="en" ti-ascii="17">
 				<display>≤</display>
 				<accessible>&lt;=</accessible>
+				<variant>≤</variant>
 			</lang>
 		</version>
 	</token>
@@ -3596,6 +3716,7 @@
 			<lang code="en" ti-ascii="19">
 				<display>≥</display>
 				<accessible>&gt;=</accessible>
+				<variant>≥</variant>
 			</lang>
 		</version>
 	</token>
@@ -3608,6 +3729,7 @@
 			<lang code="en" ti-ascii="18">
 				<display>≠</display>
 				<accessible>!=</accessible>
+				<variant>≠</variant>
 			</lang>
 		</version>
 	</token>
@@ -4074,6 +4196,7 @@
 			<lang code="en" ti-ascii="0A">
 				<display>□</display>
 				<accessible>squareplot</accessible>
+				<variant>□</variant>
 				<variant>plotsquare</variant>
 			</lang>
 		</version>
@@ -4087,6 +4210,7 @@
 			<lang code="en" ti-ascii="0B">
 				<display>﹢</display>
 				<accessible>crossplot</accessible>
+				<variant>﹢</variant>
 				<variant>plotcross</variant>
 			</lang>
 		</version>
@@ -4751,6 +4875,7 @@
 			<lang code="en" ti-ascii="27">
 				<display>\&apos;</display>
 				<accessible>&apos;</accessible>
+				<variant>\&apos;</variant>
 			</lang>
 		</version>
 	</token>
@@ -4775,6 +4900,7 @@
 			<lang code="en" ti-ascii="1A">
 				<display>⁻</display>
 				<accessible>~</accessible>
+				<variant>⁻</variant>
 				<variant>|-</variant>
 			</lang>
 		</version>
@@ -5057,6 +5183,7 @@
 				<lang code="en" ti-ascii="C650726E28">
 					<display>ΣPrn(</display>
 					<accessible>SigmaPrn(</accessible>
+					<variant>ΣPrn(</variant>
 				</lang>
 			</version>
 		</token>
@@ -5069,6 +5196,7 @@
 				<lang code="en" ti-ascii="C6496E7428">
 					<display>ΣInt(</display>
 					<accessible>SigmaInt(</accessible>
+					<variant>ΣInt(</variant>
 				</lang>
 			</version>
 		</token>
@@ -5081,6 +5209,7 @@
 				<lang code="en" ti-ascii="054E6F6D28">
 					<display>►Nom(</display>
 					<accessible>&gt;Nom(</accessible>
+					<variant>►Nom(</variant>
 				</lang>
 			</version>
 		</token>
@@ -5093,6 +5222,7 @@
 				<lang code="en" ti-ascii="0545666628">
 					<display>►Eff(</display>
 					<accessible>&gt;Eff(</accessible>
+					<variant>►Eff(</variant>
 				</lang>
 			</version>
 		</token>
@@ -5249,6 +5379,7 @@
 				<lang code="en" ti-ascii="D91263646628">
 					<display>χ²cdf(</display>
 					<accessible>chi^2cdf(</accessible>
+					<variant>χ²cdf(</variant>
 					<variant>χ^2cdf(</variant>
 					<variant>chi²cdf(</variant>
 				</lang>
@@ -5263,6 +5394,7 @@
 				<lang code="en" ti-ascii="DA63646628">
 					<display>𝙵cdf(</display>
 					<accessible>Fcdf(</accessible>
+					<variant>𝙵cdf(</variant>
 					<variant>𝐅cdf(</variant>
 				</lang>
 			</version>
@@ -5372,6 +5504,7 @@
 				<lang code="en" ti-ascii="D91270646628">
 					<display>χ²pdf(</display>
 					<accessible>chi^2pdf(</accessible>
+					<variant>χ²pdf(</variant>
 					<variant>χ^2pdf(</variant>
 					<variant>chi²pdf(</variant>
 				</lang>
@@ -5386,6 +5519,7 @@
 				<lang code="en" ti-ascii="DA70646628">
 					<display>𝙵pdf(</display>
 					<accessible>Fpdf(</accessible>
+					<variant>𝙵pdf(</variant>
 					<variant>𝐅pdf(</variant>
 				</lang>
 			</version>
@@ -5447,6 +5581,7 @@
 				<lang code="en" ti-ascii="74766D5FDD">
 					<display>tvm_𝗡</display>
 					<accessible>tvm_N</accessible>
+					<variant>tvm_𝗡</variant>
 				</lang>
 			</version>
 		</token>
@@ -5555,6 +5690,7 @@
 				<lang code="en" ti-ascii="BE4C69737428">
 					<display>ΔList(</display>
 					<accessible>DeltaList(</accessible>
+					<variant>ΔList(</variant>
 				</lang>
 			</version>
 		</token>
@@ -5591,6 +5727,7 @@
 				<lang code="en" ti-ascii="0552656374">
 					<display>►Rect</display>
 					<accessible>&gt;Rect</accessible>
+					<variant>►Rect</variant>
 				</lang>
 			</version>
 		</token>
@@ -5603,6 +5740,7 @@
 				<lang code="en" ti-ascii="05506F6C6172">
 					<display>►Polar</display>
 					<accessible>&gt;Polar</accessible>
+					<variant>►Polar</variant>
 				</lang>
 			</version>
 		</token>
@@ -5615,6 +5753,7 @@
 				<lang code="en" ti-ascii="DB">
 					<display>𝑒</display>
 					<accessible>[e]</accessible>
+					<variant>𝑒</variant>
 				</lang>
 			</version>
 		</token>
@@ -5687,6 +5826,7 @@
 				<lang code="en" ti-ascii="5368616465D91228">
 					<display>Shadeχ²(</display>
 					<accessible>Shadechi^2(</accessible>
+					<variant>Shadeχ²(</variant>
 					<variant>Shadeχ^2(</variant>
 					<variant>Shadechi²(</variant>
 				</lang>
@@ -5701,6 +5841,7 @@
 				<lang code="en" ti-ascii="5368616465DA28BB39">
 					<display>Shade𝙵(</display>
 					<accessible>ShadeF(</accessible>
+					<variant>Shade𝙵(</variant>
 					<variant>Shade𝐅(</variant>
 				</lang>
 			</version>
@@ -5714,6 +5855,7 @@
 				<lang code="en" ti-ascii="4D617472056C69737428">
 					<display>Matr►list(</display>
 					<accessible>Matr&gt;list(</accessible>
+					<variant>Matr►list(</variant>
 				</lang>
 			</version>
 		</token>
@@ -5726,6 +5868,7 @@
 				<lang code="en" ti-ascii="4C697374056D61747228">
 					<display>List►matr(</display>
 					<accessible>List&gt;matr(</accessible>
+					<variant>List►matr(</variant>
 				</lang>
 			</version>
 		</token>
@@ -5798,6 +5941,7 @@
 				<lang code="en" ti-ascii="D9122D5465737428">
 					<display>χ²-Test(</display>
 					<accessible>chi^2-Test(</accessible>
+					<variant>χ²-Test(</variant>
 					<variant>χ^2-Test(</variant>
 					<variant>chi²-Test(</variant>
 				</lang>
@@ -5884,6 +6028,7 @@
 				<lang code="en" ti-ascii="322D53616D70DA5465737420">
 					<display>2-Samp𝙵Test&#032;</display>
 					<accessible>2-SampFTest&#032;</accessible>
+					<variant>2-Samp𝙵Test&#032;</variant>
 					<variant>2-Samp𝐅Test&#032;</variant>
 				</lang>
 			</version>
@@ -5969,6 +6114,7 @@
 				<lang code="en" ti-ascii="72DB5E5BD7">
 					<display>r𝑒^θ𝑖</display>
 					<accessible>re^thetai</accessible>
+					<variant>r𝑒^θ𝑖</variant>
 					<variant>re^θ𝑖</variant>
 					<variant>re^θi</variant>
 					<variant>re^theta𝑖</variant>
@@ -5984,6 +6130,7 @@
 				<lang code="en" ti-ascii="612B62D7">
 					<display>a+b𝑖</display>
 					<accessible>a+bi</accessible>
+					<variant>a+b𝑖</variant>
 				</lang>
 			</version>
 		</token>
@@ -6070,6 +6217,7 @@
 				<lang code="en" ti-ascii="45717505537472696E6728">
 					<display>Equ►String(</display>
 					<accessible>Equ&gt;String(</accessible>
+					<variant>Equ►String(</variant>
 				</lang>
 			</version>
 		</token>
@@ -6082,6 +6230,7 @@
 				<lang code="en" ti-ascii="537472696E670545717528">
 					<display>String►Equ(</display>
 					<accessible>String&gt;Equ(</accessible>
+					<variant>String►Equ(</variant>
 				</lang>
 			</version>
 		</token>
@@ -6778,6 +6927,7 @@
 				<lang code="en" ti-ascii="B6">
 					<display>´</display>
 					<accessible>|&apos;</accessible>
+					<variant>´</variant>
 					<variant>^^&apos;</variant>
 				</lang>
 			</version>
@@ -6804,6 +6954,7 @@
 				<lang code="en" ti-ascii="B8">
 					<display>¨</display>
 					<accessible>|:</accessible>
+					<variant>¨</variant>
 					<variant>^^:</variant>
 				</lang>
 			</version>
@@ -6817,6 +6968,7 @@
 				<lang code="en" ti-ascii="B9">
 					<display>¿</display>
 					<accessible>|?</accessible>
+					<variant>¿</variant>
 				</lang>
 			</version>
 		</token>
@@ -6829,6 +6981,7 @@
 				<lang code="en" ti-ascii="BA">
 					<display>¡</display>
 					<accessible>|!</accessible>
+					<variant>¡</variant>
 				</lang>
 			</version>
 		</token>
@@ -6841,6 +6994,7 @@
 				<lang code="en" ti-ascii="BB">
 					<display>α</display>
 					<accessible>alpha</accessible>
+					<variant>α</variant>
 				</lang>
 			</version>
 		</token>
@@ -6853,6 +7007,7 @@
 				<lang code="en" ti-ascii="BC">
 					<display>β</display>
 					<accessible>beta</accessible>
+					<variant>β</variant>
 				</lang>
 			</version>
 		</token>
@@ -6865,6 +7020,7 @@
 				<lang code="en" ti-ascii="BD">
 					<display>γ</display>
 					<accessible>gamma</accessible>
+					<variant>γ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6877,6 +7033,7 @@
 				<lang code="en" ti-ascii="BE">
 					<display>Δ</display>
 					<accessible>Delta</accessible>
+					<variant>Δ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6889,6 +7046,7 @@
 				<lang code="en" ti-ascii="BF">
 					<display>δ</display>
 					<accessible>delta</accessible>
+					<variant>δ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6901,6 +7059,7 @@
 				<lang code="en" ti-ascii="C0">
 					<display>ε</display>
 					<accessible>epsilon</accessible>
+					<variant>ε</variant>
 				</lang>
 			</version>
 		</token>
@@ -6913,6 +7072,7 @@
 				<lang code="en" ti-ascii="C2">
 					<display>λ</display>
 					<accessible>lambda</accessible>
+					<variant>λ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6925,6 +7085,7 @@
 				<lang code="en" ti-ascii="C3">
 					<display>μ</display>
 					<accessible>mu</accessible>
+					<variant>μ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6950,6 +7111,7 @@
 				<lang code="en" ti-ascii="C5">
 					<display>ρ</display>
 					<accessible>rho</accessible>
+					<variant>ρ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6962,6 +7124,7 @@
 				<lang code="en" ti-ascii="C6">
 					<display>Σ</display>
 					<accessible>Sigma</accessible>
+					<variant>Σ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6974,6 +7137,7 @@
 				<lang code="en" ti-ascii="C9">
 					<display>Φ</display>
 					<accessible>Phi</accessible>
+					<variant>Φ</variant>
 				</lang>
 			</version>
 		</token>
@@ -6986,6 +7150,7 @@
 				<lang code="en" ti-ascii="CA">
 					<display>Ω</display>
 					<accessible>Omega</accessible>
+					<variant>Ω</variant>
 				</lang>
 			</version>
 		</token>
@@ -7011,6 +7176,7 @@
 				<lang code="en" ti-ascii="D9">
 					<display>χ</display>
 					<accessible>chi</accessible>
+					<variant>χ</variant>
 				</lang>
 			</version>
 		</token>
@@ -7349,6 +7515,7 @@
 				<lang code="en" ti-ascii="C7">
 					<display>σ</display>
 					<accessible>sigma</accessible>
+					<variant>σ</variant>
 				</lang>
 			</version>
 		</token>
@@ -7361,6 +7528,7 @@
 				<lang code="en" ti-ascii="C8">
 					<display>τ</display>
 					<accessible>tau</accessible>
+					<variant>τ</variant>
 				</lang>
 			</version>
 		</token>
@@ -7529,6 +7697,7 @@
 				<lang code="en" ti-ascii="CE">
 					<display>…</display>
 					<accessible>...</accessible>
+					<variant>…</variant>
 				</lang>
 			</version>
 		</token>
@@ -7541,6 +7710,7 @@
 				<lang code="en" ti-ascii="13">
 					<display>∠</display>
 					<accessible>|&lt;</accessible>
+					<variant>∠</variant>
 				</lang>
 			</version>
 		</token>
@@ -7553,6 +7723,7 @@
 				<lang code="en" ti-ascii="F4">
 					<display>ß</display>
 					<accessible>sharps</accessible>
+					<variant>ß</variant>
 				</lang>
 			</version>
 		</token>
@@ -7565,6 +7736,7 @@
 				<lang code="en" ti-ascii="CD">
 					<display>ˣ</display>
 					<accessible>^^x</accessible>
+					<variant>ˣ</variant>
 				</lang>
 			</version>
 		</token>
@@ -7577,6 +7749,7 @@
 				<lang code="en" ti-ascii="0D">
 					<display>ᴛ</display>
 					<accessible>smallT</accessible>
+					<variant>ᴛ</variant>
 				</lang>
 			</version>
 		</token>
@@ -7589,6 +7762,7 @@
 				<lang code="en" ti-ascii="80">
 					<display>₀</display>
 					<accessible>small0</accessible>
+					<variant>₀</variant>
 				</lang>
 			</version>
 		</token>
@@ -7601,6 +7775,7 @@
 				<lang code="en" ti-ascii="81">
 					<display>₁</display>
 					<accessible>small1</accessible>
+					<variant>₁</variant>
 				</lang>
 			</version>
 		</token>
@@ -7613,6 +7788,7 @@
 				<lang code="en" ti-ascii="82">
 					<display>₂</display>
 					<accessible>small2</accessible>
+					<variant>₂</variant>
 				</lang>
 			</version>
 		</token>
@@ -7625,6 +7801,7 @@
 				<lang code="en" ti-ascii="83">
 					<display>₃</display>
 					<accessible>small3</accessible>
+					<variant>₃</variant>
 				</lang>
 			</version>
 		</token>
@@ -7637,6 +7814,7 @@
 				<lang code="en" ti-ascii="84">
 					<display>₄</display>
 					<accessible>small4</accessible>
+					<variant>₄</variant>
 				</lang>
 			</version>
 		</token>
@@ -7649,6 +7827,7 @@
 				<lang code="en" ti-ascii="85">
 					<display>₅</display>
 					<accessible>small5</accessible>
+					<variant>₅</variant>
 				</lang>
 			</version>
 		</token>
@@ -7661,6 +7840,7 @@
 				<lang code="en" ti-ascii="86">
 					<display>₆</display>
 					<accessible>small6</accessible>
+					<variant>₆</variant>
 				</lang>
 			</version>
 		</token>
@@ -7673,6 +7853,7 @@
 				<lang code="en" ti-ascii="87">
 					<display>₇</display>
 					<accessible>small7</accessible>
+					<variant>₇</variant>
 				</lang>
 			</version>
 		</token>
@@ -7685,6 +7866,7 @@
 				<lang code="en" ti-ascii="88">
 					<display>₈</display>
 					<accessible>small8</accessible>
+					<variant>₈</variant>
 				</lang>
 			</version>
 		</token>
@@ -7697,6 +7879,7 @@
 				<lang code="en" ti-ascii="89">
 					<display>₉</display>
 					<accessible>small9</accessible>
+					<variant>₉</variant>
 				</lang>
 			</version>
 		</token>
@@ -7709,6 +7892,7 @@
 				<lang code="en" ti-ascii="1D">
 					<display>₁₀</display>
 					<accessible>small10</accessible>
+					<variant>₁₀</variant>
 				</lang>
 			</version>
 		</token>
@@ -7721,6 +7905,7 @@
 				<lang code="en" ti-ascii="CF">
 					<display>◄</display>
 					<accessible>&lt;|</accessible>
+					<variant>◄</variant>
 				</lang>
 			</version>
 		</token>
@@ -7733,6 +7918,7 @@
 				<lang code="en" ti-ascii="05">
 					<display>►</display>
 					<accessible>|&gt;</accessible>
+					<variant>►</variant>
 				</lang>
 			</version>
 		</token>
@@ -7745,6 +7931,7 @@
 				<lang code="en" ti-ascii="1E">
 					<display>↑</display>
 					<accessible>uparrow</accessible>
+					<variant>↑</variant>
 				</lang>
 			</version>
 		</token>
@@ -7757,6 +7944,7 @@
 				<lang code="en" ti-ascii="1F">
 					<display>↓</display>
 					<accessible>downarrow</accessible>
+					<variant>↓</variant>
 				</lang>
 			</version>
 		</token>
@@ -7769,6 +7957,7 @@
 				<lang code="en" ti-ascii="09">
 					<display>×</display>
 					<accessible>xmark</accessible>
+					<variant>×</variant>
 				</lang>
 			</version>
 		</token>
@@ -7781,6 +7970,7 @@
 				<lang code="en" ti-ascii="08">
 					<display>∫</display>
 					<accessible>integral</accessible>
+					<variant>∫</variant>
 				</lang>
 			</version>
 		</token>
@@ -7793,6 +7983,7 @@
 				<lang code="en" ti-ascii="F3">
 					<display>🡁</display>
 					<accessible>bolduparrow</accessible>
+					<variant>🡁</variant>
 					<variant>🡅</variant>
 				</lang>
 			</version>
@@ -7806,6 +7997,7 @@
 				<lang code="en" ti-ascii="07">
 					<display>🠿</display>
 					<accessible>bolddownarrow</accessible>
+					<variant>🠿</variant>
 					<variant>🡇</variant>
 				</lang>
 			</version>
@@ -7831,6 +8023,7 @@
 				<lang code="en" ti-ascii="7F">
 					<display>⌸</display>
 					<accessible>invertedequal</accessible>
+					<variant>⌸</variant>
 				</lang>
 			</version>
 		</token>
@@ -7859,6 +8052,7 @@
 			<lang code="en" ti-ascii="1028">
 				<display>√(</display>
 				<accessible>sqrt(</accessible>
+				<variant>√(</variant>
 			</lang>
 		</version>
 	</token>
@@ -7886,6 +8080,7 @@
 			<lang code="en" ti-ascii="0E1028">
 				<display>³√(</display>
 				<accessible>cuberoot(</accessible>
+				<variant>³√(</variant>
 			</lang>
 		</version>
 	</token>
@@ -7928,6 +8123,7 @@
 			<lang code="en" ti-ascii="DB5E">
 				<display>𝑒^</display>
 				<accessible>e^^</accessible>
+				<variant>𝑒^</variant>
 			</lang>
 		</version>
 		<version>
@@ -7938,6 +8134,7 @@
 			<lang code="en" ti-ascii="DB5E28">
 				<display>𝑒^(</display>
 				<accessible>e^^(</accessible>
+				<variant>𝑒^(</variant>
 			</lang>
 		</version>
 	</token>
@@ -7980,6 +8177,7 @@
 			<lang code="en" ti-ascii="1D5E">
 				<display>₁₀^</display>
 				<accessible>10^^</accessible>
+				<variant>₁₀^</variant>
 			</lang>
 		</version>
 		<version>
@@ -7990,6 +8188,7 @@
 			<lang code="en" ti-ascii="1D5E28">
 				<display>₁₀^(</display>
 				<accessible>10^^(</accessible>
+				<variant>₁₀^(</variant>
 			</lang>
 		</version>
 	</token>
@@ -8698,6 +8897,7 @@
 			<lang code="en" ti-ascii="DC">
 				<display>ʟ</display>
 				<accessible>smallL</accessible>
+				<variant>ʟ</variant>
 				<variant>⌊</variant>
 				<variant>|L</variant>
 			</lang>
@@ -8989,6 +9189,7 @@
 				<lang code="en" ti-ascii="D912474F462D5465737428">
 					<display>χ²GOF-Test(</display>
 					<accessible>chi^2GOF-Test(</accessible>
+					<variant>χ²GOF-Test(</variant>
 					<variant>χ^2GOF-Test(</variant>
 					<variant>chi²GOF-Test(</variant>
 				</lang>
@@ -9039,6 +9240,7 @@
 				<lang code="en" ti-ascii="5A4672616331F632">
 					<display>ZFrac1⁄2</display>
 					<accessible>ZFrac1/2</accessible>
+					<variant>ZFrac1⁄2</variant>
 				</lang>
 			</version>
 		</token>
@@ -9051,6 +9253,7 @@
 				<lang code="en" ti-ascii="5A4672616331F633">
 					<display>ZFrac1⁄3</display>
 					<accessible>ZFrac1/3</accessible>
+					<variant>ZFrac1⁄3</variant>
 				</lang>
 			</version>
 		</token>
@@ -9063,6 +9266,7 @@
 				<lang code="en" ti-ascii="5A4672616331F634">
 					<display>ZFrac1⁄4</display>
 					<accessible>ZFrac1/4</accessible>
+					<variant>ZFrac1⁄4</variant>
 				</lang>
 			</version>
 		</token>
@@ -9075,6 +9279,7 @@
 				<lang code="en" ti-ascii="5A4672616331F635">
 					<display>ZFrac1⁄5</display>
 					<accessible>ZFrac1/5</accessible>
+					<variant>ZFrac1⁄5</variant>
 				</lang>
 			</version>
 		</token>
@@ -9087,6 +9292,7 @@
 				<lang code="en" ti-ascii="5A4672616331F638">
 					<display>ZFrac1⁄8</display>
 					<accessible>ZFrac1/8</accessible>
+					<variant>ZFrac1⁄8</variant>
 				</lang>
 			</version>
 		</token>
@@ -9099,6 +9305,7 @@
 				<lang code="en" ti-ascii="5A4672616331F63130">
 					<display>ZFrac1⁄10</display>
 					<accessible>ZFrac1/10</accessible>
+					<variant>ZFrac1⁄10</variant>
 				</lang>
 			</version>
 		</token>
@@ -9124,6 +9331,7 @@
 				<lang code="en" ti-ascii="F6">
 					<display>⁄</display>
 					<accessible>n/d</accessible>
+					<variant>⁄</variant>
 				</lang>
 			</version>
 		</token>
@@ -9136,6 +9344,7 @@
 				<lang code="en" ti-ascii="F5">
 					<display>󸏵</display>
 					<accessible>Un/d</accessible>
+					<variant>󸏵</variant>
 					<variant>ᵤ</variant>
 				</lang>
 			</version>
@@ -9149,6 +9358,7 @@
 				<lang code="en" ti-ascii="056EF664CF05556EF664">
 					<display>►n⁄d◄►Un⁄d</display>
 					<accessible>&gt;n/d&lt;&gt;Un/d</accessible>
+					<variant>►n⁄d◄►Un⁄d</variant>
 					<variant>►n/d◄►Un/d</variant>
 					<variant>&gt;n⁄d&lt;&gt;Un⁄d</variant>
 				</lang>
@@ -9163,6 +9373,7 @@
 				<lang code="en" ti-ascii="0546CF0544">
 					<display>►F◄►D</display>
 					<accessible>&gt;F&lt;&gt;D</accessible>
+					<variant>►F◄►D</variant>
 				</lang>
 			</version>
 		</token>
@@ -9187,6 +9398,7 @@
 				<lang code="en" ti-ascii="C628">
 					<display>Σ(</display>
 					<accessible>Sigma(</accessible>
+					<variant>Σ(</variant>
 				</lang>
 			</version>
 		</token>
@@ -9223,6 +9435,7 @@
 				<lang code="en" ti-ascii="4D4154485052494E54">
 					<display>MATHPRINT</display>
 					<accessible>[MATHPRINT]</accessible>
+					<variant>MATHPRINT</variant>
 				</lang>
 			</version>
 		</token>
@@ -9235,6 +9448,7 @@
 				<lang code="en" ti-ascii="434C4153534943">
 					<display>CLASSIC</display>
 					<accessible>[CLASSIC]</accessible>
+					<variant>CLASSIC</variant>
 				</lang>
 			</version>
 		</token>
@@ -9247,6 +9461,7 @@
 				<lang code="en" ti-ascii="6EF664">
 					<display>n⁄d</display>
 					<accessible>[n/d]</accessible>
+					<variant>n⁄d</variant>
 				</lang>
 			</version>
 		</token>
@@ -9259,6 +9474,7 @@
 				<lang code="en" ti-ascii="556EF664">
 					<display>Un⁄d</display>
 					<accessible>[Un/d]</accessible>
+					<variant>Un⁄d</variant>
 				</lang>
 			</version>
 		</token>
@@ -9271,6 +9487,7 @@
 				<lang code="en" ti-ascii="4155544F">
 					<display>AUTO</display>
 					<accessible>[AUTO]</accessible>
+					<variant>AUTO</variant>
 				</lang>
 			</version>
 		</token>
@@ -9283,6 +9500,7 @@
 				<lang code="en" ti-ascii="444543">
 					<display>DEC</display>
 					<accessible>[DEC]</accessible>
+					<variant>DEC</variant>
 				</lang>
 			</version>
 		</token>
@@ -9299,6 +9517,7 @@
 				<lang code="en" ti-ascii="46524143">
 					<display>FRAC</display>
 					<accessible>[FRAC]</accessible>
+					<variant>FRAC</variant>
 				</lang>
 			</version>
 			<version>
@@ -9309,6 +9528,7 @@
 				<lang code="en" ti-ascii="465241432D415050524F58">
 					<display>FRAC-APPROX</display>
 					<accessible>[FRAC-APPROX]</accessible>
+					<variant>FRAC-APPROX</variant>
 				</lang>
 			</version>
 		</token>
@@ -9321,6 +9541,7 @@
 				<lang code="en" ti-ascii="5354415457495A415244204F4E">
 					<display>STATWIZARD ON</display>
 					<accessible>[STATWIZARD ON]</accessible>
+					<variant>STATWIZARD ON</variant>
 				</lang>
 			</version>
 		</token>
@@ -9333,6 +9554,7 @@
 				<lang code="en" ti-ascii="5354415457495A415244204F4646">
 					<display>STATWIZARD OFF</display>
 					<accessible>[STATWIZARD OFF]</accessible>
+					<variant>STATWIZARD OFF</variant>
 				</lang>
 			</version>
 		</token>
@@ -9849,6 +10071,7 @@
 				<lang code="en" ti-ascii="5175617274696C65732053657474696E67CE">
 					<display>Quartiles Setting…</display>
 					<accessible>Quartiles Setting...</accessible>
+					<variant>Quartiles Setting…</variant>
 				</lang>
 			</version>
 		</token>
@@ -9861,6 +10084,7 @@
 				<lang code="en" ti-ascii="7528012D3229">
 					<display>u(𝑛-2)</display>
 					<accessible>u(n-2)</accessible>
+					<variant>u(𝑛-2)</variant>
 					<variant>u(𝒏-2)</variant>
 				</lang>
 			</version>
@@ -9874,6 +10098,7 @@
 				<lang code="en" ti-ascii="7628012D3229">
 					<display>v(𝑛-2)</display>
 					<accessible>v(n-2)</accessible>
+					<variant>v(𝑛-2)</variant>
 					<variant>v(𝒏-2)</variant>
 				</lang>
 			</version>
@@ -9887,6 +10112,7 @@
 				<lang code="en" ti-ascii="7728012D3229">
 					<display>w(𝑛-2)</display>
 					<accessible>w(n-2)</accessible>
+					<variant>w(𝑛-2)</variant>
 					<variant>w(𝒏-2)</variant>
 				</lang>
 			</version>
@@ -9900,6 +10126,7 @@
 				<lang code="en" ti-ascii="7528012D3129">
 					<display>u(𝑛-1)</display>
 					<accessible>u(n-1)</accessible>
+					<variant>u(𝑛-1)</variant>
 					<variant>u(𝒏-1)</variant>
 				</lang>
 			</version>
@@ -9913,6 +10140,7 @@
 				<lang code="en" ti-ascii="7628012D3129">
 					<display>v(𝑛-1)</display>
 					<accessible>v(n-1)</accessible>
+					<variant>v(𝑛-1)</variant>
 					<variant>v(𝒏-1)</variant>
 				</lang>
 			</version>
@@ -9926,6 +10154,7 @@
 				<lang code="en" ti-ascii="7728012D3129">
 					<display>w(𝑛-1)</display>
 					<accessible>w(n-1)</accessible>
+					<variant>w(𝑛-1)</variant>
 					<variant>w(𝒏-1)</variant>
 				</lang>
 			</version>
@@ -9939,6 +10168,7 @@
 				<lang code="en" ti-ascii="75280129">
 					<display>u(𝑛)</display>
 					<accessible>u(n)</accessible>
+					<variant>u(𝑛)</variant>
 					<variant>u(𝒏)</variant>
 				</lang>
 			</version>
@@ -9952,6 +10182,7 @@
 				<lang code="en" ti-ascii="76280129">
 					<display>v(𝑛)</display>
 					<accessible>v(n)</accessible>
+					<variant>v(𝑛)</variant>
 					<variant>v(𝒏)</variant>
 				</lang>
 			</version>
@@ -9965,6 +10196,7 @@
 				<lang code="en" ti-ascii="77280129">
 					<display>w(𝑛)</display>
 					<accessible>w(n)</accessible>
+					<variant>w(𝑛)</variant>
 					<variant>w(𝒏)</variant>
 				</lang>
 			</version>
@@ -9978,6 +10210,7 @@
 				<lang code="en" ti-ascii="7528012B3129">
 					<display>u(𝑛+1)</display>
 					<accessible>u(n+1)</accessible>
+					<variant>u(𝑛+1)</variant>
 					<variant>u(𝒏+1)</variant>
 				</lang>
 			</version>
@@ -9991,6 +10224,7 @@
 				<lang code="en" ti-ascii="7628012B3129">
 					<display>v(𝑛+1)</display>
 					<accessible>v(n+1)</accessible>
+					<variant>v(𝑛+1)</variant>
 					<variant>v(𝒏+1)</variant>
 				</lang>
 			</version>
@@ -10004,6 +10238,7 @@
 				<lang code="en" ti-ascii="7728012B3129">
 					<display>w(𝑛+1)</display>
 					<accessible>w(n+1)</accessible>
+					<variant>w(𝑛+1)</variant>
 					<variant>w(𝒏+1)</variant>
 				</lang>
 			</version>
@@ -10033,6 +10268,7 @@
 				<lang code="en" ti-ascii="534551280129">
 					<display>SEQ(𝑛)</display>
 					<accessible>SEQ(n)</accessible>
+					<variant>SEQ(𝑛)</variant>
 					<variant>SEQ(𝒏)</variant>
 				</lang>
 			</version>
@@ -10046,6 +10282,7 @@
 				<lang code="en" ti-ascii="53455128012B3129">
 					<display>SEQ(𝑛+1)</display>
 					<accessible>SEQ(n+1)</accessible>
+					<variant>SEQ(𝑛+1)</variant>
 					<variant>SEQ(𝒏+1)</variant>
 				</lang>
 			</version>
@@ -10059,6 +10296,7 @@
 				<lang code="en" ti-ascii="53455128012B3229">
 					<display>SEQ(𝑛+2)</display>
 					<accessible>SEQ(n+2)</accessible>
+					<variant>SEQ(𝑛+2)</variant>
 					<variant>SEQ(𝒏+2)</variant>
 				</lang>
 			</version>
@@ -10277,6 +10515,7 @@
 			<lang code="en" ti-ascii="CD10">
 				<display>ˣ√</display>
 				<accessible>xroot</accessible>
+				<variant>ˣ√</variant>
 			</lang>
 		</version>
 	</token>
