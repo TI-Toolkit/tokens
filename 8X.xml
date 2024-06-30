@@ -755,6 +755,7 @@
 			<lang code="en" ti-ascii="D6">
 				<display>&#010;</display>
 				<accessible>&#010;</accessible>
+				<variant>&#013;&#010;</variant>
 			</lang>
 		</version>
 	</token>
