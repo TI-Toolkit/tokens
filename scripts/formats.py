@@ -57,7 +57,7 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
 
         # Require text to match regex
         def text(regex: str):
-            if not re.fullmatch(regex, element.text):
+            if not re.fullmatch(regex, element.text, flags=re.DOTALL):
                 raise ValidationError(f"<{element.tag}> text '{element.text}' does not match r'{regex}'")
 
         # Check requirements for each tag
@@ -102,13 +102,13 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
                 children(r"<name>" if for_73 else r"<display><accessible>(<variant>)*")
 
             case "name" if for_73:
-                text(r"[\S\s]+")
+                text(r".+")
 
             case "display":
-                text(r"[\S\s]+")
+                text(r".+")
 
             case "accessible":
-                text(r"[\u0000-\u00FF]*")
+                text(r"[\u0000-\u00FF]+")
 
                 if element.text in all_names[version][lang]:
                     raise ValidationError(f"{lang} accessible name '{element.text}' is not unique within {version}")
@@ -116,7 +116,7 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
                 all_names[version][lang].add(element.text)
 
             case "variant":
-                text(r"[\S\s]+")
+                text(r".+")
 
                 if element.text in all_names[version][lang]:
                     raise ValidationError(f"{lang} variant name '{element.text}' is not unique within {version}")
