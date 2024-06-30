@@ -931,7 +931,10 @@
         "en": {
           "ti-ascii": "D6",
           "display": "\n",
-          "accessible": "\n"
+          "accessible": "\n",
+          "variants": [
+            "\r\n"
+          ]
         }
       }
     }
