@@ -116,7 +116,7 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
                 all_names[version][lang].add(element.text)
 
             case "variant":
-                text(r".+")
+                text(r"[\S\s]+")
 
                 if element.text in all_names[version][lang]:
                     raise ValidationError(f"{lang} variant name '{element.text}' is not unique within {version}")
