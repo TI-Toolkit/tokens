@@ -44,7 +44,7 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
                 if attr not in attrib:
                     raise ValidationError(f"<{element.tag}> does not have attribute {attr}")
 
-                if not re.fullmatch(regex, value := attrib.pop(attr)):
+                if not re.fullmatch(regex, value := attrib.pop(attr), flags=re.DOTALL):
                     raise ValidationError(f"<{element.tag}> {attr} '{value}' does not match r'{regex}'")
 
             if attrib:
@@ -98,13 +98,15 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
                 children(r"<model><os-version>")
 
             case "lang":
-                attributes({"code": r"[a-z]{2}"} if for_73 else {"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+"})
-                children(r"<name>" if for_73 else r"<display><accessible>(<variant>)*")
+                if for_73:
+                    attributes({"code": r"[a-z]{2}"})
+                    children(r"<name>")
+
+                else:
+                    attributes({"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+", "display": r".+"})
+                    children(r"<accessible>(<variant>)*")
 
             case "name" if for_73:
-                text(r".+")
-
-            case "display":
                 text(r".+")
 
             case "accessible":
@@ -169,7 +171,7 @@ def to_json(element: ET.Element):
             return dct | {"langs": langs}
 
         case "lang":
-            dct = {"ti-ascii": element.attrib["ti-ascii"]}
+            dct = {**element.attrib}
             variants = []
 
             for child in element:
