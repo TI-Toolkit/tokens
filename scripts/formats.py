@@ -171,7 +171,7 @@ def to_json(element: ET.Element):
             return dct | {"langs": langs}
 
         case "lang":
-            dct = {**element.attrib}
+            dct = {"ti-ascii": element.attrib["ti-ascii"], "display": element.attrib["display"]}
             variants = []
 
             for child in element:
