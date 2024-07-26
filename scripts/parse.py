@@ -163,15 +163,13 @@ class Translation:
         code = element.attrib["code"]
 
         ti_ascii = bytes.fromhex(element.attrib["ti-ascii"])
+        display = element.attrib["display"]
 
-        display = ""
         accessible = ""
         variants = []
 
         for child in element:
             match child.tag:
-                case "display":
-                    display = child.text
                 case "accessible":
                     accessible = child.text
                 case "variant":
