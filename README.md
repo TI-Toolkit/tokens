@@ -55,13 +55,12 @@ Each version includes a `<since>` tag, the first OS with that version of the tok
 Each language translation contains a number of different ways that token is represented on- and off-calc in that language:
 
 * `ti-ascii`: The font bytes corresponding to the token's characters on-calc
-* `<display>`: A Unicode approximation of the token's on-calc appearance
+* `display`: A Unicode approximation of the token's on-calc appearance
 * `<accessible>`: An ASCII or Latin-1 representation of the token that is meant to be easy to type
 * `<variant>`: Any other name commonly used to represent the token (may not exist)
 	
 ```xml
-<lang code="en" ti-ascii="7528012D3229">
-	<display>u(𝑛-2)</display>
+<lang code="en" ti-ascii="7528012D3229" display="u(𝑛-2)">
 	<accessible>u(n-2)</accessible>
 	<variant>u(𝒏-2)</variant>
 </lang>
