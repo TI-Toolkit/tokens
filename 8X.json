@@ -654,7 +654,11 @@
         "en": {
           "ti-ascii": "22",
           "display": "\"",
-          "accessible": "\""
+          "accessible": "\"",
+          "variants": [
+            "“",
+            "”"
+          ]
         }
       }
     }

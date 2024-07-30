@@ -476,6 +476,8 @@
 			</since>
 			<lang code="en" ti-ascii="22" display="&quot;">
 				<accessible>&quot;</accessible>
+ 				<variant>“</variant>
+ 				<variant>”</variant>
 			</lang>
 		</version>
 	</token>
