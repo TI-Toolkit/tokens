@@ -3819,6 +3819,23 @@
           "model": "TI-82",
           "os-version": "1.0"
         },
+        "until": {
+          "model": "TI-83",
+          "os-version": "0.01013"
+        },
+        "langs": {
+          "en": {
+            "ti-ascii": "5A5528014D696E29",
+            "display": "ZUnStart",
+            "accessible": "ZUnStart"
+          }
+        }
+      },
+      {
+        "since": {
+          "model": "TI-83",
+          "os-version": "0.01013"
+        },
         "langs": {
           "en": {
             "ti-ascii": "5A7528014D696E29",
@@ -3838,6 +3855,23 @@
         "since": {
           "model": "TI-82",
           "os-version": "1.0"
+        },
+        "until": {
+          "model": "TI-83",
+          "os-version": "0.01013"
+        },
+        "langs": {
+          "en": {
+            "ti-ascii": "5A5628014D696E29",
+            "display": "ZVnStart",
+            "accessible": "ZVnStart"
+          }
+        }
+      },
+      {
+        "since": {
+          "model": "TI-83",
+          "os-version": "0.01013"
         },
         "langs": {
           "en": {

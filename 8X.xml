@@ -2709,6 +2709,19 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="5A5528014D696E29" display="ZUnStart">
+					<accessible>ZUnStart</accessible>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</since>
 				<lang code="en" ti-ascii="5A7528014D696E29" display="Zu(𝑛Min)">
 					<accessible>Zu(nMin)</accessible>
 					<variant>Zu(𝑛Min)</variant>
@@ -2722,6 +2735,19 @@
 				<since>
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
+				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="5A5628014D696E29" display="ZVnStart">
+					<accessible>ZVnStart</accessible>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="5A7628014D696E29" display="Zv(𝑛Min)">
 					<accessible>Zv(nMin)</accessible>
