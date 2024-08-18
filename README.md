@@ -33,8 +33,20 @@ Each token is stored in a `<token>` tag (perhaps within a `<two-byte>` parent, i
 ```
 
 #### Versions
+The token sheet forces the calculator operating system versions into a clean, linear timeline spanning over 30 years. Four essential patterns allow for this:
+1. Newer calculators in the lineage generally get their token table's first version directly from their immediate predecessor's last version.
+2. Older calculators do not receive patches after a newer model is introduced.
+3. Changes from version to version (we treat calculator-to-calculator changes as version-to-version changes, given the previous points) are usually limited to addition, renaming, and omission.
+   - Basically, we don't see dramatic reorganization of the token sheet.
+4. Critically, the current system handles any violation of these patterns (that we have encountered) nicely.
 
-Each version includes a `<since>` tag, the first OS with that version of the token, and an optional `<until>` tag, the final OS with that version. The remaining tags are translations of that token into available languages.
+We can then track the history of any token with a series of half-open ranges placed on this timeline. We use `[since, until)` (i.e. both `since` and `until` are versions where changes happened).
+
+Versions are written as `major.minor` or `major.minor.patch`.
+
+For our timeline, we define an ordering of calculator models [here](https://github.com/TI-Toolkit/tokens/blob/6773ed7ba02a938b6f116f2b815f21d30dbe487f/scripts/parse.py#L6-L40). Versions are compared first by `model`, then by `major` OS version, then by `minor` OS version, then by `patch` OS version, if present.
+
+Each version includes a `<since>` tag, the first OS with that version of the token, and an optional `<until>` tag. The remaining tags are translations of that token into available languages.
 
 ```xml
 <version>
@@ -68,6 +80,8 @@ Each language translation contains a number of different ways that token is repr
 
 > [!WARNING]
 > Currently, only English translations are supported. See [our contribution guidelines](CONTRIBUTING.md) for details on adding new translations.
+
+The default translation is `en`. If a translation is not specified for a token, then it is the same as the `en` translation.
 
 ## Other Formats
 
