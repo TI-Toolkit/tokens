@@ -99,10 +99,14 @@ class TokenIDESheet:
                            {"xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
                             "xmlns:xsd": "http://www.w3.org/2001/XMLSchema"})
 
-        sheet.extend(self.sheet["meta"])
+        sheet.extend(self.sheet["meta"] or [ET.Element("Groups"), ET.Element("Styles")])
 
         def build_page(element: ET.Element, byte: str, dct: dict):
-            if byte:
+            # Special case for newline
+            if byte == "$3F":
+                element = ET.SubElement(element, "Token", byte=byte, string=r"\n", stringTerminator="true")
+
+            elif byte:
                 element = ET.SubElement(element, "Token", byte=byte,
                                         **({"string": dct["string"]} if dct.get("string", None) is not None else {}),
                                         **dct.get("attrib", {}))
