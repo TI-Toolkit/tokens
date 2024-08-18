@@ -1,7 +1,7 @@
 import json
 import xml.etree.ElementTree as ET
 
-from .formats import *
+from . import *
 
 
 with open("8X.xml", encoding="UTF-8") as infile:
@@ -21,3 +21,11 @@ with open("73.xml", encoding="UTF-8") as infile:
     with open("built/73.xml", "w+", encoding="UTF-8") as outfile:
         validate(root, for_73=True)
         outfile.write(src)
+
+
+with open(".github/workflows/tokenide.xml", encoding="UTF-8") as infile:
+    sheet = TokenIDESheet.from_xml_string(infile.read())
+
+    for model in "TI-82", "TI-83", "TI-83+", "TI-84+", "TI-84+CSE", "TI-84+CE":
+        with open(f"built/tokenide/{model}.xml", "w+", encoding="UTF-8") as outfile:
+            outfile.write(sheet.with_tokens(version=OsVersion(model, "latest")).to_xml_string())
