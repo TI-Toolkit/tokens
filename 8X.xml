@@ -8219,10 +8219,10 @@
 				<os-version>0.01013</os-version>
 			</since>
 			<lang code="en" ti-ascii="DC" display="ʟ">
-				<accessible>smallL</accessible>
+				<accessible>|L</accessible>
 				<variant>ʟ</variant>
 				<variant>⌊</variant>
-				<variant>|L</variant>
+				<variant>smallL</variant>
 			</lang>
 		</version>
 	</token>

@@ -11482,11 +11482,11 @@
         "en": {
           "ti-ascii": "DC",
           "display": "ʟ",
-          "accessible": "smallL",
+          "accessible": "|L",
           "variants": [
             "ʟ",
             "⌊",
-            "|L"
+            "smallL"
           ]
         }
       }
