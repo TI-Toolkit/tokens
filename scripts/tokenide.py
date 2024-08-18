@@ -121,7 +121,8 @@ class TokenIDESheet:
         return sheet
 
     def with_tokens(self, *,
-                    version: OsVersion = None, tokens: Tokens = None, file=None, lang: str = 'en') -> 'TokenIDESheet':
+                    version: OsVersion = None, tokens: Tokens = None, file=None,
+                    lang: str = 'en', strict: bool = False) -> 'TokenIDESheet':
         """
         Constructs a copy of this sheet updated with the specified token data from the token sheets
 
@@ -132,10 +133,13 @@ class TokenIDESheet:
         :param tokens: A Tokens container of tokens to add (defaults to all tokens)
         :param file: A file object to read tokens from (defaults to the 8X token sheet)
         :param lang: A language code (defaults to "en")
+        :param strict: Whether to remove tokens not present in the targeted version (default to False)
         :return: A TokenIDESheet containing the union of this sheet and the specified token data
         """
 
         sheet = self.sheet.copy()
+        if strict:
+            sheet["tokens"] = {}
 
         if tokens is None:
             if file is None:
@@ -156,38 +160,41 @@ class TokenIDESheet:
 
             leading, trailing = byte[:1], byte[1:]
 
-            dct = sheet["tokens"]
-            value = f"${leading.hex().upper()}"
+            old = self.sheet.copy()["tokens"]
+            new = sheet["tokens"]
 
-            if value not in dct:
-                dct[value] = {"string": None, "variants": set(), "attrib": {}, "tokens": {}}
+            value = f"${leading.hex().upper()}"
+            if value not in new:
+                new[value] = old.get(value, {"string": None, "variants": set(), "attrib": {}, "tokens": {}})
+                if strict:
+                    new[value]["tokens"] = {}
 
             if trailing:
-                dct = dct[value]["tokens"]
+                old = old[value]["tokens"]
+                new = new[value]["tokens"]
                 value = f"${trailing.hex().upper()}"
 
-                if value not in dct:
-                    dct[value] = {"string": None, "variants": set(), "attrib": {}, "tokens": {}}
+                new[value] = old.get(value, {"string": None, "variants": set(), "attrib": {}, "tokens": {}})
 
             translation = token.langs.get(lang, "en")
             display = translation.display
 
-            if dct[value]["string"] not in [*translation.names(), display]:
-                dct[value]["string"] = translation.accessible
+            if new[value]["string"] not in [*translation.names(), display]:
+                new[value]["string"] = translation.accessible
 
-            dct[value]["variants"] |= {name for name in translation.names() if all_names.count(name) == 1}
+            new[value]["variants"] |= {name for name in translation.names() if all_names.count(name) == 1}
 
-            string = dct[value]["string"]
+            string = new[value]["string"]
             if string not in display and display not in string and all_names.count(display) == 1:
-                dct[value]["variants"].add(display)
+                new[value]["variants"].add(display)
 
-            dct[value]["variants"] -= {string}
+            new[value]["variants"] -= {string}
 
             if byte in TokenIDESheet.STARTERS:
-                dct[value]["attrib"]["stringStarter"] = "true"
+                new[value]["attrib"]["stringStarter"] = "true"
 
             if byte in TokenIDESheet.TERMINATORS:
-                dct[value]["attrib"]["stringTerminator"] = "true"
+                new[value]["attrib"]["stringTerminator"] = "true"
 
         return TokenIDESheet(sheet)
 

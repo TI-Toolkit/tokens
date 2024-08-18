@@ -28,4 +28,4 @@ with open(".github/workflows/tokenide.xml", encoding="UTF-8") as infile:
 
     for model in "TI-82", "TI-83", "TI-83+", "TI-84+", "TI-84+CSE", "TI-84+CE":
         with open(f"built/tokenide/{model}.xml", "w+", encoding="UTF-8") as outfile:
-            outfile.write(sheet.with_tokens(version=OsVersion(model, "latest")).to_xml_string())
+            outfile.write(sheet.with_tokens(version=OsVersion(model, "latest"), strict=True).to_xml_string())
