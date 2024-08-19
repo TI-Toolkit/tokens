@@ -101,9 +101,9 @@ class TokenIDESheet:
 
         sheet.extend(self.sheet["meta"] or [ET.Element("Groups"), ET.Element("Styles")])
 
-        def build_page(element: ET.Element, byte: str, dct: dict):
+        def build_page(element: ET.Element, byte: str, dct: dict, depth: int = 0):
             # Special case for newline
-            if byte == "$3F":
+            if byte == "$3F" and depth == 1:
                 element = ET.SubElement(element, "Token", byte=byte, string=r"\n", stringTerminator="true")
 
             elif byte:
@@ -115,7 +115,7 @@ class TokenIDESheet:
                     element.append(ET.Element("Alt", string=name))
 
             for child_byte, child_dct in sorted(dct.get("tokens", {}).items()):
-                build_page(element, child_byte, child_dct)
+                build_page(element, child_byte, child_dct, depth + 1)
 
         build_page(sheet, "", self.sheet)
         return sheet
