@@ -78,9 +78,9 @@ Shaun McFall, Merthsoft Creations
     <Alt string="R&gt;Pr(" />
   </Token>
   <Token byte="$1C" string="R►Pθ(" style="Command">
+    <Alt string="R&gt;Ptheta(" />
     <Alt string="R►Ptheta(" />
     <Alt string="R&gt;Pθ(" />
-    <Alt string="R&gt;Ptheta(" />
   </Token>
   <Token byte="$1D" string="P►Rx(" style="Command">
     <Alt string="P&gt;Rx(" />
@@ -253,8 +253,8 @@ Shaun McFall, Merthsoft Creations
     <Token byte="$0C" string="[yhat]" />
     <Token byte="$0D" string="[Sigmay]" />
     <Token byte="$0E" string="[Sigmay^2]">
-      <Alt string="Σy^2" />
       <Alt string="sigmay²" />
+      <Alt string="Σy^2" />
     </Token>
     <Token byte="$0F" string="[Sy]" />
     <Token byte="$10" string="[sigmay]" />
@@ -295,29 +295,29 @@ Shaun McFall, Merthsoft Creations
       <Alt string="[ṗ]" />
     </Token>
     <Token byte="$29" string="[phat1]">
-      <Alt string="phat₁" />
-      <Alt string="ṗ₁" />
       <Alt string="p̂1" />
+      <Alt string="phat₁" />
       <Alt string="ṗ1" />
+      <Alt string="ṗ₁" />
     </Token>
     <Token byte="$2A" string="[phat2]">
-      <Alt string="phat₂" />
       <Alt string="ṗ₂" />
+      <Alt string="phat₂" />
       <Alt string="p̂2" />
       <Alt string="ṗ2" />
     </Token>
     <Token byte="$2B" string="[xhat1]">
+      <Alt string="xhat₁" />
       <Alt string="ẋ₁" />
       <Alt string="ẋ1" />
-      <Alt string="xhat₁" />
     </Token>
     <Token byte="$2C" string="[Sx1]" />
     <Token byte="$2D" string="[n1]" />
     <Token byte="$2E" string="[xhat2]">
+      <Alt string="x̄2" />
       <Alt string="ẋ2" />
       <Alt string="ẋ₂" />
       <Alt string="xhat₂" />
-      <Alt string="x̄2" />
     </Token>
     <Token byte="$2F" string="[Sx2]" />
     <Token byte="$30" string="[n2]" />
@@ -346,20 +346,20 @@ Shaun McFall, Merthsoft Creations
       <Alt string="v(𝒏Min)" />
     </Token>
     <Token byte="$06" string="Un-1">
-      <Alt string="U𝒏-₁" />
       <Alt string="Un-₁" />
+      <Alt string="U𝒏-₁" />
     </Token>
     <Token byte="$07" string="Vn-1">
-      <Alt string="V𝒏-₁" />
       <Alt string="Vn-₁" />
+      <Alt string="V𝒏-₁" />
     </Token>
     <Token byte="$08" string="Zu(nMin)">
       <Alt string="Zu(nmin)" />
       <Alt string="Zu(𝒏Min)" />
     </Token>
     <Token byte="$09" string="Zv(nMin)">
-      <Alt string="Zv(𝒏Min)" />
       <Alt string="Zv(nmin)" />
+      <Alt string="Zv(𝒏Min)" />
     </Token>
     <Token byte="$0A" string="Xmin" />
     <Token byte="$0B" string="Xmax" />
@@ -486,16 +486,16 @@ Shaun McFall, Merthsoft Creations
     <Token byte="$12" string="uwAxes" />
   </Token>
   <Token byte="$7F" string="plotsquare" stringTerminator="false">
-    <Alt string="squareplot" />
     <Alt string="□" />
+    <Alt string="squareplot" />
   </Token>
   <Token byte="$80" string="﹢" stringTerminator="false">
-    <Alt string="crossplot" />
     <Alt string="plotcross" />
+    <Alt string="crossplot" />
   </Token>
   <Token byte="$81" string="·" stringTerminator="false">
-    <Alt string="dotplot" />
     <Alt string="plotdot" />
+    <Alt string="dotplot" />
   </Token>
   <Token byte="$82" string="*" />
   <Token byte="$83" string="/" />
@@ -557,8 +557,8 @@ Shaun McFall, Merthsoft Creations
   <Token byte="$AE" string="'" />
   <Token byte="$AF" string="?" />
   <Token byte="$B0" string="⁻" stringTerminator="false">
-    <Alt string="|-" />
     <Alt string="~" />
+    <Alt string="|-" />
   </Token>
   <Token byte="$B1" string="int(" style="Command" />
   <Token byte="$B2" string="abs(" style="Command" />
@@ -637,8 +637,8 @@ Shaun McFall, Merthsoft Creations
     <Token byte="$35" string="ShadeNorm(" />
     <Token byte="$36" string="Shade_t(" />
     <Token byte="$37" string="Shadechi^2(">
-      <Alt string="Shadechi²(" />
       <Alt string="Shadeχ^2(" />
+      <Alt string="Shadechi²(" />
     </Token>
     <Token byte="$38" string="ShadeF(">
       <Alt string="Shade𝐅(" />
@@ -649,10 +649,10 @@ Shaun McFall, Merthsoft Creations
     <Token byte="$3C" string="T-Test " />
     <Token byte="$3D" string="2-SampZTest(" />
     <Token byte="$3E" string="1-PropZTest(" />
-    <Token byte="$3F" string="\n" stringTerminator="true" />
+    <Token byte="$3F" string="2-PropZTest(" />
     <Token byte="$40" string="chi^2-Test(">
-      <Alt string="χ^2-Test(" />
       <Alt string="chi²-Test(" />
+      <Alt string="χ^2-Test(" />
     </Token>
     <Token byte="$41" string="ZInterval " />
     <Token byte="$42" string="2-SampZInt(" />
@@ -670,9 +670,9 @@ Shaun McFall, Merthsoft Creations
     <Token byte="$4C" string="Pmt_Bgn" />
     <Token byte="$4D" string="Real" />
     <Token byte="$4E" string="re^thetai">
+      <Alt string="re^θi" />
       <Alt string="re^theta𝑖" />
       <Alt string="re^θ𝑖" />
-      <Alt string="re^θi" />
     </Token>
     <Token byte="$4F" string="a+bi" />
     <Token byte="$50" string="ExprOn" />
@@ -770,8 +770,8 @@ Shaun McFall, Merthsoft Creations
     </Token>
     <Token byte="$AE" string="chi" />
     <Token byte="$AF" string="|F">
-      <Alt string="𝐅" />
       <Alt string="|𝐅" />
+      <Alt string="𝐅" />
     </Token>
     <Token byte="$B0" string="a" />
     <Token byte="$B1" string="b" />
@@ -858,43 +858,43 @@ Shaun McFall, Merthsoft Creations
   <Token byte="$C2" string="sin(" style="Command" />
   <Token byte="$C3" string="sin^-1(" style="Command">
     <Alt string="arcsin " />
-    <Alt string="asin(" />
     <Alt string="asin " />
     <Alt string="arcsin(" />
+    <Alt string="asin(" />
   </Token>
   <Token byte="$C4" string="cos(" style="Command" />
   <Token byte="$C5" string="cos^-1(" style="Command">
-    <Alt string="acos(" />
     <Alt string="arccos(" />
     <Alt string="acos " />
+    <Alt string="acos(" />
     <Alt string="arccos " />
   </Token>
   <Token byte="$C6" string="tan(" style="Command" />
   <Token byte="$C7" string="tan^-1(" style="Command">
-    <Alt string="atan " />
-    <Alt string="arctan(" />
-    <Alt string="arctan " />
     <Alt string="atan(" />
+    <Alt string="atan " />
+    <Alt string="arctan " />
+    <Alt string="arctan(" />
   </Token>
   <Token byte="$C8" string="sinh(" style="Command" />
   <Token byte="$C9" string="sinh^-1(" style="Command">
     <Alt string="asinh " />
-    <Alt string="arcsinh(" />
     <Alt string="asinh(" />
+    <Alt string="arcsinh(" />
     <Alt string="arcsinh " />
   </Token>
   <Token byte="$CA" string="cosh(" style="Command" />
   <Token byte="$CB" string="cosh^-1(" style="Command">
-    <Alt string="acosh " />
-    <Alt string="arccosh(" />
     <Alt string="acosh(" />
+    <Alt string="arccosh(" />
     <Alt string="arccosh " />
+    <Alt string="acosh " />
   </Token>
   <Token byte="$CC" string="tanh(" style="Command" />
   <Token byte="$CD" string="tanh^-1(" style="Command">
-    <Alt string="atanh(" />
-    <Alt string="arctanh(" />
     <Alt string="atanh( " />
+    <Alt string="arctanh(" />
+    <Alt string="atanh(" />
     <Alt string="arctanh( " />
   </Token>
   <Token byte="$CE" string="If " style="Command" />
@@ -927,8 +927,8 @@ Shaun McFall, Merthsoft Creations
   <Token byte="$E9" string="PlotsOn " style="Command" />
   <Token byte="$EA" string="PlotsOff " style="Command" />
   <Token byte="$EB" string="ʟ" style="Var">
-    <Alt string="smallL" />
     <Alt string="|L" />
+    <Alt string="smallL" />
     <Alt string="⌊" />
   </Token>
   <Token byte="$EC" string="Plot1(" style="Command" />
