@@ -120,61 +120,42 @@ class TokenIDESheet:
         build_page(sheet, "", self.sheet)
         return sheet
 
-    def with_tokens(self, *,
-                    version: OsVersion = None, tokens: Tokens = None, file=None,
-                    lang: str = 'en', strict: bool = False) -> 'TokenIDESheet':
+    def for_version(self, *, version: OsVersion = None, lang: str = 'en') -> 'TokenIDESheet':
         """
-        Constructs a copy of this sheet updated with the specified token data from the token sheets
+        Constructs a copy of this sheet tailored to a given OS version
 
         If a token is entirely absent, its accessible name is used as its string value.
         Metadata is always preserved.
 
-        :param version: A minimum OS version to target (defaults to latest)
-        :param tokens: A Tokens container of tokens to add (defaults to all tokens)
-        :param file: A file object to read tokens from (defaults to the 8X token sheet)
+        :param version: The OS version to target (defaults to latest)
         :param lang: A language code (defaults to "en")
-        :param strict: Whether to remove tokens not present in the targeted version (default to False)
-        :return: A TokenIDESheet containing the union of this sheet and the specified token data
+        :return: A TokenIDESheet supporting the given version with this sheet's metadata attached
         """
 
-        sheet = self.sheet.copy()
-        if strict:
-            sheet["tokens"] = {}
+        sheet = {"meta": self.sheet["meta"].copy(), "tokens": {}}
 
-        if tokens is None:
-            if file is None:
-                with open(os.path.join(os.path.dirname(__file__), "../8X.xml"), encoding="UTF-8") as file:
-                    tokens = Tokens.from_xml_string(file.read(), version or OsVersions.LATEST)
+        with open(os.path.join(os.path.dirname(__file__), "../8X.xml"), encoding="UTF-8") as file:
+            tokens = Tokens.from_xml_string(file.read(), version or OsVersions.LATEST)
 
-            else:
-                tokens = Tokens.from_xml_string(file.read(), version or OsVersions.LATEST)
-
-        all_bytes = tokens.bytes
-
-        all_names = [name for token in all_bytes.values()
-                     for name in [*token.langs.get(lang, "en").names(), token.langs.get(lang, "en").display]]
-
-        for byte, token in all_bytes.items():
+        for byte, token in tokens.bytes.items():
             if version is not None and token.since > version:
                 continue
 
             leading, trailing = byte[:1], byte[1:]
 
-            old = self.sheet.copy()["tokens"]
             new = sheet["tokens"]
-
+            attrib = self.sheet["tokens"].copy()
             value = f"${leading.hex().upper()}"
+
             if value not in new:
-                new[value] = old.get(value, {"string": None, "variants": set(), "attrib": {}, "tokens": {}})
-                if strict:
-                    new[value]["tokens"] = {}
+                new[value] = {"string": None, "variants": set(), "attrib": {}, "tokens": {}}
 
             if trailing:
-                old = old[value]["tokens"]
+                attrib = attrib[value]["tokens"]
                 new = new[value]["tokens"]
                 value = f"${trailing.hex().upper()}"
 
-                new[value] = old.get(value, {"string": None, "variants": set(), "attrib": {}, "tokens": {}})
+                new[value] = {"string": None, "variants": set(), "attrib": {}, "tokens": {}}
 
             translation = token.langs.get(lang, "en")
             display = translation.display
@@ -182,14 +163,10 @@ class TokenIDESheet:
             if new[value]["string"] not in [*translation.names(), display]:
                 new[value]["string"] = translation.accessible
 
-            new[value]["variants"] |= {name for name in translation.names() if all_names.count(name) == 1}
+            new[value]["variants"] |= {*translation.names()}
+            new[value]["variants"] -= {new[value]["string"]}
 
-            string = new[value]["string"]
-            if string not in display and display not in string and all_names.count(display) == 1:
-                new[value]["variants"].add(display)
-
-            new[value]["variants"] -= {string}
-
+            new[value]["attrib"] |= attrib.get(value, {}).get("attrib", {})
             if byte in TokenIDESheet.STARTERS:
                 new[value]["attrib"]["stringStarter"] = "true"
 
