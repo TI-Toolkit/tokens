@@ -31,6 +31,7 @@ class TokenIDESheet:
 
     def __init__(self, sheet: dict[str] = None):
         self.sheet = sheet or {"tokens": {}, "meta": []}
+        self.sheet["tokens"] |= {"$00": {"string": "", "variants": set(), "attrib": {}, "tokens": {}}}
 
     @staticmethod
     def from_xml_string(xml_str: str) -> 'TokenIDESheet':
@@ -137,7 +138,11 @@ class TokenIDESheet:
         with open(os.path.join(os.path.dirname(__file__), "../8X.xml"), encoding="UTF-8") as file:
             tokens = Tokens.from_xml_string(file.read(), version or OsVersions.LATEST)
 
-        for byte, token in tokens.bytes.items():
+        all_bytes = tokens.bytes
+        all_names = [name for token in all_bytes.values()
+                     for name in {*token.langs.get(lang, "en").names(), token.langs.get(lang, "en").display}]
+
+        for byte, token in all_bytes.items():
             if version is not None and token.since > version:
                 continue
 
@@ -160,9 +165,7 @@ class TokenIDESheet:
             translation = token.langs.get(lang, "en")
             display = translation.display
 
-            if new[value]["string"] not in [*translation.names(), display]:
-                new[value]["string"] = translation.accessible
-
+            new[value]["string"] = display if all_names.count(display) == 1 else translation.accessible
             new[value]["variants"] |= {*translation.names()}
             new[value]["variants"] -= {new[value]["string"]}
 
