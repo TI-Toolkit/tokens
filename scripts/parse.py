@@ -210,32 +210,34 @@ class Token:
         :return: A token corresponding to the element and bits
         """
 
-        span = {"since": OsVersions.INITIAL, "until": OsVersions.LATEST}
+        since, until = OsVersions.INITIAL, OsVersions.LATEST
         langs: dict[str, Translation] = {}
 
-        def find_latest_version():
-            for version_elem in element:
-                for child in version_elem:
-                    match child.tag:
-                        case "since":
-                            version_since = OsVersion.from_element(child)
-                            if version < version_since:
-                                return
+        for version_elem in element:
+            below, above = False, True
 
-                            if span["since"] < version_since:
-                                span["since"] = version_since
+            for child in version_elem:
+                match child.tag:
+                    case "since":
+                        version_since = OsVersion.from_element(child)
+                        if version_since < version:
+                            below = True
+                            since = version_since
 
-                        case "until":
-                            version_until = OsVersion.from_element(child)
-                            if span["until"] > version_until:
-                                span["until"] = version_until
+                    case "until":
+                        version_until = OsVersion.from_element(child)
+                        if version_until < version:
+                            above = False
 
-                        case "lang":
+                        else:
+                            until = version_until
+
+                    case "lang":
+                        if above and below:
                             code, translation = Translation.from_element(child)
                             langs[code] = translation
 
-        find_latest_version()
-        return Token(bits, langs, attrs=element.attrib, **span)
+        return Token(bits, langs, attrs=element.attrib, since=since, until=until)
 
 
 class Tokens:
