@@ -1,6 +1,6 @@
 # TI Toolkit Token Sheets
 
-Here you can find token sheets for the TI-73 and TI-83/84-series calculators to include in external projects. The sheets contain detailed information about every token in a simple XML format. Basic scripts for parsing the sheets are also included.
+Here you can find token sheets for the TI-83/84-series calculators to include in external projects. The sheets contain detailed information about every token in a simple XML format. Basic scripts for parsing the sheets are also included.
 
 ## How to Use
 
@@ -10,7 +10,7 @@ You can also manually include a download of the sheets and/or scripts as needed.
 
 ## XML Format
 
-The XML format for `8X.xml` is outlined below; `73.xml` follows a similar schema.
+The XML format for `8X.xml` is outlined below.
 
 #### Tokens
 

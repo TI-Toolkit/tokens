@@ -7,7 +7,7 @@ from collections import defaultdict
 from .parse import OsVersion, OsVersions
 
 
-def validate(root: ET.Element, *) -> int:
+def validate(root: ET.Element) -> int:
     """
     Validates a token sheet, raising an error if an invalid component is found
 
@@ -82,6 +82,11 @@ def validate(root: ET.Element, *) -> int:
                 children(r"<since>(<until>)?(<lang>)+")
 
             case "since":
+                if (this_version := OsVersion.from_element(element)) < version:
+                    raise ValidationError(f"version {this_version} overlaps with {version}")
+
+                version = this_version
+                
                 # Workaround for nested defaultdict
                 all_names[version] = all_names.get(version, defaultdict(set))
 
