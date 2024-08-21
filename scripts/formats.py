@@ -7,12 +7,11 @@ from collections import defaultdict
 from .parse import OsVersion, OsVersions
 
 
-def validate(root: ET.Element, *, for_73: bool = False) -> int:
+def validate(root: ET.Element, *) -> int:
     """
     Validates a token sheet, raising an error if an invalid component is found
 
     :param root: An XML element, which must be the root element of the sheet
-    :param for_73: Whether to use the 73 sheet validator (defaults to False)
     :return: The number of tokens in the sheet
     """
 
@@ -83,12 +82,6 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
                 children(r"<since>(<until>)?(<lang>)+")
 
             case "since":
-                if not for_73:
-                    if (this_version := OsVersion.from_element(element)) < version:
-                        raise ValidationError(f"version {this_version} overlaps with {version}")
-
-                    version = this_version
-
                 # Workaround for nested defaultdict
                 all_names[version] = all_names.get(version, defaultdict(set))
 
@@ -98,16 +91,8 @@ def validate(root: ET.Element, *, for_73: bool = False) -> int:
                 children(r"<model><os-version>")
 
             case "lang":
-                if for_73:
-                    attributes({"code": r"[a-z]{2}"})
-                    children(r"<name>")
-
-                else:
-                    attributes({"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+", "display": r".+"})
-                    children(r"<accessible>(<variant>)*")
-
-            case "name" if for_73:
-                text(r".+")
+                attributes({"code": r"[a-z]{2}", "ti-ascii": r"([0-9A-F]{2})+", "display": r".+"})
+                children(r"<accessible>(<variant>)*")
 
             case "accessible":
                 text(r"[\u0000-\u00FF]+")
@@ -190,7 +175,6 @@ def to_json(element: ET.Element):
         case _:
             if list(element):
                 return {child.tag: to_json(child) for child in element}
-
             else:
                 return element.text
 
