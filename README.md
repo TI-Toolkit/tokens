@@ -1,6 +1,6 @@
 # TI Toolkit Token Sheets
 
-Here you can find token sheets for the TI-83/84-series calculators to include in external projects. The sheets contain detailed information about every token in a simple XML format. Basic scripts for parsing the sheets are also included.
+Here, you can find token sheets for the TI-83/84-series calculators to include in external projects. The sheets contain detailed information about every token in a simple XML format. Basic scripts for parsing the sheets are also included.
 
 ## How to Use
 
@@ -37,7 +37,7 @@ The token sheet forces the calculator operating system versions into a clean, li
 1. Newer calculators in the lineage generally get their token table's first version directly from their immediate predecessor's last version.
 2. Older calculators do not receive patches after a newer model is introduced.
 3. Changes from version to version (we treat calculator-to-calculator changes as version-to-version changes, given the previous points) are usually limited to addition, renaming, and omission.
-   - Basically, we don't see dramatic reorganization of the token sheet.
+   - Basically, we don't see dramatic reorganization of the token data.
 4. Critically, the current system handles any violation of these patterns (that we have encountered) nicely.
 
 We can then track the history of any token with a series of half-open ranges placed on this timeline. We use `[since, until)` (i.e. both `since` and `until` are versions where changes happened).
@@ -67,10 +67,13 @@ Each version includes a `<since>` tag, the first OS with that version of the tok
 Each language translation contains a number of different ways that token is represented on- and off-calc in that language:
 
 * `ti-ascii`: The font bytes corresponding to the token's characters on-calc
-* `display`: A Unicode approximation of the token's on-calc appearance
-* `<accessible>`: An ASCII or Latin-1 representation of the token that is meant to be easy to type
-* `<variant>`: Any other name commonly used to represent the token (may not exist)
-	
+* `display`: A Unicode approximation of the token's on-calc appearance. These are meant only for display; they are not unique and may contain characters not found on most keyboards. 
+* `<accessible>`: A representation of the token meant to be easy to type for speakers of the language. For `en`, this means ASCII and Latin-1.
+* `<variant>`: Any other name commonly used to represent the token (optional and repeatable).
+
+`accessible` and `variant` entries are guaranteed to be unique within their version and translation, and there must not be any overlapping names between them. This is vital for tokenization tasks.
+
+
 ```xml
 <lang code="en" ti-ascii="7528012D3229" display="u(𝑛-2)">
 	<accessible>u(n-2)</accessible>
@@ -81,7 +84,7 @@ Each language translation contains a number of different ways that token is repr
 > [!WARNING]
 > Currently, only English translations are supported. See [our contribution guidelines](CONTRIBUTING.md) for details on adding new translations.
 
-The default translation is `en`. If a translation is not specified for a token, then it is the same as the `en` translation.
+The default translation is `en`. If a translation is not specified for a token, it is the same as the `en` translation.
 
 ## Other Formats
 
@@ -94,7 +97,7 @@ If there's a format you want supported, feel free to open an issue.
 The `scripts` package contains Python scripts for parsing and manipulating the token sheets.
 
 * `build.py`: Helper script to generate the `built` branch
-* `formats.py`: Convert an XML sheet to another other format, e.g. JSON ([see above](#Other-Formats))
+* `formats.py`: Convert an XML sheet to another format, e.g. JSON ([see above](#Other-Formats))
 * `parse.py`: Load a sheet or individual tokens into Python objects
 * `tokenide.py`: Create or update token files used by [TokenIDE](https://github.com/merthsoft/TokenIDE)
 * `trie.py`: Create a trie from a sheet for use in tokenization
