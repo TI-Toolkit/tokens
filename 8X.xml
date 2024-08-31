@@ -10,7 +10,7 @@
  - Ryan Pitasky
  - Peter Marheine
  -->
-<tokens>
+<tokens format-version="1.0">
 	<token value="$01">
 		<version>
 			<since>
