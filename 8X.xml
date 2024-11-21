@@ -484,8 +484,8 @@
 	<token value="$2B">
 		<version>
 			<since>
-				<model>TI-82</model>
-				<os-version>1.0</os-version>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
 			</since>
 			<lang code="en" ti-ascii="2C" display=",">
 				<accessible>,</accessible>

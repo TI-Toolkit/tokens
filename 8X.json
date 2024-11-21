@@ -666,8 +666,8 @@
   "$2B": [
     {
       "since": {
-        "model": "TI-82",
-        "os-version": "1.0"
+        "model": "TI-83",
+        "os-version": "0.01013"
       },
       "langs": {
         "en": {
