@@ -3530,6 +3530,19 @@
 				<model>TI-82</model>
 				<os-version>1.0</os-version>
 			</since>
+			<until>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
+			</until>
+			<lang code="en" ti-ascii="46756C6C53637265656E" display="FullScreen">
+				<accessible>FullScreen</accessible>
+			</lang>
+		</version>
+		<version>
+			<since>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
+			</since>
 			<lang code="en" ti-ascii="46756C6C" display="Full">
 				<accessible>Full</accessible>
 			</lang>
