@@ -4970,6 +4970,23 @@
         "model": "TI-82",
         "os-version": "1.0"
       },
+      "until": {
+        "model": "TI-83",
+        "os-version": "0.01013"
+      },
+      "langs": {
+        "en": {
+          "ti-ascii": "46756C6C53637265656E",
+          "display": "FullScreen",
+          "accessible": "FullScreen"
+        }
+      }
+    },
+    {
+      "since": {
+        "model": "TI-83",
+        "os-version": "0.01013"
+      },
       "langs": {
         "en": {
           "ti-ascii": "46756C6C",
