@@ -5,10 +5,10 @@
  - Frederic Desautels
  - Kevin Gomez
  - LogicalJoe
+ - Peter Marheine
  - Shaun McFall, through tokenide
  - Christopher Mitchell, through tokenide
  - Ryan Pitasky
- - Peter Marheine
  -->
 <tokens format-version="1.0">
 	<token value="$01">
@@ -484,8 +484,8 @@
 	<token value="$2B">
 		<version>
 			<since>
-				<model>TI-83</model>
-				<os-version>0.01013</os-version>
+				<model>TI-82</model>
+				<os-version>1.0</os-version>
 			</since>
 			<lang code="en" ti-ascii="2C" display=",">
 				<accessible>,</accessible>
@@ -495,8 +495,8 @@
 	<token value="$2C">
 		<version>
 			<since>
-				<model>TI-82</model>
-				<os-version>1.0</os-version>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
 			</since>
 			<lang code="en" ti-ascii="D7" display="𝑖">
 				<accessible>[i]</accessible>
