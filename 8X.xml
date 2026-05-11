@@ -8618,7 +8618,7 @@
 					<model>TI-84+</model>
 					<os-version>2.53</os-version>
 				</since>
-				<lang code="en" ti-ascii="F7" display=".">
+				<lang code="en" ti-ascii="F7" display="⬚">
 					<accessible>mathprintbox</accessible>
 					<variant>⬚</variant>
 				</lang>
