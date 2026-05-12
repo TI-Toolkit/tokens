@@ -12037,7 +12037,7 @@
         "langs": {
           "en": {
             "ti-ascii": "F7",
-            "display": ".",
+            "display": "⬚",
             "accessible": "mathprintbox",
             "variants": [
               "⬚"
@@ -12954,9 +12954,9 @@
           "en": {
             "ti-ascii": "F9",
             "display": ".",
-            "accessible": "plottinydot",
+            "accessible": "tinydotplot",
             "variants": [
-              "·"
+              "plottinydot"
             ]
           }
         }
