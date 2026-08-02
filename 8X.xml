@@ -3933,6 +3933,7 @@
 			</since>
 			<lang code="en" ti-ascii="0C" display="·">
 				<accessible>dotplot</accessible>
+				<variant>·</variant>
 				<variant>plotdot</variant>
 			</lang>
 		</version>
@@ -4507,7 +4508,8 @@
 				<os-version>1.0</os-version>
 			</since>
 			<lang code="en" ti-ascii="C4" display="π">
-				<accessible>pi</accessible>
+			    <accessible>pi</accessible>
+				<variant>π</variant>
 			</lang>
 		</version>
 	</token>
@@ -4528,9 +4530,8 @@
 				<model>TI-82</model>
 				<os-version>1.0</os-version>
 			</since>
-			<lang code="en" ti-ascii="27" display="\&apos;">
+			<lang code="en" ti-ascii="27" display="&apos;">
 				<accessible>&apos;</accessible>
-				<variant>\&apos;</variant>
 			</lang>
 		</version>
 	</token>
@@ -6634,6 +6635,7 @@
 				</since>
 				<lang code="en" ti-ascii="D8" display="p̂">
 					<accessible>phat</accessible>
+					<variant>p̂</variant>
 					<variant>ṗ</variant>
 				</lang>
 			</version>
@@ -7414,6 +7416,8 @@
 				</since>
 				<lang code="en" ti-ascii="10" display="√">
 					<accessible>squareroot</accessible>
+					<variant>sqrt</variant>
+					<variant>√</variant>
 				</lang>
 			</version>
 		</token>
@@ -8642,9 +8646,9 @@
 					<model>TI-84+</model>
 					<os-version>2.53</os-version>
 				</since>
-				<lang code="en" ti-ascii="F5" display="󸏵">
+				<lang code="en" ti-ascii="F5" display="␣">
 					<accessible>Un/d</accessible>
-					<variant>󸏵</variant>
+					<variant>␣</variant>
 					<variant>ᵤ</variant>
 				</lang>
 			</version>
