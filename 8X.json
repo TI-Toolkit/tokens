@@ -5521,6 +5521,7 @@
           "display": "·",
           "accessible": "dotplot",
           "variants": [
+            "·",
             "plotdot"
           ]
         }
@@ -6304,7 +6305,10 @@
         "en": {
           "ti-ascii": "C4",
           "display": "π",
-          "accessible": "pi"
+          "accessible": "pi",
+          "variants": [
+            "π"
+          ]
         }
       }
     }
@@ -6333,11 +6337,8 @@
       "langs": {
         "en": {
           "ti-ascii": "27",
-          "display": "\\'",
-          "accessible": "'",
-          "variants": [
-            "\\'"
-          ]
+          "display": "'",
+          "accessible": "'"
         }
       }
     }
@@ -9262,6 +9263,7 @@
             "display": "p̂",
             "accessible": "phat",
             "variants": [
+              "p̂",
               "ṗ"
             ]
           }
@@ -10370,7 +10372,11 @@
           "en": {
             "ti-ascii": "10",
             "display": "√",
-            "accessible": "squareroot"
+            "accessible": "squareroot",
+            "variants": [
+              "sqrt",
+              "√"
+            ]
           }
         }
       }
@@ -12073,10 +12079,10 @@
         "langs": {
           "en": {
             "ti-ascii": "F5",
-            "display": "󸏵",
+            "display": "␣",
             "accessible": "Un/d",
             "variants": [
-              "󸏵",
+              "␣",
               "ᵤ"
             ]
           }
