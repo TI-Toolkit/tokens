@@ -1229,7 +1229,7 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
-				<lang code="en" ti-ascii="5983" display="Y₂">
+				<lang code="en" ti-ascii="5982" display="Y₂">
 					<accessible>{Y2}</accessible>
 					<variant>Y₂</variant>
 				</lang>
@@ -1241,7 +1241,7 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
-				<lang code="en" ti-ascii="5984" display="Y₃">
+				<lang code="en" ti-ascii="5983" display="Y₃">
 					<accessible>{Y3}</accessible>
 					<variant>Y₃</variant>
 				</lang>
@@ -1253,7 +1253,7 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
-				<lang code="en" ti-ascii="5985" display="Y₄">
+				<lang code="en" ti-ascii="5984" display="Y₄">
 					<accessible>{Y4}</accessible>
 					<variant>Y₄</variant>
 				</lang>
@@ -1265,7 +1265,7 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
-				<lang code="en" ti-ascii="5986" display="Y₅">
+				<lang code="en" ti-ascii="5985" display="Y₅">
 					<accessible>{Y5}</accessible>
 					<variant>Y₅</variant>
 				</lang>
@@ -3893,7 +3893,7 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
-				<lang code="en" ti-ascii="53696E52656720" display="uwAxes">
+				<lang code="en" ti-ascii="757741786573" display="uwAxes">
 					<accessible>uwAxes</accessible>
 				</lang>
 			</version>
@@ -5417,7 +5417,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</since>
-				<lang code="en" ti-ascii="5368616465DA28BB39" display="Shade𝙵(">
+				<lang code="en" ti-ascii="5368616465DA28" display="Shade𝙵(">
 					<accessible>ShadeF(</accessible>
 					<variant>Shade𝙵(</variant>
 					<variant>Shade𝐅(</variant>
@@ -7056,7 +7056,7 @@
 					<model>TI-83+</model>
 					<os-version>1.15</os-version>
 				</since>
-				<lang code="en" ti-ascii="B7" display="`">
+				<lang code="en" ti-ascii="60" display="`">
 					<accessible>`</accessible>
 				</lang>
 			</version>
