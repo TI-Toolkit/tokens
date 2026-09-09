@@ -1699,7 +1699,7 @@
         },
         "langs": {
           "en": {
-            "ti-ascii": "5983",
+            "ti-ascii": "5982",
             "display": "Y₂",
             "accessible": "{Y2}",
             "variants": [
@@ -1717,7 +1717,7 @@
         },
         "langs": {
           "en": {
-            "ti-ascii": "5984",
+            "ti-ascii": "5983",
             "display": "Y₃",
             "accessible": "{Y3}",
             "variants": [
@@ -1735,7 +1735,7 @@
         },
         "langs": {
           "en": {
-            "ti-ascii": "5985",
+            "ti-ascii": "5984",
             "display": "Y₄",
             "accessible": "{Y4}",
             "variants": [
@@ -1753,7 +1753,7 @@
         },
         "langs": {
           "en": {
-            "ti-ascii": "5986",
+            "ti-ascii": "5985",
             "display": "Y₅",
             "accessible": "{Y5}",
             "variants": [
@@ -5463,7 +5463,7 @@
         },
         "langs": {
           "en": {
-            "ti-ascii": "53696E52656720",
+            "ti-ascii": "757741786573",
             "display": "uwAxes",
             "accessible": "uwAxes"
           }
@@ -7562,7 +7562,7 @@
         },
         "langs": {
           "en": {
-            "ti-ascii": "5368616465DA28BB39",
+            "ti-ascii": "5368616465DA28",
             "display": "Shade𝙵(",
             "accessible": "ShadeF(",
             "variants": [
@@ -9846,7 +9846,7 @@
         },
         "langs": {
           "en": {
-            "ti-ascii": "B7",
+            "ti-ascii": "60",
             "display": "`",
             "accessible": "`"
           }
