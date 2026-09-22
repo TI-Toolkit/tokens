@@ -68,6 +68,9 @@
 			<lang code="en" ti-ascii="426F78706C6F74" display="Boxplot">
 				<accessible>Boxplot</accessible>
 			</lang>
+			<lang code="fr" display="Carré">
+				<accessible>Carré</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$06">
@@ -218,6 +221,9 @@
 			<lang code="en" ti-ascii="726F756E6428" display="round(">
 				<accessible>round(</accessible>
 			</lang>
+			<lang code="fr" display="arrondi(">
+				<accessible>arrondi(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$13">
@@ -240,6 +246,9 @@
 			<lang code="en" ti-ascii="6175676D656E7428" display="augment(">
 				<accessible>augment(</accessible>
 			</lang>
+			<lang code="fr" display="chaîne(">
+				<accessible>chaîne(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$15">
@@ -250,6 +259,9 @@
 			</since>
 			<lang code="en" ti-ascii="726F775377617028" display="rowSwap(">
 				<accessible>rowSwap(</accessible>
+			</lang>
+			<lang code="fr" display="permutLigne(">
+				<accessible>permutLigne(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -262,6 +274,9 @@
 			<lang code="en" ti-ascii="726F772B28" display="row+(">
 				<accessible>row+(</accessible>
 			</lang>
+			<lang code="fr" display="ligne+(">
+				<accessible>ligne+(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$17">
@@ -273,6 +288,9 @@
 			<lang code="en" ti-ascii="2A726F7728" display="*row(">
 				<accessible>*row(</accessible>
 			</lang>
+			<lang code="fr" display="*ligne(">
+				<accessible>*ligne(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$18">
@@ -283,6 +301,9 @@
 			</since>
 			<lang code="en" ti-ascii="2A726F772B28" display="*row+(">
 				<accessible>*row+(</accessible>
+			</lang>
+			<lang code="fr" display="*ligne+(">
+				<accessible>*ligne+(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -367,6 +388,9 @@
 			<lang code="en" ti-ascii="6D656469616E28" display="median(">
 				<accessible>median(</accessible>
 			</lang>
+			<lang code="fr" display="médianne">
+				<accessible>médianne</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$20">
@@ -377,6 +401,9 @@
 			</since>
 			<lang code="en" ti-ascii="72616E644D28" display="randM(">
 				<accessible>randM(</accessible>
+			</lang>
+			<lang code="fr" display="MatAléat(">
+				<accessible>MatAléat(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -389,6 +416,9 @@
 			<lang code="en" ti-ascii="6D65616E28" display="mean(">
 				<accessible>mean(</accessible>
 			</lang>
+			<lang code="fr" display="moyenne(">
+				<accessible>moyenne(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$22">
@@ -400,6 +430,9 @@
 			<lang code="en" ti-ascii="736F6C766528" display="solve(">
 				<accessible>solve(</accessible>
 			</lang>
+			<lang code="fr" display="résoudre(">
+				<accessible>résoudre(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$23">
@@ -410,6 +443,9 @@
 			</since>
 			<lang code="en" ti-ascii="73657128" display="seq(">
 				<accessible>seq(</accessible>
+			</lang>
+			<lang code="fr" display="suite(">
+				<accessible>suite(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -476,8 +512,8 @@
 			</since>
 			<lang code="en" ti-ascii="22" display="&quot;">
 				<accessible>&quot;</accessible>
- 				<variant>“</variant>
- 				<variant>”</variant>
+				<variant>“</variant>
+				<variant>”</variant>
 			</lang>
 		</version>
 	</token>
@@ -524,6 +560,9 @@
 			<lang code="en" ti-ascii="437562696352656720" display="CubicReg&#032;">
 				<accessible>CubicReg&#032;</accessible>
 			</lang>
+			<lang code="fr" display="RegCubique&#032;">
+				<accessible>RegCubique&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$2F">
@@ -534,6 +573,9 @@
 			</since>
 			<lang code="en" ti-ascii="517561727452656720" display="QuartReg&#032;">
 				<accessible>QuartReg&#032;</accessible>
+			</lang>
+			<lang code="fr" display="RegQuatre&#032;">
+				<accessible>RegQuatre&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -679,6 +721,9 @@
 			<lang code="en" ti-ascii="206F7220" display="&#032;or&#032;">
 				<accessible>&#032;or&#032;</accessible>
 			</lang>
+			<lang code="fr" display=" ou&#032;">
+				<accessible> ou&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$3D">
@@ -689,6 +734,9 @@
 			</since>
 			<lang code="en" ti-ascii="20786F7220" display="&#032;xor&#032;">
 				<accessible>&#032;xor&#032;</accessible>
+			</lang>
+			<lang code="fr" display=" ouExcl&#032;">
+				<accessible> ouExcl&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -723,6 +771,9 @@
 			</since>
 			<lang code="en" ti-ascii="20616E6420" display="&#032;and&#032;">
 				<accessible>&#032;and&#032;</accessible>
+			</lang>
+			<lang code="fr" display=" et&#032;">
+				<accessible> et&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -1602,6 +1653,9 @@
 				<lang code="en" ti-ascii="50696331" display="Pic1">
 					<accessible>Pic1</accessible>
 				</lang>
+				<lang code="fr" display="Img1">
+					<accessible>Img1</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$01">
@@ -1612,6 +1666,9 @@
 				</since>
 				<lang code="en" ti-ascii="50696332" display="Pic2">
 					<accessible>Pic2</accessible>
+				</lang>
+				<lang code="fr" display="Img2">
+					<accessible>Img2</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1624,6 +1681,9 @@
 				<lang code="en" ti-ascii="50696333" display="Pic3">
 					<accessible>Pic3</accessible>
 				</lang>
+				<lang code="fr" display="Img3">
+					<accessible>Img3</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$03">
@@ -1634,6 +1694,9 @@
 				</since>
 				<lang code="en" ti-ascii="50696334" display="Pic4">
 					<accessible>Pic4</accessible>
+				</lang>
+				<lang code="fr" display="Img4">
+					<accessible>Img4</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1646,6 +1709,9 @@
 				<lang code="en" ti-ascii="50696335" display="Pic5">
 					<accessible>Pic5</accessible>
 				</lang>
+				<lang code="fr" display="Img5">
+					<accessible>Img5</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$05">
@@ -1656,6 +1722,9 @@
 				</since>
 				<lang code="en" ti-ascii="50696336" display="Pic6">
 					<accessible>Pic6</accessible>
+				</lang>
+				<lang code="fr" display="Img6">
+					<accessible>Img6</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1668,6 +1737,9 @@
 				<lang code="en" ti-ascii="50696337" display="Pic7">
 					<accessible>Pic7</accessible>
 				</lang>
+				<lang code="fr" display="Img7">
+					<accessible>Img7</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$07">
@@ -1678,6 +1750,9 @@
 				</since>
 				<lang code="en" ti-ascii="50696338" display="Pic8">
 					<accessible>Pic8</accessible>
+				</lang>
+				<lang code="fr" display="Img8">
+					<accessible>Img8</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1690,6 +1765,9 @@
 				<lang code="en" ti-ascii="50696339" display="Pic9">
 					<accessible>Pic9</accessible>
 				</lang>
+				<lang code="fr" display="Img9">
+					<accessible>Img9</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$09">
@@ -1700,6 +1778,9 @@
 				</since>
 				<lang code="en" ti-ascii="50696330" display="Pic0">
 					<accessible>Pic0</accessible>
+				</lang>
+				<lang code="fr" display="Img0">
+					<accessible>Img0</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1714,6 +1795,9 @@
 				<lang code="en" ti-ascii="47444231" display="GDB1">
 					<accessible>GDB1</accessible>
 				</lang>
+				<lang code="fr" display="BDG1">
+					<accessible>BDG1</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$01">
@@ -1724,6 +1808,9 @@
 				</since>
 				<lang code="en" ti-ascii="47444232" display="GDB2">
 					<accessible>GDB2</accessible>
+				</lang>
+				<lang code="fr" display="BDG2">
+					<accessible>BDG2</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1736,6 +1823,9 @@
 				<lang code="en" ti-ascii="47444233" display="GDB3">
 					<accessible>GDB3</accessible>
 				</lang>
+				<lang code="fr" display="BDG3">
+					<accessible>BDG3</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$03">
@@ -1746,6 +1836,9 @@
 				</since>
 				<lang code="en" ti-ascii="47444234" display="GDB4">
 					<accessible>GDB4</accessible>
+				</lang>
+				<lang code="fr" display="BDG4">
+					<accessible>BDG4</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1758,6 +1851,9 @@
 				<lang code="en" ti-ascii="47444235" display="GDB5">
 					<accessible>GDB5</accessible>
 				</lang>
+				<lang code="fr" display="BDG5">
+					<accessible>BDG5</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$05">
@@ -1768,6 +1864,9 @@
 				</since>
 				<lang code="en" ti-ascii="47444236" display="GDB6">
 					<accessible>GDB6</accessible>
+				</lang>
+				<lang code="fr" display="BDG6">
+					<accessible>BDG6</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1780,6 +1879,9 @@
 				<lang code="en" ti-ascii="47444237" display="GDB7">
 					<accessible>GDB7</accessible>
 				</lang>
+				<lang code="fr" display="BDG7">
+					<accessible>BDG7</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$07">
@@ -1790,6 +1892,9 @@
 				</since>
 				<lang code="en" ti-ascii="47444238" display="GDB8">
 					<accessible>GDB8</accessible>
+				</lang>
+				<lang code="fr" display="BDG8">
+					<accessible>BDG8</accessible>
 				</lang>
 			</version>
 		</token>
@@ -1802,6 +1907,9 @@
 				<lang code="en" ti-ascii="47444239" display="GDB9">
 					<accessible>GDB9</accessible>
 				</lang>
+				<lang code="fr" display="BDG9">
+					<accessible>BDG9</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$09">
@@ -1812,6 +1920,9 @@
 				</since>
 				<lang code="en" ti-ascii="47444230" display="GDB0">
 					<accessible>GDB0</accessible>
+				</lang>
+				<lang code="fr" display="BDG0">
+					<accessible>BDG0</accessible>
 				</lang>
 			</version>
 		</token>
@@ -2353,6 +2464,9 @@
 					<accessible>[Sx1]</accessible>
 					<variant>Sx₁</variant>
 				</lang>
+				<lang code="fr" display="Éctypx₁">
+					<accessible>Éctypx₁</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$2D">
@@ -2393,6 +2507,9 @@
 					<accessible>[Sx2]</accessible>
 					<variant>Sx₂</variant>
 				</lang>
+				<lang code="fr" display="Éctypx₂">
+					<accessible>Éctypx₂</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$30">
@@ -2417,6 +2534,9 @@
 					<accessible>[Sxp]</accessible>
 					<variant>Sxp</variant>
 				</lang>
+				<lang code="fr" display="Éctypxp">
+					<accessible>Éctypxp</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$32">
@@ -2429,6 +2549,9 @@
 					<accessible>[lower]</accessible>
 					<variant>lower</variant>
 				</lang>
+				<lang code="fr" display="borninf">
+					<accessible>borninf</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$33">
@@ -2440,6 +2563,9 @@
 				<lang code="en" ti-ascii="7570706572" display="upper">
 					<accessible>[upper]</accessible>
 					<variant>upper</variant>
+				</lang>
+				<lang code="fr" display="bornsup">
+					<accessible>bornsup</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3204,6 +3330,9 @@
 				<lang code="en" ti-ascii="5056" display="PV">
 					<accessible>PV</accessible>
 				</lang>
+				<lang code="fr" display="VA">
+					<accessible>VA</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$2E">
@@ -3225,6 +3354,9 @@
 				</since>
 				<lang code="en" ti-ascii="4656" display="FV">
 					<accessible>FV</accessible>
+				</lang>
+				<lang code="fr" display="VAC">
+					<accessible>VAC</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3287,6 +3419,9 @@
 				<lang code="en" ti-ascii="506C6F7453746570" display="PlotStep">
 					<accessible>PlotStep</accessible>
 				</lang>
+				<lang code="fr" display="GraphPas">
+					<accessible>GraphPas</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$35">
@@ -3297,6 +3432,9 @@
 				</since>
 				<lang code="en" ti-ascii="5A506C6F7453746570" display="ZPlotStep">
 					<accessible>ZPlotStep</accessible>
+				</lang>
+				<lang code="fr" display="ZGraphPas">
+					<accessible>ZGraphPas</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3331,6 +3469,9 @@
 				<lang code="en" ti-ascii="547261636553746570" display="TraceStep">
 					<accessible>TraceStep</accessible>
 				</lang>
+				<lang code="fr" display="TracePas">
+					<accessible>TracePas</accessible>
+				</lang>
 			</version>
 		</token>
 	</two-byte>
@@ -3353,6 +3494,9 @@
 			</since>
 			<lang code="en" ti-ascii="446567726565" display="Degree">
 				<accessible>Degree</accessible>
+			</lang>
+			<lang code="fr" display="Degré">
+				<accessible>Degré</accessible>
 			</lang>
 		</version>
 	</token>
@@ -3387,6 +3531,9 @@
 			<lang code="en" ti-ascii="456E67" display="Eng">
 				<accessible>Eng</accessible>
 			</lang>
+			<lang code="fr" display="Ing">
+				<accessible>Ing</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$69">
@@ -3397,6 +3544,9 @@
 			</since>
 			<lang code="en" ti-ascii="466C6F6174" display="Float">
 				<accessible>Float</accessible>
+			</lang>
+			<lang code="fr" display="Flottant">
+				<accessible>Flottant</accessible>
 			</lang>
 		</version>
 	</token>
@@ -3500,6 +3650,9 @@
 			<lang code="en" ti-ascii="416E73" display="Ans">
 				<accessible>Ans</accessible>
 			</lang>
+			<lang code="fr" display="Rep">
+				<accessible>Rep</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$73">
@@ -3510,6 +3663,9 @@
 			</since>
 			<lang code="en" ti-ascii="46697820" display="Fix&#032;">
 				<accessible>Fix&#032;</accessible>
+			</lang>
+			<lang code="fr" display="Fixe&#032;">
+				<accessible>Fixe&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -3546,6 +3702,9 @@
 			<lang code="en" ti-ascii="46756C6C" display="Full">
 				<accessible>Full</accessible>
 			</lang>
+			<lang code="fr" display="PleinEcr">
+				<accessible>PleinEcr</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$76">
@@ -3556,6 +3715,9 @@
 			</since>
 			<lang code="en" ti-ascii="46756E63" display="Func">
 				<accessible>Func</accessible>
+			</lang>
+			<lang code="fr" display="Fonct">
+				<accessible>Fonct</accessible>
 			</lang>
 		</version>
 	</token>
@@ -3579,6 +3741,9 @@
 			<lang code="en" ti-ascii="506F6C6172" display="Polar">
 				<accessible>Polar</accessible>
 			</lang>
+			<lang code="fr" display="Polaire">
+				<accessible>Polaire</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$79">
@@ -3589,6 +3754,9 @@
 			</since>
 			<lang code="en" ti-ascii="536571" display="Seq">
 				<accessible>Seq</accessible>
+			</lang>
+			<lang code="fr" display="Suite">
+				<accessible>Suite</accessible>
 			</lang>
 		</version>
 	</token>
@@ -3601,6 +3769,9 @@
 			<lang code="en" ti-ascii="496E64706E744175746F" display="IndpntAuto">
 				<accessible>IndpntAuto</accessible>
 			</lang>
+			<lang code="fr" display="ValeursAuto">
+				<accessible>ValeursAuto</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$7B">
@@ -3611,6 +3782,9 @@
 			</since>
 			<lang code="en" ti-ascii="496E64706E7441736B" display="IndpntAsk">
 				<accessible>IndpntAsk</accessible>
+			</lang>
+			<lang code="fr" display="ValeursDem">
+				<accessible>ValeursDem</accessible>
 			</lang>
 		</version>
 	</token>
@@ -3623,6 +3797,9 @@
 			<lang code="en" ti-ascii="446570656E644175746F" display="DependAuto">
 				<accessible>DependAuto</accessible>
 			</lang>
+			<lang code="fr" display="CalculsAuto">
+				<accessible>CalculsAuto</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$7D">
@@ -3633,6 +3810,9 @@
 			</since>
 			<lang code="en" ti-ascii="446570656E6441736B" display="DependAsk">
 				<accessible>DependAsk</accessible>
+			</lang>
+			<lang code="fr" display="CalculsDem">
+				<accessible>CalculsDem</accessible>
 			</lang>
 		</version>
 	</token>
@@ -3645,6 +3825,9 @@
 				</since>
 				<lang code="en" ti-ascii="53657175656E7469616C" display="Sequential">
 					<accessible>Sequential</accessible>
+				</lang>
+				<lang code="fr" display="Séquentiel">
+					<accessible>Séquentiel</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3668,6 +3851,9 @@
 				<lang code="en" ti-ascii="506F6C61724743" display="PolarGC">
 					<accessible>PolarGC</accessible>
 				</lang>
+				<lang code="fr" display="CoordPol">
+					<accessible>CoordPol</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$03">
@@ -3678,6 +3864,9 @@
 				</since>
 				<lang code="en" ti-ascii="526563744743" display="RectGC">
 					<accessible>RectGC</accessible>
+				</lang>
+				<lang code="fr" display="CoordRect">
+					<accessible>CoordRect</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3690,6 +3879,9 @@
 				<lang code="en" ti-ascii="436F6F72644F6E" display="CoordOn">
 					<accessible>CoordOn</accessible>
 				</lang>
+				<lang code="fr" display="CoordAff">
+					<accessible>CoordAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$05">
@@ -3700,6 +3892,9 @@
 				</since>
 				<lang code="en" ti-ascii="436F6F72644F6666" display="CoordOff">
 					<accessible>CoordOff</accessible>
+				</lang>
+				<lang code="fr" display="CoordNAff">
+					<accessible>CoordNAff</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3773,6 +3968,9 @@
 				<lang code="en" ti-ascii="417865734F6E20" display="AxesOn&#032;">
 					<accessible>AxesOn&#032;</accessible>
 				</lang>
+				<lang code="fr" display="AxesAff&#032;">
+					<accessible>AxesAff&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$09">
@@ -3783,6 +3981,9 @@
 				</since>
 				<lang code="en" ti-ascii="417865734F6666" display="AxesOff">
 					<accessible>AxesOff</accessible>
+				</lang>
+				<lang code="fr" display="AxesNAff">
+					<accessible>AxesNAff</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3808,6 +4009,9 @@
 				<lang code="en" ti-ascii="47726964446F7420" display="GridDot&#032;">
 					<accessible>GridDot&#032;</accessible>
 				</lang>
+				<lang code="fr" display="QuadAff">
+					<accessible>QuadAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0B">
@@ -3818,6 +4022,9 @@
 				</since>
 				<lang code="en" ti-ascii="477269644F6666" display="GridOff">
 					<accessible>GridOff</accessible>
+				</lang>
+				<lang code="fr" display="QuadNAff">
+					<accessible>QuadNAff</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3830,6 +4037,9 @@
 				<lang code="en" ti-ascii="4C6162656C4F6E" display="LabelOn">
 					<accessible>LabelOn</accessible>
 				</lang>
+				<lang code="fr" display="EtiqAff">
+					<accessible>EtiqAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0D">
@@ -3840,6 +4050,9 @@
 				</since>
 				<lang code="en" ti-ascii="4C6162656C4F6666" display="LabelOff">
 					<accessible>LabelOff</accessible>
+				</lang>
+				<lang code="fr" display="EtiqNAff">
+					<accessible>EtiqNAff</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3852,6 +4065,9 @@
 				<lang code="en" ti-ascii="576562" display="Web">
 					<accessible>Web</accessible>
 				</lang>
+				<lang code="fr" display="Toile">
+					<accessible>Toile</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0F">
@@ -3862,6 +4078,9 @@
 				</since>
 				<lang code="en" ti-ascii="54696D65" display="Time">
 					<accessible>Time</accessible>
+				</lang>
+				<lang code="fr" display="f(n)">
+					<accessible>f(n)</accessible>
 				</lang>
 			</version>
 		</token>
@@ -3980,6 +4199,9 @@
 			<lang code="en" ti-ascii="436C7244726177" display="ClrDraw">
 				<accessible>ClrDraw</accessible>
 			</lang>
+			<lang code="fr" display="EffDessin">
+				<accessible>EffDessin</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$86">
@@ -4013,6 +4235,9 @@
 			<lang code="en" ti-ascii="5A426F78" display="ZBox">
 				<accessible>ZBox</accessible>
 			</lang>
+			<lang code="fr" display="Zboîte">
+				<accessible>Zboîte</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$89">
@@ -4023,6 +4248,9 @@
 			</since>
 			<lang code="en" ti-ascii="5A6F6F6D20496E" display="Zoom In">
 				<accessible>Zoom In</accessible>
+			</lang>
+			<lang code="fr" display="Zoom +">
+				<accessible>Zoom +</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4035,6 +4263,9 @@
 			<lang code="en" ti-ascii="5A6F6F6D204F7574" display="Zoom Out">
 				<accessible>Zoom Out</accessible>
 			</lang>
+			<lang code="fr" display="Zoom -">
+				<accessible>Zoom -</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$8B">
@@ -4045,6 +4276,9 @@
 			</since>
 			<lang code="en" ti-ascii="5A537175617265" display="ZSquare">
 				<accessible>ZSquare</accessible>
+			</lang>
+			<lang code="fr" display="Zorthonormal">
+				<accessible>Zorthonormal</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4057,6 +4291,9 @@
 			<lang code="en" ti-ascii="5A496E7465676572" display="ZInteger">
 				<accessible>ZInteger</accessible>
 			</lang>
+			<lang code="fr" display="ZintConf">
+				<accessible>ZintConf</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$8D">
@@ -4068,6 +4305,9 @@
 			<lang code="en" ti-ascii="5A50726576696F7573" display="ZPrevious">
 				<accessible>ZPrevious</accessible>
 			</lang>
+			<lang code="fr" display="Zprécédent">
+				<accessible>Zprécédent</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$8E">
@@ -4078,6 +4318,9 @@
 			</since>
 			<lang code="en" ti-ascii="5A446563696D616C" display="ZDecimal">
 				<accessible>ZDecimal</accessible>
+			</lang>
+			<lang code="fr" display="Zdécimal">
+				<accessible>Zdécimal</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4101,6 +4344,9 @@
 			<lang code="en" ti-ascii="5A6F6F6D52636C" display="ZoomRcl">
 				<accessible>ZoomRcl</accessible>
 			</lang>
+			<lang code="fr" display="ZoomRpl">
+				<accessible>ZoomRpl</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$91">
@@ -4123,6 +4369,9 @@
 			<lang code="en" ti-ascii="5A6F6F6D53746F" display="ZoomSto">
 				<accessible>ZoomSto</accessible>
 			</lang>
+			<lang code="fr" display="SauveFen">
+				<accessible>SauveFen</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$93">
@@ -4133,6 +4382,9 @@
 			</since>
 			<lang code="en" ti-ascii="5465787428" display="Text(">
 				<accessible>Text(</accessible>
+			</lang>
+			<lang code="fr" display="Texte(">
+				<accessible>Texte(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4145,6 +4397,9 @@
 			<lang code="en" ti-ascii="206E507220" display="&#032;nPr&#032;">
 				<accessible>&#032;nPr&#032;</accessible>
 			</lang>
+			<lang code="fr" display=" Arrangement">
+				<accessible> Arrangement</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$95">
@@ -4155,6 +4410,9 @@
 			</since>
 			<lang code="en" ti-ascii="206E437220" display="&#032;nCr&#032;">
 				<accessible>&#032;nCr&#032;</accessible>
+			</lang>
+			<lang code="fr" display="Combinaison&#032;">
+				<accessible>Combinaison&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4167,6 +4425,9 @@
 			<lang code="en" ti-ascii="466E4F6E20" display="FnOn&#032;">
 				<accessible>FnOn&#032;</accessible>
 			</lang>
+			<lang code="fr" display="FonctAff&#032;">
+				<accessible>FonctAff&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$97">
@@ -4177,6 +4438,9 @@
 			</since>
 			<lang code="en" ti-ascii="466E4F666620" display="FnOff&#032;">
 				<accessible>FnOff&#032;</accessible>
+			</lang>
+			<lang code="fr" display="FonctNAff&#032;">
+				<accessible>FonctNAff&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4189,6 +4453,9 @@
 			<lang code="en" ti-ascii="53746F726550696320" display="StorePic&#032;">
 				<accessible>StorePic&#032;</accessible>
 			</lang>
+			<lang code="fr" display="SauveImage&#032;">
+				<accessible>SauveImage&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$99">
@@ -4199,6 +4466,9 @@
 			</since>
 			<lang code="en" ti-ascii="526563616C6C50696320" display="RecallPic&#032;">
 				<accessible>RecallPic&#032;</accessible>
+			</lang>
+			<lang code="fr" display="RappelImage&#032;">
+				<accessible>RappelImage&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4211,6 +4481,9 @@
 			<lang code="en" ti-ascii="53746F726547444220" display="StoreGDB&#032;">
 				<accessible>StoreGDB&#032;</accessible>
 			</lang>
+			<lang code="fr" display="SauveBDG&#032;">
+				<accessible>SauveBDG&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$9B">
@@ -4221,6 +4494,9 @@
 			</since>
 			<lang code="en" ti-ascii="526563616C6C47444220" display="RecallGDB&#032;">
 				<accessible>RecallGDB&#032;</accessible>
+			</lang>
+			<lang code="fr" display="RappelBDG&#032;">
+				<accessible>RappelBDG&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4233,6 +4509,9 @@
 			<lang code="en" ti-ascii="4C696E6528" display="Line(">
 				<accessible>Line(</accessible>
 			</lang>
+			<lang code="fr" display="Ligne(">
+				<accessible>Ligne(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$9D">
@@ -4243,6 +4522,9 @@
 			</since>
 			<lang code="en" ti-ascii="566572746963616C20" display="Vertical&#032;">
 				<accessible>Vertical&#032;</accessible>
+			</lang>
+			<lang code="fr" display="Verticale&#032;">
+				<accessible>Verticale&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4255,6 +4537,9 @@
 			<lang code="en" ti-ascii="50742D4F6E28" display="Pt-On(">
 				<accessible>Pt-On(</accessible>
 			</lang>
+			<lang code="fr" display="Pt-Aff(">
+				<accessible>Pt-Aff(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$9F">
@@ -4265,6 +4550,9 @@
 			</since>
 			<lang code="en" ti-ascii="50742D4F666628" display="Pt-Off(">
 				<accessible>Pt-Off(</accessible>
+			</lang>
+			<lang code="fr" display="Pt-Naff(">
+				<accessible>Pt-Naff(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4288,6 +4576,9 @@
 			<lang code="en" ti-ascii="50786C2D4F6E28" display="Pxl-On(">
 				<accessible>Pxl-On(</accessible>
 			</lang>
+			<lang code="fr" display="Pxl-Aff(">
+				<accessible>Pxl-Aff(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$A2">
@@ -4298,6 +4589,9 @@
 			</since>
 			<lang code="en" ti-ascii="50786C2D4F666628" display="Pxl-Off(">
 				<accessible>Pxl-Off(</accessible>
+			</lang>
+			<lang code="fr" display="Pxl-Naff(">
+				<accessible>Pxl-Naff(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4321,6 +4615,9 @@
 			<lang code="en" ti-ascii="536861646528" display="Shade(">
 				<accessible>Shade(</accessible>
 			</lang>
+			<lang code="fr" display="Ombre(">
+				<accessible>Ombre(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$A5">
@@ -4331,6 +4628,9 @@
 			</since>
 			<lang code="en" ti-ascii="436972636C6528" display="Circle(">
 				<accessible>Circle(</accessible>
+			</lang>
+			<lang code="fr" display="Cercle(">
+				<accessible>Cercle(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4343,6 +4643,9 @@
 			<lang code="en" ti-ascii="486F72697A6F6E74616C20" display="Horizontal&#032;">
 				<accessible>Horizontal&#032;</accessible>
 			</lang>
+			<lang code="fr" display="Horizontale&#032;">
+				<accessible>Horizontale&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$A7">
@@ -4353,6 +4656,9 @@
 			</since>
 			<lang code="en" ti-ascii="54616E67656E7428" display="Tangent(">
 				<accessible>Tangent(</accessible>
+			</lang>
+			<lang code="fr" display="Tangente(">
+				<accessible>Tangente(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4365,6 +4671,9 @@
 			<lang code="en" ti-ascii="44726177496E7620" display="DrawInv&#032;">
 				<accessible>DrawInv&#032;</accessible>
 			</lang>
+			<lang code="fr" display="DessRecip&#032;">
+				<accessible>DessRecip&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$A9">
@@ -4375,6 +4684,9 @@
 			</since>
 			<lang code="en" ti-ascii="447261774620" display="DrawF&#032;">
 				<accessible>DrawF&#032;</accessible>
+			</lang>
+			<lang code="fr" display="DessFonct&#032;">
+				<accessible>DessFonct&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4388,6 +4700,9 @@
 				<lang code="en" ti-ascii="53747231" display="Str1">
 					<accessible>Str1</accessible>
 				</lang>
+				<lang code="fr" display="Chaine1">
+					<accessible>Chaine1</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$01">
@@ -4398,6 +4713,9 @@
 				</since>
 				<lang code="en" ti-ascii="53747232" display="Str2">
 					<accessible>Str2</accessible>
+				</lang>
+				<lang code="fr" display="Chaine2">
+					<accessible>Chaine2</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4410,6 +4728,9 @@
 				<lang code="en" ti-ascii="53747233" display="Str3">
 					<accessible>Str3</accessible>
 				</lang>
+				<lang code="fr" display="Chaine3">
+					<accessible>Chaine3</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$03">
@@ -4420,6 +4741,9 @@
 				</since>
 				<lang code="en" ti-ascii="53747234" display="Str4">
 					<accessible>Str4</accessible>
+				</lang>
+				<lang code="fr" display="Chaine4">
+					<accessible>Chaine4</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4432,6 +4756,9 @@
 				<lang code="en" ti-ascii="53747235" display="Str5">
 					<accessible>Str5</accessible>
 				</lang>
+				<lang code="fr" display="Chaine5">
+					<accessible>Chaine5</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$05">
@@ -4442,6 +4769,9 @@
 				</since>
 				<lang code="en" ti-ascii="53747236" display="Str6">
 					<accessible>Str6</accessible>
+				</lang>
+				<lang code="fr" display="Chaine6">
+					<accessible>Chaine6</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4454,6 +4784,9 @@
 				<lang code="en" ti-ascii="53747237" display="Str7">
 					<accessible>Str7</accessible>
 				</lang>
+				<lang code="fr" display="Chaine7">
+					<accessible>Chaine7</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$07">
@@ -4464,6 +4797,9 @@
 				</since>
 				<lang code="en" ti-ascii="53747238" display="Str8">
 					<accessible>Str8</accessible>
+				</lang>
+				<lang code="fr" display="Chaine8">
+					<accessible>Chaine8</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4476,6 +4812,9 @@
 				<lang code="en" ti-ascii="53747239" display="Str9">
 					<accessible>Str9</accessible>
 				</lang>
+				<lang code="fr" display="Chaine9">
+					<accessible>Chaine9</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$09">
@@ -4486,6 +4825,9 @@
 				</since>
 				<lang code="en" ti-ascii="53747230" display="Str0">
 					<accessible>Str0</accessible>
+				</lang>
+				<lang code="fr" display="Chaine0">
+					<accessible>Chaine0</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4498,6 +4840,9 @@
 			</since>
 			<lang code="en" ti-ascii="72616E64" display="rand">
 				<accessible>rand</accessible>
+			</lang>
+			<lang code="fr" display="NbrAléat">
+				<accessible>NbrAléat</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4521,6 +4866,9 @@
 			</since>
 			<lang code="en" ti-ascii="6765744B6579" display="getKey">
 				<accessible>getKey</accessible>
+			</lang>
+			<lang code="fr" display="codetouch(">
+				<accessible>codetouch(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4581,6 +4929,9 @@
 			<lang code="en" ti-ascii="696E7428" display="int(">
 				<accessible>int(</accessible>
 			</lang>
+			<lang code="fr" display="partEnt(">
+				<accessible>partEnt(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$B2">
@@ -4629,6 +4980,9 @@
 			<lang code="en" ti-ascii="64657428" display="det(">
 				<accessible>det(</accessible>
 			</lang>
+			<lang code="fr" display="dét(">
+				<accessible>dét(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$B4">
@@ -4652,6 +5006,9 @@
 			</since>
 			<lang code="en" ti-ascii="6964656E7469747928" display="identity(">
 				<accessible>identity(</accessible>
+			</lang>
+			<lang code="fr" display="identité(">
+				<accessible>identité(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4701,6 +5058,9 @@
 			<lang code="en" ti-ascii="73756D28" display="sum(">
 				<accessible>sum(</accessible>
 			</lang>
+			<lang code="fr" display="somme(">
+				<accessible>somme(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$B7">
@@ -4722,6 +5082,9 @@
 			</since>
 			<lang code="en" ti-ascii="6E6F7428" display="not(">
 				<accessible>not(</accessible>
+			</lang>
+			<lang code="fr" display="non(">
+				<accessible>non(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -4747,6 +5110,9 @@
 			<lang code="en" ti-ascii="695061727428" display="iPart(">
 				<accessible>iPart(</accessible>
 			</lang>
+			<lang code="fr" display="ent(">
+				<accessible>ent(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$BA">
@@ -4771,6 +5137,9 @@
 			<lang code="en" ti-ascii="665061727428" display="fPart(">
 				<accessible>fPart(</accessible>
 			</lang>
+			<lang code="fr" display="partDéc(">
+				<accessible>partDéc(</accessible>
+			</lang>
 		</version>
 	</token>
 	<two-byte value="$BB">
@@ -4783,6 +5152,9 @@
 				<lang code="en" ti-ascii="6E707628" display="npv(">
 					<accessible>npv(</accessible>
 				</lang>
+				<lang code="fr" display="vactNet(">
+					<accessible>vactNet(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$01">
@@ -4793,6 +5165,9 @@
 				</since>
 				<lang code="en" ti-ascii="69727228" display="irr(">
 					<accessible>irr(</accessible>
+				</lang>
+				<lang code="fr" display="tauxRi(">
+					<accessible>tauxRi(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4805,6 +5180,9 @@
 				<lang code="en" ti-ascii="62616C28" display="bal(">
 					<accessible>bal(</accessible>
 				</lang>
+				<lang code="fr" display="paSolde(">
+					<accessible>paSolde(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$03">
@@ -4816,6 +5194,9 @@
 				<lang code="en" ti-ascii="C650726E28" display="ΣPrn(">
 					<accessible>SigmaPrn(</accessible>
 					<variant>ΣPrn(</variant>
+				</lang>
+				<lang code="fr" display="paSomPrinc(">
+					<accessible>paSomPrinc(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4864,6 +5245,9 @@
 				<lang code="en" ti-ascii="64626428" display="dbd(">
 					<accessible>dbd(</accessible>
 				</lang>
+				<lang code="fr" display="jed(">
+					<accessible>jed(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$08">
@@ -4874,6 +5258,9 @@
 				</since>
 				<lang code="en" ti-ascii="6C636D28" display="lcm(">
 					<accessible>lcm(</accessible>
+				</lang>
+				<lang code="fr" display="ppcm(">
+					<accessible>ppcm(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4886,6 +5273,9 @@
 				<lang code="en" ti-ascii="67636428" display="gcd(">
 					<accessible>gcd(</accessible>
 				</lang>
+				<lang code="fr" display="pgcd(">
+					<accessible>pgcd(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0A">
@@ -4896,6 +5286,9 @@
 				</since>
 				<lang code="en" ti-ascii="72616E64496E7428" display="randInt(">
 					<accessible>randInt(</accessible>
+				</lang>
+				<lang code="fr" display="entAléat(">
+					<accessible>entAléat(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4908,6 +5301,9 @@
 				<lang code="en" ti-ascii="72616E6442696E28" display="randBin(">
 					<accessible>randBin(</accessible>
 				</lang>
+				<lang code="fr" display="BinAléat(">
+					<accessible>BinAléat(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0C">
@@ -4919,6 +5315,9 @@
 				<lang code="en" ti-ascii="73756228" display="sub(">
 					<accessible>sub(</accessible>
 				</lang>
+				<lang code="fr" display="Sous-chaine(">
+					<accessible>Sous-chaine(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0D">
@@ -4929,6 +5328,9 @@
 				</since>
 				<lang code="en" ti-ascii="73746444657628" display="stdDev(">
 					<accessible>stdDev(</accessible>
+				</lang>
+				<lang code="fr" display="Ecart-type(">
+					<accessible>Ecart-type(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4952,6 +5354,9 @@
 				<lang code="en" ti-ascii="696E537472696E6728" display="inString(">
 					<accessible>inString(</accessible>
 				</lang>
+				<lang code="fr" display="carChaine(">
+					<accessible>carChaine(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$10">
@@ -4962,6 +5367,9 @@
 				</since>
 				<lang code="en" ti-ascii="6E6F726D616C63646628" display="normalcdf(">
 					<accessible>normalcdf(</accessible>
+				</lang>
+				<lang code="fr" display="normalFRép(">
+					<accessible>normalFRép(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4974,6 +5382,9 @@
 				<lang code="en" ti-ascii="696E764E6F726D28" display="invNorm(">
 					<accessible>invNorm(</accessible>
 				</lang>
+				<lang code="fr" display="FracNormale(">
+					<accessible>FracNormale(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$12">
@@ -4984,6 +5395,9 @@
 				</since>
 				<lang code="en" ti-ascii="7463646628" display="tcdf(">
 					<accessible>tcdf(</accessible>
+				</lang>
+				<lang code="fr" display="studentFRép(">
+					<accessible>studentFRép(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -4999,6 +5413,9 @@
 					<variant>χ^2cdf(</variant>
 					<variant>chi²cdf(</variant>
 				</lang>
+				<lang code="fr" display="X²FRép(	">
+					<accessible>X²FRép(	</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$14">
@@ -5012,6 +5429,9 @@
 					<variant>𝙵cdf(</variant>
 					<variant>𝐅cdf(</variant>
 				</lang>
+				<lang code="fr" display="𝐅FRép(">
+					<accessible>𝐅FRép(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$15">
@@ -5022,6 +5442,9 @@
 				</since>
 				<lang code="en" ti-ascii="62696E6F6D70646628" display="binompdf(">
 					<accessible>binompdf(</accessible>
+				</lang>
+				<lang code="fr" display="binomfdp(">
+					<accessible>binomfdp(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5034,6 +5457,9 @@
 				<lang code="en" ti-ascii="62696E6F6D63646628" display="binomcdf(">
 					<accessible>binomcdf(</accessible>
 				</lang>
+				<lang code="fr" display="binomFRép(">
+					<accessible>binomFRép(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$17">
@@ -5044,6 +5470,9 @@
 				</since>
 				<lang code="en" ti-ascii="706F6973736F6E70646628" display="poissonpdf(">
 					<accessible>poissonpdf(</accessible>
+				</lang>
+				<lang code="fr" display="poissonFdp(">
+					<accessible>poissonFdp(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5056,6 +5485,9 @@
 				<lang code="en" ti-ascii="706F6973736F6E63646628" display="poissoncdf(">
 					<accessible>poissoncdf(</accessible>
 				</lang>
+				<lang code="fr" display="poissonFRép(">
+					<accessible>poissonFRép(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$19">
@@ -5066,6 +5498,9 @@
 				</since>
 				<lang code="en" ti-ascii="67656F6D657470646628" display="geometpdf(">
 					<accessible>geometpdf(</accessible>
+				</lang>
+				<lang code="fr" display="géomtFdp(">
+					<accessible>géomtFdp(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5078,6 +5513,9 @@
 				<lang code="en" ti-ascii="67656F6D657463646628" display="geometcdf(">
 					<accessible>geometcdf(</accessible>
 				</lang>
+				<lang code="fr" display="géomtFRép(">
+					<accessible>géomtFRép(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$1B">
@@ -5089,6 +5527,9 @@
 				<lang code="en" ti-ascii="6E6F726D616C70646628" display="normalpdf(">
 					<accessible>normalpdf(</accessible>
 				</lang>
+				<lang code="fr" display="normalFdp(">
+					<accessible>normalFdp(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$1C">
@@ -5099,6 +5540,9 @@
 				</since>
 				<lang code="en" ti-ascii="7470646628" display="tpdf(">
 					<accessible>tpdf(</accessible>
+				</lang>
+				<lang code="fr" display="StudentFdp(">
+					<accessible>StudentFdp(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5114,6 +5558,9 @@
 					<variant>χ^2pdf(</variant>
 					<variant>chi²pdf(</variant>
 				</lang>
+				<lang code="fr" display="Χ²Fdp(">
+					<accessible>Χ²Fdp(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$1E">
@@ -5127,6 +5574,9 @@
 					<variant>𝙵pdf(</variant>
 					<variant>𝐅pdf(</variant>
 				</lang>
+				<lang code="fr" display="𝐅fdp(">
+					<accessible>𝐅fdp(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$1F">
@@ -5137,6 +5587,9 @@
 				</since>
 				<lang code="en" ti-ascii="72616E644E6F726D28" display="randNorm(">
 					<accessible>randNorm(</accessible>
+				</lang>
+				<lang code="fr" display="normAléat(">
+					<accessible>normAléat(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5171,6 +5624,9 @@
 				<lang code="en" ti-ascii="74766D5F5056" display="tvm_PV">
 					<accessible>tvm_PV</accessible>
 				</lang>
+				<lang code="fr" display="tvm_VA">
+					<accessible>tvm_VA</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$23">
@@ -5194,6 +5650,9 @@
 				<lang code="en" ti-ascii="74766D5F4656" display="tvm_FV">
 					<accessible>tvm_FV</accessible>
 				</lang>
+				<lang code="fr" display="tvm_VAC">
+					<accessible>tvm_VAC</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$25">
@@ -5215,6 +5674,9 @@
 				</since>
 				<lang code="en" ti-ascii="7265616C28" display="real(">
 					<accessible>real(</accessible>
+				</lang>
+				<lang code="fr" display="reel(">
+					<accessible>reel(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5238,6 +5700,9 @@
 				<lang code="en" ti-ascii="616E676C6528" display="angle(">
 					<accessible>angle(</accessible>
 				</lang>
+				<lang code="fr" display="argument(">
+					<accessible>argument(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$29">
@@ -5248,6 +5713,9 @@
 				</since>
 				<lang code="en" ti-ascii="63756D53756D28" display="cumSum(">
 					<accessible>cumSum(</accessible>
+				</lang>
+				<lang code="fr" display="somCum(">
+					<accessible>somCum(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5271,6 +5739,9 @@
 				<lang code="en" ti-ascii="6C656E67746828" display="length(">
 					<accessible>length(</accessible>
 				</lang>
+				<lang code="fr" display="longueur(">
+					<accessible>longueur(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$2C">
@@ -5283,6 +5754,9 @@
 					<accessible>DeltaList(</accessible>
 					<variant>ΔList(</variant>
 				</lang>
+				<lang code="fr" display="Δliste(">
+					<accessible>Δliste(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$2D">
@@ -5294,6 +5768,9 @@
 				<lang code="en" ti-ascii="72656628" display="ref(">
 					<accessible>ref(</accessible>
 				</lang>
+				<lang code="fr" display="Gauss(">
+					<accessible>Gauss(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$2E">
@@ -5304,6 +5781,9 @@
 				</since>
 				<lang code="en" ti-ascii="7272656628" display="rref(">
 					<accessible>rref(</accessible>
+				</lang>
+				<lang code="fr" display="Gauss-Jordan(">
+					<accessible>Gauss-Jordan(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5329,6 +5809,9 @@
 					<accessible>&gt;Polar</accessible>
 					<variant>►Polar</variant>
 				</lang>
+				<lang code="fr" display="►Polaire">
+					<accessible>►Polaire</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$31">
@@ -5352,6 +5835,9 @@
 				<lang code="en" ti-ascii="53696E52656720" display="SinReg&#032;">
 					<accessible>SinReg&#032;</accessible>
 				</lang>
+				<lang code="fr" display="RegSin&#032;">
+					<accessible>RegSin&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$33">
@@ -5362,6 +5848,9 @@
 				</since>
 				<lang code="en" ti-ascii="4C6F67697374696320" display="Logistic&#032;">
 					<accessible>Logistic&#032;</accessible>
+				</lang>
+				<lang code="fr" display="Logistique&#032;">
+					<accessible>Logistique&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5374,6 +5863,9 @@
 				<lang code="en" ti-ascii="4C696E526567545465737420" display="LinRegTTest&#032;">
 					<accessible>LinRegTTest&#032;</accessible>
 				</lang>
+				<lang code="fr" display="RegLinTTest&#032;">
+					<accessible>RegLinTTest&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$35">
@@ -5385,6 +5877,9 @@
 				<lang code="en" ti-ascii="53686164654E6F726D28" display="ShadeNorm(">
 					<accessible>ShadeNorm(</accessible>
 				</lang>
+				<lang code="fr" display="OmbreNorm(">
+					<accessible>OmbreNorm(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$36">
@@ -5395,6 +5890,9 @@
 				</since>
 				<lang code="en" ti-ascii="53686164655F7428" display="Shade_t(">
 					<accessible>Shade_t(</accessible>
+				</lang>
+				<lang code="fr" display="Ombre_t(">
+					<accessible>Ombre_t(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5410,6 +5908,9 @@
 					<variant>Shadeχ^2(</variant>
 					<variant>Shadechi²(</variant>
 				</lang>
+				<lang code="fr" display="Ombreχ²(">
+					<accessible>Ombreχ²(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$38">
@@ -5422,6 +5923,9 @@
 					<accessible>ShadeF(</accessible>
 					<variant>Shade𝙵(</variant>
 					<variant>Shade𝐅(</variant>
+				</lang>
+				<lang code="fr" display="Ombre𝐅(">
+					<accessible>Ombre𝐅(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5480,6 +5984,9 @@
 				<lang code="en" ti-ascii="322D53616D705A5465737428" display="2-SampZTest(">
 					<accessible>2-SampZTest(</accessible>
 				</lang>
+				<lang code="fr" display="2-CompZTest(">
+					<accessible>2-CompZTest(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$3E">
@@ -5527,6 +6034,9 @@
 				<lang code="en" ti-ascii="5A496E74657276616C20" display="ZInterval&#032;">
 					<accessible>ZInterval&#032;</accessible>
 				</lang>
+				<lang code="fr" display="ZintConf&#032;">
+					<accessible>ZintConf&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$42">
@@ -5537,6 +6047,9 @@
 				</since>
 				<lang code="en" ti-ascii="322D53616D705A496E7428" display="2-SampZInt(">
 					<accessible>2-SampZInt(</accessible>
+				</lang>
+				<lang code="fr" display="2-CompZIntC(">
+					<accessible>2-CompZIntC(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5582,6 +6095,9 @@
 				<lang code="en" ti-ascii="322D53616D70545465737420" display="2-SampTTest&#032;">
 					<accessible>2-SampTTest&#032;</accessible>
 				</lang>
+				<lang code="fr" display="2-CompTTest(&#032;">
+					<accessible>2-CompTTest(&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$47">
@@ -5595,6 +6111,9 @@
 					<variant>2-Samp𝙵Test&#032;</variant>
 					<variant>2-Samp𝐅Test&#032;</variant>
 				</lang>
+				<lang code="fr" display="2-Comp𝐅Test(&#032;">
+					<accessible>2-Comp𝐅Test(&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$48">
@@ -5605,6 +6124,9 @@
 				</since>
 				<lang code="en" ti-ascii="54496E74657276616C20" display="TInterval&#032;">
 					<accessible>TInterval&#032;</accessible>
+				</lang>
+				<lang code="fr" display="TintConf&#032;">
+					<accessible>TintConf&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5617,6 +6139,9 @@
 				<lang code="en" ti-ascii="322D53616D7054496E7420" display="2-SampTInt&#032;">
 					<accessible>2-SampTInt&#032;</accessible>
 				</lang>
+				<lang code="fr" display="2-CompTIntC(&#032;">
+					<accessible>2-CompTIntC(&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$4A">
@@ -5627,6 +6152,9 @@
 				</since>
 				<lang code="en" ti-ascii="5365745570456469746F7220" display="SetUpEditor&#032;">
 					<accessible>SetUpEditor&#032;</accessible>
+				</lang>
+				<lang code="fr" display="ListesDéfaut&#032;">
+					<accessible>ListesDéfaut&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5639,6 +6167,9 @@
 				<lang code="en" ti-ascii="506D745F456E64" display="Pmt_End">
 					<accessible>Pmt_End</accessible>
 				</lang>
+				<lang code="fr" display="Pmt_Fin">
+					<accessible>Pmt_Fin</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$4C">
@@ -5650,6 +6181,9 @@
 				<lang code="en" ti-ascii="506D745F42676E" display="Pmt_Bgn">
 					<accessible>Pmt_Bgn</accessible>
 				</lang>
+				<lang code="fr" display="Pmt_Déb">
+					<accessible>Pmt_Déb</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$4D">
@@ -5660,6 +6194,9 @@
 				</since>
 				<lang code="en" ti-ascii="5265616C" display="Real">
 					<accessible>Real</accessible>
+				</lang>
+				<lang code="fr" display="Réel">
+					<accessible>Réel</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5699,6 +6236,9 @@
 				<lang code="en" ti-ascii="457870724F6E" display="ExprOn">
 					<accessible>ExprOn</accessible>
 				</lang>
+				<lang code="fr" display="ExpAff">
+					<accessible>ExpAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$51">
@@ -5710,6 +6250,9 @@
 				<lang code="en" ti-ascii="457870724F6666" display="ExprOff">
 					<accessible>ExprOff</accessible>
 				</lang>
+				<lang code="fr" display="ExpNAff">
+					<accessible>ExpNAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$52">
@@ -5720,6 +6263,9 @@
 				</since>
 				<lang code="en" ti-ascii="436C72416C6C4C69737473" display="ClrAllLists">
 					<accessible>ClrAllLists</accessible>
+				</lang>
+				<lang code="fr" display="EffToutListes">
+					<accessible>EffToutListes</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5756,6 +6302,9 @@
 				<lang code="en" ti-ascii="44656C56617220" display="DelVar&#032;">
 					<accessible>DelVar&#032;</accessible>
 				</lang>
+				<lang code="fr" display="EffVar&#032;">
+					<accessible>EffVar&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$55">
@@ -5767,6 +6316,9 @@
 				<lang code="en" ti-ascii="45717505537472696E6728" display="Equ►String(">
 					<accessible>Equ&gt;String(</accessible>
 					<variant>Equ►String(</variant>
+				</lang>
+				<lang code="fr" display="Equ►Chaine(">
+					<accessible>Equ►Chaine(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5780,6 +6332,9 @@
 					<accessible>String&gt;Equ(</accessible>
 					<variant>String►Equ(</variant>
 				</lang>
+				<lang code="fr" display="Chaine►Equ(">
+					<accessible>Chaine►Equ(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$57">
@@ -5790,6 +6345,9 @@
 				</since>
 				<lang code="en" ti-ascii="436C65617220456E7472696573" display="Clear Entries">
 					<accessible>Clear Entries</accessible>
+				</lang>
+				<lang code="fr" display="Efface entrées">
+					<accessible>Efface entrées</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5802,6 +6360,9 @@
 				<lang code="en" ti-ascii="53656C65637428" display="Select(">
 					<accessible>Select(</accessible>
 				</lang>
+				<lang code="fr" display="Sélect(">
+					<accessible>Sélect(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$59">
@@ -5812,6 +6373,9 @@
 				</since>
 				<lang code="en" ti-ascii="414E4F564128" display="ANOVA(">
 					<accessible>ANOVA(</accessible>
+				</lang>
+				<lang code="fr" display="ANUVA(">
+					<accessible>ANUVA(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5824,6 +6388,9 @@
 				<lang code="en" ti-ascii="4D6F64426F78706C6F74" display="ModBoxplot">
 					<accessible>ModBoxplot</accessible>
 				</lang>
+				<lang code="fr" display="GraphBoitMoust">
+					<accessible>GraphBoitMoust</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$5B">
@@ -5834,6 +6401,9 @@
 				</since>
 				<lang code="en" ti-ascii="4E6F726D50726F62506C6F74" display="NormProbPlot">
 					<accessible>NormProbPlot</accessible>
+				</lang>
+				<lang code="fr" display="GraphProbNorm">
+					<accessible>GraphProbNorm</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5857,6 +6427,9 @@
 				<lang code="en" ti-ascii="5A6F6F6D466974" display="ZoomFit">
 					<accessible>ZoomFit</accessible>
 				</lang>
+				<lang code="fr" display="ZminMax">
+					<accessible>ZminMax</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$66">
@@ -5868,6 +6441,9 @@
 				<lang code="en" ti-ascii="446961676E6F737469634F6E" display="DiagnosticOn">
 					<accessible>DiagnosticOn</accessible>
 				</lang>
+				<lang code="fr" display="CorrelAff">
+					<accessible>CorrelAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$67">
@@ -5878,6 +6454,9 @@
 				</since>
 				<lang code="en" ti-ascii="446961676E6F737469634F6666" display="DiagnosticOff">
 					<accessible>DiagnosticOff</accessible>
+				</lang>
+				<lang code="fr" display="CorrelNAff">
+					<accessible>CorrelNAff</accessible>
 				</lang>
 			</version>
 		</token>
@@ -5900,6 +6479,9 @@
 				</since>
 				<lang code="en" ti-ascii="556E4172636869766520" display="UnArchive&#032;">
 					<accessible>UnArchive&#032;</accessible>
+				</lang>
+				<lang code="fr" display="DésArchive&#032;">
+					<accessible>DésArchive&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -6995,6 +7577,9 @@
 				<lang code="en" ti-ascii="47617262616765436F6C6C656374" display="GarbageCollect">
 					<accessible>GarbageCollect</accessible>
 				</lang>
+				<lang code="fr" display="RéorganiserMém">
+					<accessible>RéorganiserMém</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$CF">
@@ -7060,6 +7645,9 @@
 				</since>
 				<lang code="en" ti-ascii="60" display="`">
 					<accessible>`</accessible>
+				</lang>
+				<lang code="fr" display="‛">
+					<accessible>‛</accessible>
 				</lang>
 			</version>
 		</token>
@@ -7638,6 +8226,9 @@
 				<variant>arcsin(</variant>
 				<variant>asin(</variant>
 			</lang>
+			<lang code="fr" display="Arcsin(">
+				<accessible>Arcsin(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$C4">
@@ -7691,6 +8282,9 @@
 				<variant>cos⁻¹(</variant>
 				<variant>arccos(</variant>
 				<variant>acos(</variant>
+			</lang>
+			<lang code="fr" display="Arccos(">
+				<accessible>Arccos(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -7746,6 +8340,9 @@
 				<variant>arctan(</variant>
 				<variant>atan(</variant>
 			</lang>
+			<lang code="fr" display="Arctan(">
+				<accessible>Arctan(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$C8">
@@ -7769,6 +8366,9 @@
 			</since>
 			<lang code="en" ti-ascii="73696E6828" display="sinh(">
 				<accessible>sinh(</accessible>
+			</lang>
+			<lang code="fr" display="sh(">
+				<accessible>sh(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -7800,6 +8400,9 @@
 				<variant>arcsinh(</variant>
 				<variant>asinh(</variant>
 			</lang>
+			<lang code="fr" display="Argsh(">
+				<accessible>Argsh(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$CA">
@@ -7823,6 +8426,9 @@
 			</since>
 			<lang code="en" ti-ascii="636F736828" display="cosh(">
 				<accessible>cosh(</accessible>
+			</lang>
+			<lang code="fr" display="ch(">
+				<accessible>ch(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -7854,6 +8460,9 @@
 				<variant>arccosh(</variant>
 				<variant>acosh(</variant>
 			</lang>
+			<lang code="fr" display="Argch(">
+				<accessible>Argch(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$CC">
@@ -7877,6 +8486,9 @@
 			</since>
 			<lang code="en" ti-ascii="74616E6828" display="tanh(">
 				<accessible>tanh(</accessible>
+			</lang>
+			<lang code="fr" display="th(">
+				<accessible>th(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -7907,6 +8519,9 @@
 				<variant>tanh⁻¹(</variant>
 				<variant>arctanh(</variant>
 				<variant>atanh(</variant>
+			</lang>
+			<lang code="fr" display="Argth(">
+				<accessible>Argth(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -8106,6 +8721,9 @@
 			<lang code="en" ti-ascii="446973704772617068" display="DispGraph">
 				<accessible>DispGraph</accessible>
 			</lang>
+			<lang code="fr" display="AffGraph">
+				<accessible>AffGraph</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$E0">
@@ -8128,6 +8746,9 @@
 			<lang code="en" ti-ascii="436C72486F6D65" display="ClrHome">
 				<accessible>ClrHome</accessible>
 			</lang>
+			<lang code="fr" display="EffEcran">
+				<accessible>EffEcran</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$E2">
@@ -8138,6 +8759,9 @@
 			</since>
 			<lang code="en" ti-ascii="46696C6C28" display="Fill(">
 				<accessible>Fill(</accessible>
+			</lang>
+			<lang code="fr" display="Remplir(">
+				<accessible>Remplir(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -8150,6 +8774,9 @@
 			<lang code="en" ti-ascii="536F72744128" display="SortA(">
 				<accessible>SortA(</accessible>
 			</lang>
+			<lang code="fr" display="Tricroi(">
+				<accessible>Tricroi(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$E4">
@@ -8161,6 +8788,9 @@
 			<lang code="en" ti-ascii="536F72744428" display="SortD(">
 				<accessible>SortD(</accessible>
 			</lang>
+			<lang code="fr" display="Tridécroi(">
+				<accessible>Tridécroi(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$E5">
@@ -8171,6 +8801,9 @@
 			</since>
 			<lang code="en" ti-ascii="446973705461626C65" display="DispTable">
 				<accessible>DispTable</accessible>
+			</lang>
+			<lang code="fr" display="AffTable">
+				<accessible>AffTable</accessible>
 			</lang>
 		</version>
 	</token>
@@ -8194,6 +8827,9 @@
 			<lang code="en" ti-ascii="53656E6428" display="Send(">
 				<accessible>Send(</accessible>
 			</lang>
+			<lang code="fr" display="Envoi(">
+				<accessible>Envoi(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$E8">
@@ -8204,6 +8840,9 @@
 			</since>
 			<lang code="en" ti-ascii="47657428" display="Get(">
 				<accessible>Get(</accessible>
+			</lang>
+			<lang code="fr" display="Capt(">
+				<accessible>Capt(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -8216,6 +8855,9 @@
 			<lang code="en" ti-ascii="506C6F74734F6E20" display="PlotsOn&#032;">
 				<accessible>PlotsOn&#032;</accessible>
 			</lang>
+			<lang code="fr" display="GraphAff&#032;">
+				<accessible>GraphAff&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$EA">
@@ -8226,6 +8868,9 @@
 			</since>
 			<lang code="en" ti-ascii="506C6F74734F666620" display="PlotsOff&#032;">
 				<accessible>PlotsOff&#032;</accessible>
+			</lang>
+			<lang code="fr" display="GraphNAff&#032;">
+				<accessible>GraphNAff&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -8252,6 +8897,9 @@
 			<lang code="en" ti-ascii="506C6F743128" display="Plot1(">
 				<accessible>Plot1(</accessible>
 			</lang>
+			<lang code="fr" display="Graph1(">
+				<accessible>Graph1(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$ED">
@@ -8263,6 +8911,9 @@
 			<lang code="en" ti-ascii="506C6F743228" display="Plot2(">
 				<accessible>Plot2(</accessible>
 			</lang>
+			<lang code="fr" display="Graph2(">
+				<accessible>Graph2(</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$EE">
@@ -8273,6 +8924,9 @@
 			</since>
 			<lang code="en" ti-ascii="506C6F743328" display="Plot3(">
 				<accessible>Plot3(</accessible>
+			</lang>
+			<lang code="fr" display="Graph3(">
+				<accessible>Graph3(</accessible>
 			</lang>
 		</version>
 	</token>
@@ -8286,6 +8940,9 @@
 				<lang code="en" ti-ascii="7365744461746528" display="setDate(">
 					<accessible>setDate(</accessible>
 				</lang>
+				<lang code="fr" display="défDate(">
+					<accessible>défDate(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$01">
@@ -8296,6 +8953,9 @@
 				</since>
 				<lang code="en" ti-ascii="73657454696D6528" display="setTime(">
 					<accessible>setTime(</accessible>
+				</lang>
+				<lang code="fr" display="défHeure(">
+					<accessible>défHeure(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8308,6 +8968,9 @@
 				<lang code="en" ti-ascii="636865636B546D7228" display="checkTmr(">
 					<accessible>checkTmr(</accessible>
 				</lang>
+				<lang code="fr" display="AffMintr(">
+					<accessible>AffMintr(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$03">
@@ -8318,6 +8981,9 @@
 				</since>
 				<lang code="en" ti-ascii="7365744474466D7428" display="setDtFmt(">
 					<accessible>setDtFmt(</accessible>
+				</lang>
+				<lang code="fr" display="défFmtDt(">
+					<accessible>défFmtDt(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8330,6 +8996,9 @@
 				<lang code="en" ti-ascii="736574546D466D7428" display="setTmFmt(">
 					<accessible>setTmFmt(</accessible>
 				</lang>
+				<lang code="fr" display="défFmtHr(">
+					<accessible>défFmtHr(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$05">
@@ -8340,6 +9009,9 @@
 				</since>
 				<lang code="en" ti-ascii="74696D65436E7628" display="timeCnv(">
 					<accessible>timeCnv(</accessible>
+				</lang>
+				<lang code="fr" display="convHeur(">
+					<accessible>convHeur(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8352,6 +9024,9 @@
 				<lang code="en" ti-ascii="6461794F66576B28" display="dayOfWk(">
 					<accessible>dayOfWk(</accessible>
 				</lang>
+				<lang code="fr" display="joursem(">
+					<accessible>joursem(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$07">
@@ -8362,6 +9037,9 @@
 				</since>
 				<lang code="en" ti-ascii="676574447453747228" display="getDtStr(">
 					<accessible>getDtStr(</accessible>
+				</lang>
+				<lang code="fr" display="AffChDt(">
+					<accessible>AffChDt(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8374,6 +9052,9 @@
 				<lang code="en" ti-ascii="676574546D53747228" display="getTmStr(">
 					<accessible>getTmStr(</accessible>
 				</lang>
+				<lang code="fr" display="affChHr(">
+					<accessible>affChHr(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$09">
@@ -8384,6 +9065,9 @@
 				</since>
 				<lang code="en" ti-ascii="67657444617465" display="getDate">
 					<accessible>getDate</accessible>
+				</lang>
+				<lang code="fr" display="affDate">
+					<accessible>affDate</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8396,6 +9080,9 @@
 				<lang code="en" ti-ascii="67657454696D65" display="getTime">
 					<accessible>getTime</accessible>
 				</lang>
+				<lang code="fr" display="affHeure">
+					<accessible>affHeure</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0B">
@@ -8406,6 +9093,9 @@
 				</since>
 				<lang code="en" ti-ascii="7374617274546D72" display="startTmr">
 					<accessible>startTmr</accessible>
+				</lang>
+				<lang code="fr" display="actMintr&#032;">
+					<accessible>actMintr&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8418,6 +9108,9 @@
 				<lang code="en" ti-ascii="6765744474466D74" display="getDtFmt">
 					<accessible>getDtFmt</accessible>
 				</lang>
+				<lang code="fr" display="affFmtDt">
+					<accessible>affFmtDt</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0D">
@@ -8428,6 +9121,9 @@
 				</since>
 				<lang code="en" ti-ascii="676574546D466D74" display="getTmFmt">
 					<accessible>getTmFmt</accessible>
+				</lang>
+				<lang code="fr" display="affFmtHr">
+					<accessible>affFmtHr</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8440,6 +9136,9 @@
 				<lang code="en" ti-ascii="6973436C6F636B4F6E" display="isClockOn">
 					<accessible>isClockOn</accessible>
 				</lang>
+				<lang code="fr" display="actHorl">
+					<accessible>actHorl</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$0F">
@@ -8450,6 +9149,9 @@
 				</since>
 				<lang code="en" ti-ascii="436C6F636B4F6666" display="ClockOff">
 					<accessible>ClockOff</accessible>
+				</lang>
+				<lang code="fr" display="HorlNAff">
+					<accessible>HorlNAff</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8462,6 +9164,9 @@
 				<lang code="en" ti-ascii="436C6F636B4F6E" display="ClockOn">
 					<accessible>ClockOn</accessible>
 				</lang>
+				<lang code="fr" display="HorlAff">
+					<accessible>HorlAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$11">
@@ -8473,6 +9178,9 @@
 				<lang code="en" ti-ascii="4F70656E4C696228" display="OpenLib(">
 					<accessible>OpenLib(</accessible>
 				</lang>
+				<lang code="fr" display="OuvrirBiblio(">
+					<accessible>OuvrirBiblio(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$12">
@@ -8483,6 +9191,9 @@
 				</since>
 				<lang code="en" ti-ascii="457865634C696220" display="ExecLib&#032;">
 					<accessible>ExecLib&#032;</accessible>
+				</lang>
+				<lang code="fr" display="ExécBiblio&#032;">
+					<accessible>ExécBiblio&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8856,6 +9567,9 @@
 					<accessible>BLUE</accessible>
 					<variant>Blue</variant>
 				</lang>
+				<lang code="fr" display="BLEU">
+					<accessible>BLEU</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$42">
@@ -8868,6 +9582,9 @@
 					<accessible>RED</accessible>
 					<variant>Red</variant>
 				</lang>
+				<lang code="fr" display="ROUGE">
+					<accessible>ROUGE</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$43">
@@ -8879,6 +9596,9 @@
 				<lang code="en" ti-ascii="424C41434B" display="BLACK">
 					<accessible>BLACK</accessible>
 					<variant>Black</variant>
+				</lang>
+				<lang code="fr" display="NOIR">
+					<accessible>NOIR</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8904,6 +9624,9 @@
 					<accessible>GREEN</accessible>
 					<variant>Green</variant>
 				</lang>
+				<lang code="fr" display="VERT">
+					<accessible>VERT</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$46">
@@ -8928,6 +9651,9 @@
 					<accessible>BROWN</accessible>
 					<variant>Brown</variant>
 				</lang>
+				<lang code="fr" display="MARRON">
+					<accessible>MARRON</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$48">
@@ -8939,6 +9665,9 @@
 				<lang code="en" ti-ascii="4E415659" display="NAVY">
 					<accessible>NAVY</accessible>
 					<variant>Navy</variant>
+				</lang>
+				<lang code="fr" display="BLEU MRN">
+					<accessible>BLEU MRN</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8952,6 +9681,9 @@
 					<accessible>LTBLUE</accessible>
 					<variant>LtBlue</variant>
 				</lang>
+				<lang code="fr" display="BLEU CLR">
+					<accessible>BLEU CLR</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$4A">
@@ -8964,6 +9696,9 @@
 					<accessible>YELLOW</accessible>
 					<variant>Yellow</variant>
 				</lang>
+				<lang code="fr" display="JAUNE">
+					<accessible>JAUNE</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$4B">
@@ -8975,6 +9710,9 @@
 				<lang code="en" ti-ascii="5748495445" display="WHITE">
 					<accessible>WHITE</accessible>
 					<variant>White</variant>
+				</lang>
+				<lang code="fr" display="BLANC">
+					<accessible>BLANC</accessible>
 				</lang>
 			</version>
 		</token>
@@ -8990,6 +9728,9 @@
 					<variant>LTGREY</variant>
 					<variant>LtGrey</variant>
 				</lang>
+				<lang code="fr" display="GRIS CLR">
+					<accessible>GRIS CLR</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$4D">
@@ -9003,6 +9744,9 @@
 					<variant>MedGray</variant>
 					<variant>MEDGREY</variant>
 					<variant>MedGrey</variant>
+				</lang>
+				<lang code="fr" display="GRIS MOY">
+					<accessible>GRIS MOY</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9018,6 +9762,9 @@
 					<variant>GREY</variant>
 					<variant>Grey</variant>
 				</lang>
+				<lang code="fr" display="GRIS">
+					<accessible>GRIS</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$4F">
@@ -9031,6 +9778,9 @@
 					<variant>DarkGray</variant>
 					<variant>DARKGREY</variant>
 					<variant>DarkGrey</variant>
+				</lang>
+				<lang code="fr" display="GRIS FON">
+					<accessible>GRIS FON</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9153,6 +9903,9 @@
 				<lang code="en" ti-ascii="477269644C696E6520" display="GridLine&#032;">
 					<accessible>GridLine&#032;</accessible>
 				</lang>
+				<lang code="fr" display="LigneAff&#032;">
+					<accessible>LigneAff&#032;</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$5B">
@@ -9163,6 +9916,9 @@
 				</since>
 				<lang code="en" ti-ascii="4261636B67726F756E644F6E20" display="BackgroundOn&#032;">
 					<accessible>BackgroundOn&#032;</accessible>
+				</lang>
+				<lang code="fr" display="ArrPlanAff&#032;">
+					<accessible>ArrPlanAff&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9175,6 +9931,9 @@
 				<lang code="en" ti-ascii="4261636B67726F756E644F6666" display="BackgroundOff">
 					<accessible>BackgroundOff</accessible>
 				</lang>
+				<lang code="fr" display="ArrPlanNAff">
+					<accessible>ArrPlanNAff</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$65">
@@ -9185,6 +9944,9 @@
 				</since>
 				<lang code="en" ti-ascii="4772617068436F6C6F7228" display="GraphColor(">
 					<accessible>GraphColor(</accessible>
+				</lang>
+				<lang code="fr" display="CouleurGraph(">
+					<accessible>CouleurGraph(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9197,6 +9959,9 @@
 				<lang code="en" ti-ascii="517569636B506C6F74264669742D4551" display="QuickPlot&amp;Fit-EQ">
 					<accessible>QuickPlot&amp;Fit-EQ</accessible>
 				</lang>
+				<lang code="fr" display="TracéAjust-Éq">
+					<accessible>TracéAjust-Éq</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$67">
@@ -9207,6 +9972,9 @@
 				</since>
 				<lang code="en" ti-ascii="54657874436F6C6F7228" display="TextColor(">
 					<accessible>TextColor(</accessible>
+				</lang>
+				<lang code="fr" display="CouleurTexte(">
+					<accessible>CouleurTexte(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9230,6 +9998,9 @@
 				<lang code="en" ti-ascii="4465746563744173796D4F6E" display="DetectAsymOn">
 					<accessible>DetectAsymOn</accessible>
 				</lang>
+				<lang code="fr" display="DétectAsymAct">
+					<accessible>DétectAsymAct</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$6B">
@@ -9241,6 +10012,9 @@
 				<lang code="en" ti-ascii="4465746563744173796D4F6666" display="DetectAsymOff">
 					<accessible>DetectAsymOff</accessible>
 				</lang>
+				<lang code="fr" display="DétectAsymDés">
+					<accessible>DétectAsymDés</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$6C">
@@ -9251,6 +10025,9 @@
 				</since>
 				<lang code="en" ti-ascii="426F72646572436F6C6F7220" display="BorderColor&#032;">
 					<accessible>BorderColor&#032;</accessible>
+				</lang>
+				<lang code="fr" display="CouleurBord&#032;">
+					<accessible>CouleurBord&#032;</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9275,6 +10052,9 @@
 				<lang code="en" ti-ascii="5468696E" display="Thin">
 					<accessible>Thin</accessible>
 				</lang>
+				<lang code="fr" display="Fin">
+					<accessible>Fin</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$75">
@@ -9285,6 +10065,9 @@
 				</since>
 				<lang code="en" ti-ascii="446F742D5468696E" display="Dot-Thin">
 					<accessible>Dot-Thin</accessible>
+				</lang>
+				<lang code="fr" display="Point fin">
+					<accessible>Point fin</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9319,6 +10102,9 @@
 				<lang code="en" ti-ascii="5175617274696C65732053657474696E67CE" display="Quartiles Setting…">
 					<accessible>Quartiles Setting...</accessible>
 					<variant>Quartiles Setting…</variant>
+				</lang>
+				<lang code="fr" display="Quartiles réglage…">
+					<accessible>Quartiles réglage…</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9504,6 +10290,9 @@
 					<variant>SEQ(𝑛)</variant>
 					<variant>SEQ(𝒏)</variant>
 				</lang>
+				<lang code="fr" display="SUITE(𝑛)">
+					<accessible>SUITE(𝑛)</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$90">
@@ -9516,6 +10305,9 @@
 					<accessible>SEQ(n+1)</accessible>
 					<variant>SEQ(𝑛+1)</variant>
 					<variant>SEQ(𝒏+1)</variant>
+				</lang>
+				<lang code="fr" display="SUITE(𝑛+1)">
+					<accessible>SUITE(𝑛+1)</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9530,6 +10322,9 @@
 					<variant>SEQ(𝑛+2)</variant>
 					<variant>SEQ(𝒏+2)</variant>
 				</lang>
+				<lang code="fr" display="SUITE(𝑛+2)">
+					<accessible>SUITE(𝑛+2)</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$92">
@@ -9540,6 +10335,9 @@
 				</since>
 				<lang code="en" ti-ascii="4C454654" display="LEFT">
 					<accessible>LEFT</accessible>
+				</lang>
+				<lang code="fr" display="GAUCHE">
+					<accessible>GAUCHE</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9552,6 +10350,9 @@
 				<lang code="en" ti-ascii="43454E544552" display="CENTER">
 					<accessible>CENTER</accessible>
 				</lang>
+				<lang code="fr" display="CENTRE">
+					<accessible>CENTRE</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$94">
@@ -9562,6 +10363,9 @@
 				</since>
 				<lang code="en" ti-ascii="5249474854" display="RIGHT">
 					<accessible>RIGHT</accessible>
+				</lang>
+				<lang code="fr" display="DROITE">
+					<accessible>DROITE</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9596,6 +10400,9 @@
 				<lang code="en" ti-ascii="746F537472696E6728" display="toString(">
 					<accessible>toString(</accessible>
 				</lang>
+				<lang code="fr" display="versChaîne(">
+					<accessible>versChaîne(</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$98">
@@ -9618,6 +10425,9 @@
 				<lang code="en" ti-ascii="457865637574652050726F6772616D" display="Execute Program">
 					<accessible>Execute Program</accessible>
 				</lang>
+				<lang code="fr" display="Exécuter programme">
+					<accessible>Exécuter programme</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$9F">
@@ -9628,6 +10438,9 @@
 				</since>
 				<lang code="en" ti-ascii="556E646F20436C656172" display="Undo Clear">
 					<accessible>Undo Clear</accessible>
+				</lang>
+				<lang code="fr" display="Annuler effacer">
+					<accessible>Annuler effacer</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9640,6 +10453,9 @@
 				<lang code="en" ti-ascii="496E73657274204C696E652041626F7665" display="Insert Line Above">
 					<accessible>Insert Line Above</accessible>
 				</lang>
+				<lang code="fr" display="Insérer ligne ↑">
+					<accessible>Insérer ligne ↑</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$A1">
@@ -9650,6 +10466,9 @@
 				</since>
 				<lang code="en" ti-ascii="437574204C696E65" display="Cut Line">
 					<accessible>Cut Line</accessible>
+				</lang>
+				<lang code="fr" display="Couper ligne">
+					<accessible>Couper ligne</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9662,6 +10481,9 @@
 				<lang code="en" ti-ascii="436F7079204C696E65" display="Copy Line">
 					<accessible>Copy Line</accessible>
 				</lang>
+				<lang code="fr" display="Copier ligne">
+					<accessible>Copier ligne</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$A3">
@@ -9672,6 +10494,9 @@
 				</since>
 				<lang code="en" ti-ascii="5061737465204C696E652042656C6F77" display="Paste Line Below">
 					<accessible>Paste Line Below</accessible>
+				</lang>
+				<lang code="fr" display="Coller ligne ↓">
+					<accessible>Coller ligne ↓</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9684,6 +10509,9 @@
 				<lang code="en" ti-ascii="496E7365727420436F6D6D656E742041626F7665" display="Insert Comment Above">
 					<accessible>Insert Comment Above</accessible>
 				</lang>
+				<lang code="fr" display="Insérer commentaire ↑">
+					<accessible>Insérer commentaire ↑</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$A5">
@@ -9695,6 +10523,9 @@
 				<lang code="en" ti-ascii="5175697420456469746F72" display="Quit Editor">
 					<accessible>Quit Editor</accessible>
 				</lang>
+				<lang code="fr" display="Quitter">
+					<accessible>Quitter</accessible>
+				</lang>
 			</version>
 		</token>
 		<token value="$A6">
@@ -9705,6 +10536,9 @@
 				</since>
 				<lang code="en" ti-ascii="70696563657769736528" display="piecewise(">
 					<accessible>piecewise(</accessible>
+				</lang>
+				<lang code="fr" display="parmorceaux(">
+					<accessible>parmorceaux(</accessible>
 				</lang>
 			</version>
 		</token>
@@ -9741,6 +10575,9 @@
 			<lang code="en" ti-ascii="312D56617220537461747320" display="1-Var Stats&#032;">
 				<accessible>1-Var Stats&#032;</accessible>
 			</lang>
+			<lang code="fr" display="Stats 1-Var&#032;">
+				<accessible>Stats 1-Var&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$F3">
@@ -9751,6 +10588,9 @@
 			</since>
 			<lang code="en" ti-ascii="322D56617220537461747320" display="2-Var Stats&#032;">
 				<accessible>2-Var Stats&#032;</accessible>
+			</lang>
+			<lang code="fr" display="Stats 2-Var&#032;">
+				<accessible>Stats 2-Var&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -9763,6 +10603,9 @@
 			<lang code="en" ti-ascii="4C696E52656728612B62782920" display="LinReg(a+bx)&#032;">
 				<accessible>LinReg(a+bx)&#032;</accessible>
 			</lang>
+			<lang code="fr" display="RegLin(a+bx)&#032;">
+				<accessible>RegLin(a+bx)&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$F5">
@@ -9773,6 +10616,9 @@
 			</since>
 			<lang code="en" ti-ascii="45787052656720" display="ExpReg&#032;">
 				<accessible>ExpReg&#032;</accessible>
+			</lang>
+			<lang code="fr" display="RegExp&#032;">
+				<accessible>RegExp&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -9785,6 +10631,9 @@
 			<lang code="en" ti-ascii="4C6E52656720" display="LnReg&#032;">
 				<accessible>LnReg&#032;</accessible>
 			</lang>
+			<lang code="fr" display="RegLn&#032;">
+				<accessible>RegLn&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$F7">
@@ -9795,6 +10644,9 @@
 			</since>
 			<lang code="en" ti-ascii="50777252656720" display="PwrReg&#032;">
 				<accessible>PwrReg&#032;</accessible>
+			</lang>
+			<lang code="fr" display="RegPuiss&#032;">
+				<accessible>RegPuiss&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -9818,6 +10670,9 @@
 			<lang code="en" ti-ascii="5175616452656720" display="QuadReg&#032;">
 				<accessible>QuadReg&#032;</accessible>
 			</lang>
+			<lang code="fr" display="RegQuad&#032;">
+				<accessible>RegQuad&#032;</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$FA">
@@ -9828,6 +10683,9 @@
 			</since>
 			<lang code="en" ti-ascii="436C724C69737420" display="ClrList&#032;">
 				<accessible>ClrList&#032;</accessible>
+			</lang>
+			<lang code="fr" display="EffListe&#032;">
+				<accessible>EffListe&#032;</accessible>
 			</lang>
 		</version>
 	</token>
@@ -9840,6 +10698,9 @@
 			<lang code="en" ti-ascii="436C725461626C65" display="ClrTable">
 				<accessible>ClrTable</accessible>
 			</lang>
+			<lang code="fr" display="EffTable">
+				<accessible>EffTable</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$FC">
@@ -9850,6 +10711,9 @@
 			</since>
 			<lang code="en" ti-ascii="486973746F6772616D" display="Histogram">
 				<accessible>Histogram</accessible>
+			</lang>
+			<lang code="fr" display="Histogramme">
+				<accessible>Histogramme</accessible>
 			</lang>
 		</version>
 	</token>
@@ -9862,6 +10726,9 @@
 			<lang code="en" ti-ascii="78794C696E65" display="xyLine">
 				<accessible>xyLine</accessible>
 			</lang>
+			<lang code="fr" display="Polygone">
+				<accessible>Polygone</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$FE">
@@ -9873,6 +10740,9 @@
 			<lang code="en" ti-ascii="53636174746572" display="Scatter">
 				<accessible>Scatter</accessible>
 			</lang>
+			<lang code="fr" display="Nuage">
+				<accessible>Nuage</accessible>
+			</lang>
 		</version>
 	</token>
 	<token value="$FF">
@@ -9883,6 +10753,9 @@
 			</since>
 			<lang code="en" ti-ascii="4C696E5265672861782B622920" display="LinReg(ax+b)&#032;">
 				<accessible>LinReg(ax+b)&#032;</accessible>
+			</lang>
+			<lang code="fr" display="RegLin(ax+b)&#032;">
+				<accessible>RegLin(ax+b)&#032;</accessible>
 			</lang>
 		</version>
 	</token>
