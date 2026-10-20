@@ -9490,6 +9490,7 @@
 				</since>
 				<lang code="en" ti-ascii="41736D383443455072676D" display="Asm84CEPrgm">
 					<accessible>Asm84CEPrgm</accessible>
+					<variant>Asm83CEPrgm</variant>
 				</lang>
 			</version>
 		</token>
