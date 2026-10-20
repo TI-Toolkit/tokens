@@ -1553,6 +1553,21 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="55D7" display="U𝑛">
+					<accessible>Un</accessible>
+					<variant>U𝑛</variant>
+					<variant>|u</variant>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</since>
 				<lang code="en" ti-ascii="75" display="u">
 					<accessible>|u</accessible>
 				</lang>
@@ -1564,6 +1579,21 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="56D7" display="V𝑛">
+					<accessible>Vn</accessible>
+					<variant>V𝑛</variant>
+					<variant>|v</variant>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</since>
 				<lang code="en" ti-ascii="76" display="v">
 					<accessible>|v</accessible>
 				</lang>
@@ -1572,8 +1602,8 @@
 		<token value="$82">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="77" display="w">
 					<accessible>|w</accessible>
@@ -2207,6 +2237,21 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="D7" display="𝑛">
+					<accessible>[recursiven]</accessible>
+					<variant>𝑛</variant>
+					<variant>[𝒏]</variant>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</since>
 				<lang code="en" ti-ascii="01" display="𝑛">
 					<accessible>[recursiven]</accessible>
 					<variant>𝑛</variant>
@@ -2217,8 +2262,8 @@
 		<token value="$22">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="70" display="p">
 					<accessible>[p]</accessible>
@@ -2228,8 +2273,8 @@
 		<token value="$23">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="7A" display="z">
 					<accessible>[z]</accessible>
@@ -2239,8 +2284,8 @@
 		<token value="$24">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="74" display="t">
 					<accessible>[t]</accessible>
@@ -2250,8 +2295,8 @@
 		<token value="$25">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="D912" display="χ²">
 					<accessible>[chi^2]</accessible>
@@ -2264,8 +2309,8 @@
 		<token value="$26">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="DA" display="𝙵">
 					<accessible>[|F]</accessible>
@@ -2275,8 +2320,8 @@
 		<token value="$27">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="6466" display="df">
 					<accessible>[df]</accessible>
@@ -2286,8 +2331,8 @@
 		<token value="$28">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="D8" display="p̂">
 					<accessible>[phat]</accessible>
@@ -2299,8 +2344,8 @@
 		<token value="$29">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="D881" display="p̂₁">
 					<accessible>[phat1]</accessible>
@@ -2315,8 +2360,8 @@
 		<token value="$2A">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="D882" display="p̂₂">
 					<accessible>[phat2]</accessible>
@@ -2331,8 +2376,8 @@
 		<token value="$2B">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="CB81" display="x̄₁">
 					<accessible>[xhat1]</accessible>
@@ -2346,8 +2391,8 @@
 		<token value="$2C">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="537881" display="Sx₁">
 					<accessible>[Sx1]</accessible>
@@ -2358,8 +2403,8 @@
 		<token value="$2D">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="6E81" display="n₁">
 					<accessible>[n1]</accessible>
@@ -2370,8 +2415,8 @@
 		<token value="$2E">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="CB82" display="x̄₂">
 					<accessible>[xhat2]</accessible>
@@ -2386,8 +2431,8 @@
 		<token value="$2F">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="537882" display="Sx₂">
 					<accessible>[Sx2]</accessible>
@@ -2398,8 +2443,8 @@
 		<token value="$30">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="6E82" display="n₂">
 					<accessible>[n2]</accessible>
@@ -2410,8 +2455,8 @@
 		<token value="$31">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="537870" display="Sxp">
 					<accessible>[Sxp]</accessible>
@@ -2422,8 +2467,8 @@
 		<token value="$32">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="6C6F776572" display="lower">
 					<accessible>[lower]</accessible>
@@ -2434,8 +2479,8 @@
 		<token value="$33">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="7570706572" display="upper">
 					<accessible>[upper]</accessible>
@@ -2446,8 +2491,8 @@
 		<token value="$34">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="73" display="s">
 					<accessible>[s]</accessible>
@@ -2457,8 +2502,8 @@
 		<token value="$35">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="7212" display="r²">
 					<accessible>[r^2]</accessible>
@@ -2469,8 +2514,8 @@
 		<token value="$36">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="5212" display="R²">
 					<accessible>[R^2]</accessible>
@@ -2481,8 +2526,8 @@
 		<token value="$37">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="6466" display="df">
 					<accessible>[factordf]</accessible>
@@ -2492,8 +2537,8 @@
 		<token value="$38">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="5353" display="SS">
 					<accessible>[factorSS]</accessible>
@@ -2503,8 +2548,8 @@
 		<token value="$39">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="4D53" display="MS">
 					<accessible>[factorMS]</accessible>
@@ -2514,8 +2559,8 @@
 		<token value="$3A">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="6466" display="df">
 					<accessible>[errordf]</accessible>
@@ -2525,8 +2570,8 @@
 		<token value="$3B">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="5353" display="SS">
 					<accessible>[errorSS]</accessible>
@@ -2536,8 +2581,8 @@
 		<token value="$3C">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="4D53" display="MS">
 					<accessible>[errorMS]</accessible>
@@ -2600,7 +2645,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="556E5374617274" display="UnStart">
+				<lang code="en" ti-ascii="55D75374617274" display="U𝑛Start">
 					<accessible>UnStart</accessible>
 				</lang>
 			</version>
@@ -2626,7 +2671,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="56015374617274" display="VnStart">
+				<lang code="en" ti-ascii="56D75374617274" display="V𝑛Start">
 					<accessible>VnStart</accessible>
 					<variant>V𝒏Start</variant>
 				</lang>
@@ -2653,7 +2698,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="55012D81" display="U𝑛-₁">
+				<lang code="en" ti-ascii="55D72D81" display="U𝑛-₁">
 					<accessible>Un-1</accessible>
 					<variant>U𝑛-₁</variant>
 					<variant>U𝒏-₁</variant>
@@ -2683,7 +2728,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="56012D81" display="V𝑛-₁">
+				<lang code="en" ti-ascii="56D72D81" display="V𝑛-₁">
 					<accessible>Vn-1</accessible>
 					<variant>V𝑛-₁</variant>
 					<variant>V𝒏-₁</variant>
@@ -2713,7 +2758,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="5A5528014D696E29" display="ZUnStart">
+				<lang code="en" ti-ascii="5A55D75374617274" display="ZU𝑛Start">
 					<accessible>ZUnStart</accessible>
 				</lang>
 			</version>
@@ -2740,7 +2785,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="5A5628014D696E29" display="ZVnStart">
+				<lang code="en" ti-ascii="5A56D75374617274" display="ZV𝑛Start">
 					<accessible>ZVnStart</accessible>
 				</lang>
 			</version>
@@ -2945,6 +2990,19 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="54626C4D696E" display="TblMin">
+					<accessible>TblMin</accessible>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</since>
 				<lang code="en" ti-ascii="54626C5374617274" display="TblStart">
 					<accessible>TblStart</accessible>
 				</lang>
@@ -2960,7 +3018,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="014D696E" display="𝑛Min">
+				<lang code="en" ti-ascii="D74D696E" display="𝑛Min">
 					<accessible>nMin</accessible>
 					<variant>𝑛Min</variant>
 					<variant>𝒏Min</variant>
@@ -2982,6 +3040,21 @@
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
 				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="5AD74D696E" display="Z𝑛Min">
+					<accessible>ZnMin</accessible>
+					<variant>Z𝑛Min</variant>
+					<variant>Z𝒏Min</variant>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</since>
 				<lang code="en" ti-ascii="5A506C6F745374617274" display="ZPlotStart">
 					<accessible>ZPlotStart</accessible>
 				</lang>
@@ -2992,6 +3065,21 @@
 				<since>
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
+				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="D74D6178" display="𝑛Max">
+					<accessible>nMax</accessible>
+					<variant>𝑛Max</variant>
+					<variant>𝒏Max</variant>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="014D6178" display="𝑛Max">
 					<accessible>nMax</accessible>
@@ -3005,6 +3093,21 @@
 				<since>
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
+				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="5AD74D6178" display="Z𝑛Max">
+					<accessible>ZnMax</accessible>
+					<variant>Z𝑛Max</variant>
+					<variant>Z𝒏Max</variant>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="5A014D6178" display="Z𝑛Max">
 					<accessible>ZnMax</accessible>
@@ -3023,7 +3126,7 @@
 					<model>TI-83</model>
 					<os-version>0.01013</os-version>
 				</until>
-				<lang code="en" ti-ascii="015374617274" display="𝑛Start">
+				<lang code="en" ti-ascii="D75374617274" display="𝑛Start">
 					<accessible>nStart</accessible>
 					<variant>𝑛Start</variant>
 				</lang>
@@ -3045,6 +3148,21 @@
 				<since>
 					<model>TI-82</model>
 					<os-version>1.0</os-version>
+				</since>
+				<until>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
+				</until>
+				<lang code="en" ti-ascii="5AD75374617274" display="Z𝑛Start">
+					<accessible>ZnStart</accessible>
+					<variant>Z𝑛Start</variant>
+					<variant>Z𝒏Start</variant>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="5A014D696E" display="Z𝑛Min">
 					<accessible>ZnMin</accessible>
@@ -3519,6 +3637,19 @@
 				<model>TI-82</model>
 				<os-version>1.0</os-version>
 			</since>
+			<until>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
+			</until>
+			<lang code="en" ti-ascii="53706C6974" display="Split">
+				<accessible>Split</accessible>
+			</lang>
+		</version>
+		<version>
+			<since>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
+			</since>
 			<lang code="en" ti-ascii="486F72697A" display="Horiz">
 				<accessible>Horiz</accessible>
 			</lang>
@@ -3868,8 +3999,8 @@
 		<token value="$10">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="757641786573" display="uvAxes">
 					<accessible>uvAxes</accessible>
@@ -3879,8 +4010,8 @@
 		<token value="$11">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="767741786573" display="vwAxes">
 					<accessible>vwAxes</accessible>
@@ -3890,8 +4021,8 @@
 		<token value="$12">
 			<version>
 				<since>
-					<model>TI-82</model>
-					<os-version>1.0</os-version>
+					<model>TI-83</model>
+					<os-version>0.01013</os-version>
 				</since>
 				<lang code="en" ti-ascii="757741786573" display="uwAxes">
 					<accessible>uwAxes</accessible>
@@ -4709,6 +4840,19 @@
 				<model>TI-82</model>
 				<os-version>1.0</os-version>
 			</since>
+			<until>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
+			</until>
+			<lang code="en" ti-ascii="70726F6420" display="prod&#032;">
+				<accessible>prod&#032;</accessible>
+			</lang>
+		</version>
+		<version>
+			<since>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
+			</since>
 			<lang code="en" ti-ascii="70726F6428" display="prod(">
 				<accessible>prod(</accessible>
 			</lang>
@@ -4719,6 +4863,19 @@
 			<since>
 				<model>TI-82</model>
 				<os-version>1.0</os-version>
+			</since>
+			<until>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
+			</until>
+			<lang code="en" ti-ascii="6E6F7420" display="not&#032;">
+				<accessible>not&#032;</accessible>
+			</lang>
+		</version>
+		<version>
+			<since>
+				<model>TI-83</model>
+				<os-version>0.01013</os-version>
 			</since>
 			<lang code="en" ti-ascii="6E6F7428" display="not(">
 				<accessible>not(</accessible>
@@ -7036,7 +7193,20 @@
 					<model>TI-83+</model>
 					<os-version>1.15</os-version>
 				</since>
+				<until>
+					<model>TI-84+CE</model>
+					<os-version>5.0.0</os-version>
+				</until>
 				<lang code="en" ti-ascii="F2" display="$">
+					<accessible>$</accessible>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-84+CE</model>
+					<os-version>5.0.0</os-version>
+				</since>
+				<lang code="en" ti-ascii="24" display="$">
 					<accessible>$</accessible>
 				</lang>
 			</version>
@@ -7520,7 +7690,7 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="DB5E" display="𝑒^">
+			<lang code="en" ti-ascii="655E" display="e^">
 				<accessible>e^^</accessible>
 				<variant>𝑒^</variant>
 			</lang>
@@ -7546,7 +7716,7 @@
 				<model>TI-83</model>
 				<os-version>0.01013</os-version>
 			</until>
-			<lang code="en" ti-ascii="6C6F67" display="log&#032;">
+			<lang code="en" ti-ascii="6C6F6720" display="log&#032;">
 				<accessible>log&#032;</accessible>
 			</lang>
 		</version>
@@ -8481,6 +8651,19 @@
 					<model>TI-84+</model>
 					<os-version>0.01</os-version>
 				</since>
+				<until>
+					<model>TI-84+CE</model>
+					<os-version>5.1.5</os-version>
+				</until>
+				<lang code="en" ti-ascii="457865634C6962" display="ExecLib">
+					<accessible>ExecLib</accessible>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-84+CE</model>
+					<os-version>5.1.5</os-version>
+				</since>
 				<lang code="en" ti-ascii="457865634C696220" display="ExecLib&#032;">
 					<accessible>ExecLib&#032;</accessible>
 				</lang>
@@ -8537,7 +8720,7 @@
 			<version>
 				<since>
 					<model>TI-84+</model>
-					<os-version>0.01</os-version>
+					<os-version>2.53</os-version>
 				</since>
 				<lang code="en" ti-ascii="5A5175616472616E7431" display="ZQuadrant1">
 					<accessible>ZQuadrant1</accessible>
@@ -9307,6 +9490,7 @@
 				</since>
 				<lang code="en" ti-ascii="41736D383443455072676D" display="Asm84CEPrgm">
 					<accessible>Asm84CEPrgm</accessible>
+					<variant>Asm83CEPrgm</variant>
 				</lang>
 			</version>
 		</token>
