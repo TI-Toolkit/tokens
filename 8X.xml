@@ -7193,7 +7193,20 @@
 					<model>TI-83+</model>
 					<os-version>1.15</os-version>
 				</since>
+				<until>
+					<model>TI-84+CE</model>
+					<os-version>5.0.0</os-version>
+				</until>
 				<lang code="en" ti-ascii="F2" display="$">
+					<accessible>$</accessible>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-84+CE</model>
+					<os-version>5.0.0</os-version>
+				</since>
+				<lang code="en" ti-ascii="24" display="$">
 					<accessible>$</accessible>
 				</lang>
 			</version>
@@ -8638,6 +8651,19 @@
 					<model>TI-84+</model>
 					<os-version>0.01</os-version>
 				</since>
+				<until>
+					<model>TI-84+CE</model>
+					<os-version>5.1.5</os-version>
+				</until>
+				<lang code="en" ti-ascii="457865634C6962" display="ExecLib">
+					<accessible>ExecLib</accessible>
+				</lang>
+			</version>
+			<version>
+				<since>
+					<model>TI-84+CE</model>
+					<os-version>5.1.5</os-version>
+				</since>
 				<lang code="en" ti-ascii="457865634C696220" display="ExecLib&#032;">
 					<accessible>ExecLib&#032;</accessible>
 				</lang>
@@ -8694,7 +8720,7 @@
 			<version>
 				<since>
 					<model>TI-84+</model>
-					<os-version>0.01</os-version>
+					<os-version>2.53</os-version>
 				</since>
 				<lang code="en" ti-ascii="5A5175616472616E7431" display="ZQuadrant1">
 					<accessible>ZQuadrant1</accessible>
