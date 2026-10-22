@@ -58,22 +58,28 @@ class OsVersion:
     model: str
     version: str
 
-    def _key(self):
-        if self.version == "":
-            return MODEL_ORDER[self.model], 0, ()
-        if self.version == "latest":
-            return MODEL_ORDER[self.model], 2, ()
-
-        return MODEL_ORDER[self.model], 1, tuple(int(part) for part in self.version.split("."))
-
     def __lt__(self, other):
-        return self._key() < other._key()
+        order1 = MODEL_ORDER[self.model]
+        order2 = MODEL_ORDER[other.model]
+
+        if order1 < order2:
+            return True
+        elif order1 > order2:
+            return False
+        else:
+            if self.version == "latest":
+                return False
+            elif other.version == "latest":
+                return True
+            elif other.version == "":
+                return False
+            elif self.version == "":
+                return True
+            else:
+                return self.version.split(".") < other.version.split(".")
 
     def __eq__(self, other):
-        return self._key() == other._key()
-
-    def __hash__(self):
-        return hash(self._key())
+        return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
 
     @staticmethod
     def from_element(element: ET.Element) -> 'OsVersion':
@@ -208,17 +214,28 @@ class Token:
         langs: dict[str, Translation] = {}
 
         for version_elem in element:
-            version_since = OsVersion.from_element(version_elem.find("since"))
-            until_elem = version_elem.find("until")
-            version_until = (OsVersions.LATEST if until_elem is None
-                             else OsVersion.from_element(until_elem))
+            below, above = False, True
 
-            in_range = version_since <= version and (until_elem is None or version < version_until)
-            if in_range:
-                since, until = version_since, version_until
-                langs = dict(Translation.from_element(child)
-                             for child in version_elem.findall("lang"))
-                break
+            for child in version_elem:
+                match child.tag:
+                    case "since":
+                        version_since = OsVersion.from_element(child)
+                        if version_since < version:
+                            below = True
+                            since = version_since
+
+                    case "until":
+                        version_until = OsVersion.from_element(child)
+                        if version_until < version:
+                            above = False
+
+                        else:
+                            until = version_until
+
+                    case "lang":
+                        if above and below:
+                            code, translation = Translation.from_element(child)
+                            langs[code] = translation
 
         return Token(bits, langs, attrs=element.attrib, since=since, until=until)
 
