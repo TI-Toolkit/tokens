@@ -76,7 +76,7 @@ class OsVersion:
             elif self.version == "":
                 return True
             else:
-                return self.version.split(".") < other.version.split(".")
+                return list(map(int, self.version.split("."))) < list(map(int, other.version.split(".")))
 
     def __eq__(self, other):
         return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
@@ -220,13 +220,13 @@ class Token:
                 match child.tag:
                     case "since":
                         version_since = OsVersion.from_element(child)
-                        if version_since < version:
+                        if version_since <= version:
                             below = True
                             since = version_since
 
                     case "until":
                         version_until = OsVersion.from_element(child)
-                        if version_until < version:
+                        if version_until <= version:
                             above = False
 
                         else:
