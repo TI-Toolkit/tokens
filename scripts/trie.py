@@ -18,10 +18,11 @@ class TokenTrie:
         :param lang: The language to insert names from
         """
         
-        if lang not in token.langs:
+        translation = token.langs.get(lang, token.langs.get("en"))
+        if translation is None:
             raise ValueError(f"lang {lang} not found")
 
-        for name in token.langs[lang].names():
+        for name in translation.names():
             current = self
             for char in name:
                 if char not in current.children:
@@ -29,7 +30,9 @@ class TokenTrie:
 
                 current = current.children[char]
 
-            current.token = token
+            # Explicit translations take precedence over English fallback names.
+            if current.token is None or lang in token.langs:
+                current.token = token
 
     @staticmethod
     def from_tokens(tokens: Tokens, lang: str = "en"):

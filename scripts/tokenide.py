@@ -140,7 +140,8 @@ class TokenIDESheet:
 
         all_bytes = tokens.bytes
         all_names = [name for token in all_bytes.values()
-                     for name in {*token.langs.get(lang, "en").names(), token.langs.get(lang, "en").display}]
+                     for name in {*token.langs.get(lang, token.langs["en"]).names(),
+                                  token.langs.get(lang, token.langs["en"]).display}]
 
         for byte, token in all_bytes.items():
             if version is not None and token.since > version:
@@ -162,7 +163,7 @@ class TokenIDESheet:
 
                 new[value] = {"string": None, "variants": set(), "attrib": {}, "tokens": {}}
 
-            translation = token.langs.get(lang, "en")
+            translation = token.langs.get(lang, token.langs["en"])
             display = translation.display
 
             new[value]["string"] = display if all_names.count(display) == 1 else translation.accessible

@@ -307,6 +307,12 @@ class Tokens:
 
         parse_page(root)
 
+        for lang, names in all_langs.items():
+            for token in all_bytes.values():
+                if lang not in token.langs:
+                    for name in token.langs["en"].names():
+                        names.setdefault(name, token.bits)
+
         return Tokens(all_bytes, all_langs)
 
 
