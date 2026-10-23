@@ -85,8 +85,8 @@ Each language translation contains a number of different ways that token is repr
 </lang>
 ```
 
-> [!WARNING]
-> Currently, only English translations are supported. See [our contribution guidelines](CONTRIBUTING.md) for details on adding new translations.
+> [!NOTE]
+> Available translations depend on the calculator and OS version. The sheet includes Danish, Dutch, Finnish, French, German, Hungarian, Italian, Norwegian, Polish, Portuguese, Spanish, and Swedish, including built-in French TI-82 Stats.fr and TI-76.fr ROM data. See the [localization source and version policy](https://github.com/TI-Toolkit/token_translation_extractor#os-versions-versus-application-revisions) and [contribution guidelines](CONTRIBUTING.md).
 
 The default translation is `en`. If a translation is not specified for a token, it is the same as the `en` translation.
 

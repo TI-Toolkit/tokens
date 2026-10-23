@@ -8,9 +8,11 @@ Does a translation have a typo? Is there a variant name that should be added? We
 
 ## Adding New Translations
 
-One important goal of this project is to maintain token translations for every language supported by TI, and there are a lot! Luckily, each language's token and font translations are bundled in a single .8ek file, which can be parsed using [this tool](https://github.com/TI-Toolkit/token_translation_extractor). We _strongly_ recommend using it or a similar tool instead of trying to manually transcribe information from a calculator.
+One important goal of this project is to maintain token translations for every language supported by TI, and there are a lot! Each language's token and font translations are bundled in a localization app (`.8xk`, `.8ck`, or `.8ek`). The [localization extraction tools](https://github.com/TI-Toolkit/token_translation_extractor) recover native strings, replacement glyphs, and version evidence from these files and reproduce the XML additions. We _strongly_ recommend using these tools instead of manually transcribing information from a calculator.
 
-Further tooling and documentation to streamline adding .8ek information to the sheets is in the works.
+Application revisions are independent of OS versions. Review the documented timeline policy before adding a new XML boundary, and verify effective locale names with English fallback to catch collisions across active ranges.
+
+Built-in translations in TI-83-family ROMs are extracted separately with the extractor repository's `locales.rom` module. Keep the ROM's actual model and OS revision, including French `frN` suffixes, and retain its native bytes and font evidence. Model order tracks token-table lineage, rather than calendar release order.
 
 ## Adding New Scripts
 
