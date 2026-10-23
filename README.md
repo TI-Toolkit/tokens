@@ -35,16 +35,20 @@ Each token is stored in a `<token>` tag (perhaps within a `<two-byte>` parent, i
 #### Versions
 The token sheet forces the calculator operating system versions into a clean, linear timeline spanning over 30 years. Four essential patterns allow for this:
 1. Newer calculators in the lineage generally get their token table's first version directly from their immediate predecessor's last version.
-2. Older calculators do not receive patches after a newer model is introduced.
+2. OS revisions stay within their model's lineage step, even when models were sold in parallel.
 3. Changes from version to version (we treat calculator-to-calculator changes as version-to-version changes, given the previous points) are usually limited to addition, renaming, and omission.
    - Basically, we don't see dramatic reorganization of the token data.
 4. Critically, the current system handles any violation of these patterns (that we have encountered) nicely.
 
 We can then track the history of any token with a series of half-open ranges placed on this timeline. We use `[since, until)` (i.e. both `since` and `until` are versions where changes happened).
 
-Versions are written as `major.minor` or `major.minor.patch`.
+Versions are written as `major.minor` or `major.minor.patch`. Built-in French TI-83 derivatives retain their native revision suffix, such as `1.11fr7` or `1.00fr5`.
 
-For our timeline, we define an ordering of calculator models [here](https://github.com/TI-Toolkit/tokens/blob/6773ed7ba02a938b6f116f2b815f21d30dbe487f/scripts/parse.py#L6-L40). Versions are compared first by `model`, then by `major` OS version, then by `minor` OS version, then by `patch` OS version, if present.
+For our timeline, we define an ordering of calculator models [here](scripts/parse.py). Versions are compared first by `model`, then by `major` OS version, then by `minor` OS version, then by `patch` OS version, if present.
+
+This ordering follows token-table lineage, rather than calendar release dates. The TI-83 → TI-82 Stats → TI-82 Stats.fr → TI-76.fr branch stays together before the Plus models, even though these TI-83 derivatives were sold after the TI-83 Plus. These are distinct model steps, not aliases; a French ROM revision does not change the TI-83's own token table. Within a model, an `frN` revision follows the same numeric version without a suffix, and its revision number is compared numerically.
+
+TI-83 versions use compact build notation: `1.010` and `1.0200` represent the 1.01 and 1.02 releases, followed by `1.10`, `1.10001`, and `1.10002`. The first two digits after the period are the minor version; the remaining digits identify the build. This differs from treating the whole component as one integer.
 
 Each version includes a `<since>` tag, the first OS with that version of the token, and an optional `<until>` tag. The remaining tags are translations of that token into available languages.
 

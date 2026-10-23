@@ -1,4 +1,5 @@
 import functools
+import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 
@@ -9,9 +10,9 @@ MODEL_ORDER = {
     "TI-82": 10,
 
     "TI-83": 20,
-    "TI-82ST": 20,
-    "TI-82ST.fr": 20,
-    "TI-76.fr": 20,
+    "TI-82ST": 21,
+    "TI-82ST.fr": 22,
+    "TI-76.fr": 23,
 
     "TI-83+": 30,
     "TI-83+SE": 30,
@@ -49,7 +50,8 @@ class OsVersion:
 
     An OS version is defined by its model and version number.
     The model name must appear in the MODEL_ORDER map above.
-    The version number must be of the form "x1.x2.....xn", where each xi is an integer.
+    The version number must be of the form "x1.x2.....xn", where each xi is an integer,
+    optionally followed by the French ROM revision suffix "frN".
 
     Both the model and version can also be empty or "latest".
     An empty model/version is always first in version ordering, while "latest" is always last.
@@ -57,6 +59,20 @@ class OsVersion:
     
     model: str
     version: str
+
+    def _version_key(self) -> tuple[tuple[int, ...], int]:
+        """Compare native TI-83 build notation and optional French ``frN`` revisions."""
+        match = re.fullmatch(r"(\d+(?:\.\d+)*)(?:fr(\d+))?", self.version)
+        if match is None:
+            raise ValueError(f"Invalid OS version: {self.version!r}")
+        components = match[1].split(".")
+        numbers = tuple(map(int, components))
+        if self.model == "TI-83" and len(components) == 2 and len(components[1]) >= 2:
+            # TI-83 uses two minor digits followed by build digits: 1.010 (1.01)
+            # and 1.0200 (1.02) precede 1.10, then 1.10001 and 1.10002.
+            minor, build = components[1][:2], components[1][2:]
+            numbers = (int(components[0]), int(minor)) + ((int(build),) if build else ())
+        return numbers, int(match[2]) if match[2] else -1
 
     def __lt__(self, other):
         order1 = MODEL_ORDER[self.model]
@@ -76,7 +92,7 @@ class OsVersion:
             elif self.version == "":
                 return True
             else:
-                return list(map(int, self.version.split("."))) < list(map(int, other.version.split(".")))
+                return self._version_key() < other._version_key()
 
     def __eq__(self, other):
         return MODEL_ORDER[self.model] == MODEL_ORDER[other.model] and self.version == other.version
@@ -109,11 +125,15 @@ class OsVersion:
         if model not in MODEL_ORDER or model == "latest":  # "latest" is for user convenience, not the sheet itself
             raise ValueError("Unrecognized <model>: " + model)
 
-        if any([c != '.' and not c.isnumeric() for c in version]):
+        result = OsVersion(model, version)
+        try:
+            result._version_key()
+        except ValueError:
             raise ValueError(
-                "Invalid <version> string \"" + version + "\", must be a sequence of numbers separated by periods.")
+                "Invalid <version> string \"" + version
+                + "\", must be numbers separated by periods, optionally followed by frN.") from None
 
-        return OsVersion(model, version)
+        return result
 
 
 class OsVersions:

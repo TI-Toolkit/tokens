@@ -119,7 +119,7 @@ def validate(root: ET.Element) -> int:
                 text(r"TI-\d\d.*")
 
             case "os-version":
-                text(r"(\d+\.)+\d+")
+                text(r"(\d+\.)+\d+(?:fr\d+)?")
 
             case _:
                 raise ValidationError(f"unrecognized tag <{element.tag}>")
